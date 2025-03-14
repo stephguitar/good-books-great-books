@@ -1,0 +1,96 @@
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\bin\Debug\LIBRARY.exe.config
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\bin\Debug\LIBRARY.exe
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\bin\Debug\LIBRARY.pdb
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.AssemblyReference.cache
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Form1.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Properties.Resources.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.GenerateResource.cache
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.CoreCompileInputs.cache
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.exe
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.pdb
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.profile.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.signupForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.loginForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.booksForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.finesForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.transactionsForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.reservationsForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.homeForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.reportsForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn1Form_Reports.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn_1Reportscs.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn2Form_Reports.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn3Form_Reports.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn4Form_Reports.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn6Form_Reports.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn5Form_Reports.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.notificationsForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.memberForm.resources
+C:\Users\Summer MDR\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.adminForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\LIBRARY.exe.config
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\LIBRARY.exe
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\LIBRARY.pdb
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\BouncyCastle.Cryptography.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\Google.Protobuf.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\K4os.Compression.LZ4.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\K4os.Compression.LZ4.Streams.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\K4os.Hash.xxHash.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\MySql.Data.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Buffers.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Configuration.ConfigurationManager.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.IO.Pipelines.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Memory.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Numerics.Vectors.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Threading.Tasks.Extensions.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\ZstdSharp.dll
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\BouncyCastle.Cryptography.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\Google.Protobuf.pdb
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\Google.Protobuf.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\K4os.Compression.LZ4.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\K4os.Compression.LZ4.Streams.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\K4os.Hash.xxHash.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\MySql.Data.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Buffers.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Configuration.ConfigurationManager.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.IO.Pipelines.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Memory.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Numerics.Vectors.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Threading.Tasks.Extensions.xml
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.AssemblyReference.cache
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.adminForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.booksForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn1Form_Reports.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn2Form_Reports.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn3Form_Reports.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn4Form_Reports.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn5Form_Reports.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn6Form_Reports.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn_1Reportscs.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.finesForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Form1.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.homeForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.loginForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.memberForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.notificationsForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.profile.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Properties.Resources.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.reportsForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.reservationsForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.signupForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.transactionsForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.GenerateResource.cache
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.CoreCompileInputs.cache
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.Up2Date
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.exe
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.pdb
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.toastForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer2.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer3.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer4.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer5.resources
