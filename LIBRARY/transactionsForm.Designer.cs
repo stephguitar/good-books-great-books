@@ -48,8 +48,8 @@
             this.txtbox_Edition = new System.Windows.Forms.TextBox();
             this.txtbox_Author = new System.Windows.Forms.TextBox();
             this.txtbox_Title = new System.Windows.Forms.TextBox();
-            this.txtTransactionID = new System.Windows.Forms.TextBox();
-            this.txtCopyID = new System.Windows.Forms.TextBox();
+            this.txtbox_TransactionID = new System.Windows.Forms.TextBox();
+            this.txtbox_CopyID = new System.Windows.Forms.TextBox();
             this.txtbox_BookID = new System.Windows.Forms.TextBox();
             this.txtbox_dueDate = new System.Windows.Forms.TextBox();
             this.txtbox_issueDate = new System.Windows.Forms.TextBox();
@@ -60,8 +60,10 @@
             this.txtbox_LibrarianName = new System.Windows.Forms.TextBox();
             this.txtbox_LibrarianID = new System.Windows.Forms.TextBox();
             this.issuedPanel = new System.Windows.Forms.Panel();
-            this.BorrowedDB = new System.Windows.Forms.DataGridView();
+            this.booksTBLDATA = new System.Windows.Forms.DataGridView();
+            this.borrowTBLDATA = new System.Windows.Forms.DataGridView();
             this.transactionLabel = new System.Windows.Forms.Label();
+            this.book_copiesTBLDATA = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -69,7 +71,9 @@
             this.transactionsPanel.SuspendLayout();
             this.issuedSidePanel.SuspendLayout();
             this.issuedPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BorrowedDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.booksTBLDATA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.borrowTBLDATA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.book_copiesTBLDATA)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -142,7 +146,6 @@
             this.transactionsPanel.Name = "transactionsPanel";
             this.transactionsPanel.Size = new System.Drawing.Size(949, 591);
             this.transactionsPanel.TabIndex = 1;
-            this.transactionsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.transactionsPanel_Paint);
             // 
             // issuedSidePanel
             // 
@@ -158,8 +161,8 @@
             this.issuedSidePanel.Controls.Add(this.txtbox_Edition);
             this.issuedSidePanel.Controls.Add(this.txtbox_Author);
             this.issuedSidePanel.Controls.Add(this.txtbox_Title);
-            this.issuedSidePanel.Controls.Add(this.txtTransactionID);
-            this.issuedSidePanel.Controls.Add(this.txtCopyID);
+            this.issuedSidePanel.Controls.Add(this.txtbox_TransactionID);
+            this.issuedSidePanel.Controls.Add(this.txtbox_CopyID);
             this.issuedSidePanel.Controls.Add(this.txtbox_BookID);
             this.issuedSidePanel.Controls.Add(this.txtbox_dueDate);
             this.issuedSidePanel.Controls.Add(this.txtbox_issueDate);
@@ -195,6 +198,7 @@
             this.btn_Borrow.TabIndex = 2;
             this.btn_Borrow.Text = "BORROW";
             this.btn_Borrow.UseVisualStyleBackColor = false;
+            this.btn_Borrow.Click += new System.EventHandler(this.btn_Borrow_Click);
             // 
             // bookInfoLabel
             // 
@@ -286,27 +290,25 @@
             this.txtbox_Title.Size = new System.Drawing.Size(153, 23);
             this.txtbox_Title.TabIndex = 35;
             // 
-            // txtTransactionID
+            // txtbox_TransactionID
             // 
-            this.txtTransactionID.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransactionID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtTransactionID.Location = new System.Drawing.Point(13, 11);
-            this.txtTransactionID.Name = "txtTransactionID";
-            this.txtTransactionID.Size = new System.Drawing.Size(211, 23);
-            this.txtTransactionID.TabIndex = 30;
-            this.txtTransactionID.Text = "Transaction ID";
-            this.txtTransactionID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtbox_TransactionID.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_TransactionID.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_TransactionID.Location = new System.Drawing.Point(13, 11);
+            this.txtbox_TransactionID.Name = "txtbox_TransactionID";
+            this.txtbox_TransactionID.ReadOnly = true;
+            this.txtbox_TransactionID.Size = new System.Drawing.Size(211, 23);
+            this.txtbox_TransactionID.TabIndex = 30;
+            this.txtbox_TransactionID.Text = "Transaction ID";
             // 
-            // txtCopyID
+            // txtbox_CopyID
             // 
-            this.txtCopyID.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCopyID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtCopyID.Location = new System.Drawing.Point(13, 40);
-            this.txtCopyID.Name = "txtCopyID";
-            this.txtCopyID.Size = new System.Drawing.Size(211, 23);
-            this.txtCopyID.TabIndex = 31;
-            this.txtCopyID.Text = "Copy ID";
-            this.txtCopyID.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtbox_CopyID.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_CopyID.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_CopyID.Location = new System.Drawing.Point(13, 40);
+            this.txtbox_CopyID.Name = "txtbox_CopyID";
+            this.txtbox_CopyID.Size = new System.Drawing.Size(211, 23);
+            this.txtbox_CopyID.TabIndex = 31;
             // 
             // txtbox_BookID
             // 
@@ -317,6 +319,7 @@
             this.txtbox_BookID.Size = new System.Drawing.Size(211, 23);
             this.txtbox_BookID.TabIndex = 34;
             this.txtbox_BookID.Text = "Book ID";
+            this.txtbox_BookID.TextChanged += new System.EventHandler(this.txtbox_BookID_TextChanged);
             // 
             // txtbox_dueDate
             // 
@@ -326,7 +329,6 @@
             this.txtbox_dueDate.Name = "txtbox_dueDate";
             this.txtbox_dueDate.Size = new System.Drawing.Size(126, 23);
             this.txtbox_dueDate.TabIndex = 33;
-            this.txtbox_dueDate.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // txtbox_issueDate
             // 
@@ -336,7 +338,6 @@
             this.txtbox_issueDate.Name = "txtbox_issueDate";
             this.txtbox_issueDate.Size = new System.Drawing.Size(126, 23);
             this.txtbox_issueDate.TabIndex = 32;
-            this.txtbox_issueDate.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtEmail
             // 
@@ -380,6 +381,7 @@
             this.txtbox_MemberID.Size = new System.Drawing.Size(211, 23);
             this.txtbox_MemberID.TabIndex = 26;
             this.txtbox_MemberID.Text = "Member ID";
+            this.txtbox_MemberID.TextChanged += new System.EventHandler(this.txtbox_MemberID_TextChanged);
             // 
             // txtbox_LibrarianName
             // 
@@ -401,25 +403,35 @@
             this.txtbox_LibrarianID.Size = new System.Drawing.Size(211, 23);
             this.txtbox_LibrarianID.TabIndex = 24;
             this.txtbox_LibrarianID.Text = "Librarian ID";
+            this.txtbox_LibrarianID.TextChanged += new System.EventHandler(this.txtbox_LibrarianID_TextChanged);
             // 
             // issuedPanel
             // 
             this.issuedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.issuedPanel.Controls.Add(this.BorrowedDB);
+            this.issuedPanel.Controls.Add(this.book_copiesTBLDATA);
+            this.issuedPanel.Controls.Add(this.booksTBLDATA);
+            this.issuedPanel.Controls.Add(this.borrowTBLDATA);
             this.issuedPanel.Controls.Add(this.transactionLabel);
             this.issuedPanel.Location = new System.Drawing.Point(250, 11);
             this.issuedPanel.Name = "issuedPanel";
             this.issuedPanel.Size = new System.Drawing.Size(576, 556);
             this.issuedPanel.TabIndex = 0;
-            this.issuedPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.issuedPanel_Paint);
             // 
-            // BorrowedDB
+            // booksTBLDATA
             // 
-            this.BorrowedDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BorrowedDB.Location = new System.Drawing.Point(14, 91);
-            this.BorrowedDB.Name = "BorrowedDB";
-            this.BorrowedDB.Size = new System.Drawing.Size(543, 443);
-            this.BorrowedDB.TabIndex = 2;
+            this.booksTBLDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.booksTBLDATA.Location = new System.Drawing.Point(14, 328);
+            this.booksTBLDATA.Name = "booksTBLDATA";
+            this.booksTBLDATA.Size = new System.Drawing.Size(266, 205);
+            this.booksTBLDATA.TabIndex = 3;
+            // 
+            // borrowTBLDATA
+            // 
+            this.borrowTBLDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.borrowTBLDATA.Location = new System.Drawing.Point(14, 91);
+            this.borrowTBLDATA.Name = "borrowTBLDATA";
+            this.borrowTBLDATA.Size = new System.Drawing.Size(543, 205);
+            this.borrowTBLDATA.TabIndex = 2;
             // 
             // transactionLabel
             // 
@@ -430,6 +442,14 @@
             this.transactionLabel.Size = new System.Drawing.Size(594, 55);
             this.transactionLabel.TabIndex = 1;
             this.transactionLabel.Text = "TRANSACTION HISTORY";
+            // 
+            // book_copiesTBLDATA
+            // 
+            this.book_copiesTBLDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.book_copiesTBLDATA.Location = new System.Drawing.Point(291, 328);
+            this.book_copiesTBLDATA.Name = "book_copiesTBLDATA";
+            this.book_copiesTBLDATA.Size = new System.Drawing.Size(266, 205);
+            this.book_copiesTBLDATA.TabIndex = 4;
             // 
             // transactionsForm
             // 
@@ -451,7 +471,9 @@
             this.issuedSidePanel.PerformLayout();
             this.issuedPanel.ResumeLayout(false);
             this.issuedPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BorrowedDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.booksTBLDATA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.borrowTBLDATA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.book_copiesTBLDATA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -472,10 +494,10 @@
         private System.Windows.Forms.TextBox txtContactNumber;
         private System.Windows.Forms.TextBox txtbox_Name;
         private System.Windows.Forms.TextBox txtbox_MemberID;
-        private System.Windows.Forms.TextBox txtTransactionID;
+        private System.Windows.Forms.TextBox txtbox_TransactionID;
         private System.Windows.Forms.TextBox txtbox_dueDate;
         private System.Windows.Forms.TextBox txtbox_issueDate;
-        private System.Windows.Forms.TextBox txtCopyID;
+        private System.Windows.Forms.TextBox txtbox_CopyID;
         private System.Windows.Forms.TextBox txtbox_Edition;
         private System.Windows.Forms.TextBox txtbox_Author;
         private System.Windows.Forms.TextBox txtbox_Title;
@@ -488,8 +510,10 @@
         private System.Windows.Forms.Label bookInfoLabel;
         private System.Windows.Forms.Button btn_Borrow;
         private System.Windows.Forms.Button btn_Cancel;
-        private System.Windows.Forms.DataGridView BorrowedDB;
+        private System.Windows.Forms.DataGridView borrowTBLDATA;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btn_Home;
+        private System.Windows.Forms.DataGridView booksTBLDATA;
+        private System.Windows.Forms.DataGridView book_copiesTBLDATA;
     }
 }

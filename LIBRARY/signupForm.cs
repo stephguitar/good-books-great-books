@@ -42,7 +42,7 @@ namespace LIBRARY
             txt.Text = placeholder;
             txt.ForeColor = Color.Gray;
 
-            txt.GotFocus += (sender, e) =>
+            txt.Enter += (sender, e) =>
             {
                 if (txt.Text == placeholder)
                 {
@@ -51,7 +51,7 @@ namespace LIBRARY
                 }
             };
 
-            txt.LostFocus += (sender, e) =>
+            txt.Leave += (sender, e) =>
             {
                 if (string.IsNullOrWhiteSpace(txt.Text))
                 {
@@ -60,6 +60,7 @@ namespace LIBRARY
                 }
             };
         }
+
 
         // GENERATE MEMBER ID ON TEXTBOX
         private void GenerateMemberID()

@@ -159,5 +159,10 @@ namespace LIBRARY
                 dt.DefaultView.RowFilter = filter; // Apply filtering
             }
         }
+
+        private void dataGridViewBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
