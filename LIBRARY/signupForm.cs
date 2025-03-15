@@ -20,8 +20,8 @@ namespace LIBRARY
             InitializeComponent();
 
             // MEMBERSHIP TYPE COMBO BOX
-            combo_TYPE.Items.Add("Student");
-            combo_TYPE.Items.Add("Staff");
+            membershipType_COMBO.Items.Add("Student");
+            membershipType_COMBO.Items.Add("Staff");
 
             // GENERATE MEMBER ID
             GenerateMemberID();
@@ -149,7 +149,7 @@ namespace LIBRARY
                         cmd.Parameters.AddWithValue("@Password", txtbox_Password.Text);
                         cmd.Parameters.AddWithValue("@Phone", txtbox_Number.Text);
                         cmd.Parameters.AddWithValue("@Address", txtbox_Address.Text);
-                        cmd.Parameters.AddWithValue("@MembershipType", combo_TYPE.Text);
+                        cmd.Parameters.AddWithValue("@MembershipType", membershipType_COMBO.Text);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)

@@ -20,11 +20,11 @@ namespace LIBRARY
             this.Load += new EventHandler(booksForm_Load);
 
             // STATUS COMBO BOX
-            combo_STATUS.Items.Add("Availability Status..."); // Placeholder
-            combo_STATUS.SelectedIndex = 0;
+            availabilityStatus_COMBO.Items.Add("Availability Status..."); // Placeholder
+            availabilityStatus_COMBO.SelectedIndex = 0;
 
-            combo_STATUS.Items.Add("Available");
-            combo_STATUS.Items.Add("Not Available");
+            availabilityStatus_COMBO.Items.Add("Available");
+            availabilityStatus_COMBO.Items.Add("Not Available");
 
             // GENRE COMBO BOX
             combo_GENRE.Items.Add("Select Genre..."); // Placeholder
@@ -121,7 +121,7 @@ namespace LIBRARY
             string searchPublisher = txtboxPublisher.Text.Trim() != "Scholastic" ? txtboxPublisher.Text.Trim() : "";
             string searchEdition = txtboxEdition.Text.Trim() != "1st" ? txtboxEdition.Text.Trim() : "";
             string searchGenre = combo_GENRE.SelectedIndex > 0 ? combo_GENRE.SelectedItem.ToString() : "";
-            string searchStatus = combo_STATUS.SelectedIndex > 0 ? combo_STATUS.SelectedItem.ToString() : "";
+            string searchStatus = availabilityStatus_COMBO.SelectedIndex > 0 ? availabilityStatus_COMBO.SelectedItem.ToString() : "";
 
             // Check if the DataGridView has a valid DataSource
             if (dataGridViewBooks.DataSource is DataTable dt)

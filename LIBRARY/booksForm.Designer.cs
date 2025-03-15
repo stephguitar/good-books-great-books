@@ -37,7 +37,7 @@
             this.isbnLABEL = new System.Windows.Forms.Label();
             this.txtboxISBN = new System.Windows.Forms.TextBox();
             this.txtboxPublisher = new System.Windows.Forms.TextBox();
-            this.combo_STATUS = new System.Windows.Forms.ComboBox();
+            this.availabilityStatus_COMBO = new System.Windows.Forms.ComboBox();
             this.combo_GENRE = new System.Windows.Forms.ComboBox();
             this.dataGridViewBooks = new System.Windows.Forms.DataGridView();
             this.btn_Borrow = new System.Windows.Forms.Button();
@@ -68,7 +68,7 @@
             this.booksPanel.Controls.Add(this.isbnLABEL);
             this.booksPanel.Controls.Add(this.txtboxISBN);
             this.booksPanel.Controls.Add(this.txtboxPublisher);
-            this.booksPanel.Controls.Add(this.combo_STATUS);
+            this.booksPanel.Controls.Add(this.availabilityStatus_COMBO);
             this.booksPanel.Controls.Add(this.combo_GENRE);
             this.booksPanel.Controls.Add(this.dataGridViewBooks);
             this.booksPanel.Controls.Add(this.btn_Borrow);
@@ -158,13 +158,13 @@
             this.txtboxPublisher.Size = new System.Drawing.Size(193, 20);
             this.txtboxPublisher.TabIndex = 30;
             // 
-            // combo_STATUS
+            // availabilityStatus_COMBO
             // 
-            this.combo_STATUS.FormattingEnabled = true;
-            this.combo_STATUS.Location = new System.Drawing.Point(367, 235);
-            this.combo_STATUS.Name = "combo_STATUS";
-            this.combo_STATUS.Size = new System.Drawing.Size(219, 21);
-            this.combo_STATUS.TabIndex = 29;
+            this.availabilityStatus_COMBO.FormattingEnabled = true;
+            this.availabilityStatus_COMBO.Location = new System.Drawing.Point(367, 235);
+            this.availabilityStatus_COMBO.Name = "availabilityStatus_COMBO";
+            this.availabilityStatus_COMBO.Size = new System.Drawing.Size(219, 21);
+            this.availabilityStatus_COMBO.TabIndex = 29;
             // 
             // combo_GENRE
             // 
@@ -345,7 +345,7 @@
         private System.Windows.Forms.Button btn_Reserve;
         private System.Windows.Forms.Button btn_Borrow;
         private System.Windows.Forms.DataGridView dataGridViewBooks;
-        private System.Windows.Forms.ComboBox combo_STATUS;
+        private System.Windows.Forms.ComboBox availabilityStatus_COMBO;
         private System.Windows.Forms.ComboBox combo_GENRE;
         private System.Windows.Forms.Label publisherLABEL;
         private System.Windows.Forms.Label isbnLABEL;

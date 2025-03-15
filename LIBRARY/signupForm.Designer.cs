@@ -39,7 +39,7 @@
             this.btn_Signup = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboLabel = new System.Windows.Forms.Label();
-            this.combo_TYPE = new System.Windows.Forms.ComboBox();
+            this.membershipType_COMBO = new System.Windows.Forms.ComboBox();
             this.addressLabel = new System.Windows.Forms.Label();
             this.numberLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
@@ -102,7 +102,7 @@
             this.enterPanel.Controls.Add(this.btn_Signup);
             this.enterPanel.Controls.Add(this.label2);
             this.enterPanel.Controls.Add(this.comboLabel);
-            this.enterPanel.Controls.Add(this.combo_TYPE);
+            this.enterPanel.Controls.Add(this.membershipType_COMBO);
             this.enterPanel.Controls.Add(this.addressLabel);
             this.enterPanel.Controls.Add(this.numberLabel);
             this.enterPanel.Controls.Add(this.emailLabel);
@@ -185,14 +185,14 @@
             this.comboLabel.TabIndex = 52;
             this.comboLabel.Text = "Membership Type:";
             // 
-            // combo_TYPE
+            // membershipType_COMBO
             // 
-            this.combo_TYPE.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_TYPE.FormattingEnabled = true;
-            this.combo_TYPE.Location = new System.Drawing.Point(399, 23);
-            this.combo_TYPE.Name = "combo_TYPE";
-            this.combo_TYPE.Size = new System.Drawing.Size(173, 26);
-            this.combo_TYPE.TabIndex = 51;
+            this.membershipType_COMBO.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.membershipType_COMBO.FormattingEnabled = true;
+            this.membershipType_COMBO.Location = new System.Drawing.Point(399, 23);
+            this.membershipType_COMBO.Name = "membershipType_COMBO";
+            this.membershipType_COMBO.Size = new System.Drawing.Size(173, 26);
+            this.membershipType_COMBO.TabIndex = 51;
             // 
             // addressLabel
             // 
@@ -385,7 +385,7 @@
         private System.Windows.Forms.Label fnLabel;
         private System.Windows.Forms.Label lnLabel;
         private System.Windows.Forms.Label conLabel;
-        private System.Windows.Forms.ComboBox combo_TYPE;
+        private System.Windows.Forms.ComboBox membershipType_COMBO;
         private System.Windows.Forms.Label addressLabel;
         private System.Windows.Forms.Label numberLabel;
         private System.Windows.Forms.Label emailLabel;
