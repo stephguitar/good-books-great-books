@@ -38,16 +38,21 @@ namespace LIBRARY
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
 
-            btn_LogIn.Visible = false;
-            btn_SignUp.Visible = false;
+            btn_login.Visible = false;
+            btn_signUp.Visible = false;
             loadform(new loginForm());
         }
 
         private void btn_SignUp_Click(object sender, EventArgs e)
         {
-            btn_LogIn.Visible = false;
-            btn_SignUp.Visible = false;
+            btn_login.Visible = false;
+            btn_signUp.Visible = false;
             loadform(new signupForm());
+        }
+
+        private void btn_registerLibrarian_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

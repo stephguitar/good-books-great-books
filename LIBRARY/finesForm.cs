@@ -17,6 +17,8 @@ namespace LIBRARY
         public finesForm()
         {
             InitializeComponent();
+
+
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
@@ -77,8 +79,13 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 back = new Form1();
+            mainForm back = new mainForm();
             back.Show();
+        }
+
+        private void finesTBLDATA_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

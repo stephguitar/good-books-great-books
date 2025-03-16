@@ -47,7 +47,7 @@ namespace LIBRARY
 
             // TEXT BOX PLACEHOLDERS
             SetPlaceholder(txtboxBookID, "Book ID");
-            SetPlaceholder(txtboxTitle, "Harry Potter and the Deathly Hallows");
+            SetPlaceholder(txtbox_bookTitle, "Harry Potter and the Deathly Hallows");
             SetPlaceholder(txtboxAuthor, "J.K. Rowling");
             SetPlaceholder(txtboxEdition, "1st");
             SetPlaceholder(txtboxISBN, "978-0545139700");
@@ -115,7 +115,7 @@ namespace LIBRARY
         private void btn_Search_Click_1(object sender, EventArgs e)
         {
             string searchBookID = txtboxBookID.Text.Trim() != "Book ID" ? txtboxBookID.Text.Trim() : "";
-            string searchTitle = txtboxTitle.Text.Trim() != "Harry Potter and the Deathly Hallows" ? txtboxTitle.Text.Trim() : "";
+            string searchTitle = txtbox_bookTitle.Text.Trim() != "Harry Potter and the Deathly Hallows" ? txtbox_bookTitle.Text.Trim() : "";
             string searchAuthor = txtboxAuthor.Text.Trim() != "J.K. Rowling" ? txtboxAuthor.Text.Trim() : "";
             string searchISBN = txtboxISBN.Text.Trim() != "978-0545139700" ? txtboxISBN.Text.Trim() : "";
             string searchPublisher = txtboxPublisher.Text.Trim() != "Scholastic" ? txtboxPublisher.Text.Trim() : "";
@@ -161,6 +161,16 @@ namespace LIBRARY
         }
 
         private void dataGridViewBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Update_Click(object sender, EventArgs e)
         {
 
         }

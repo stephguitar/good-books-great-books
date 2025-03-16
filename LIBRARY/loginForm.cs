@@ -35,14 +35,14 @@ namespace LIBRARY
         {
             btn_Librarian.Visible = false;
             btn_Member.Visible = false;
-            loadform(new memberForm());
+            loadform(new member_loginForm());
         }
 
         private void btn_Librarian_Click(object sender, EventArgs e)
         {
             btn_Librarian.Visible = false;
             btn_Member.Visible = false;
-            loadform(new adminForm());
+            loadform(new librarian_loginForm());
         }
 
         private void mouse_Down(object sender, MouseEventArgs e)

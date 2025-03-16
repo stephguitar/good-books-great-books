@@ -63,7 +63,6 @@ X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Numerics.Vectors.xml
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\bin\Debug\System.Threading.Tasks.Extensions.xml
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.AssemblyReference.cache
-X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.adminForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.booksForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn1Form_Reports.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn2Form_Reports.resources
@@ -73,10 +72,8 @@ X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn5Form_Reports.resou
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn6Form_Reports.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.btn_1Reportscs.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.finesForm.resources
-X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Form1.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.homeForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.loginForm.resources
-X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.memberForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.notificationsForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.profile.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Properties.Resources.resources
@@ -94,3 +91,6 @@ X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer2.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer3.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer4.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer5.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.librarian_loginForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.member_loginForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.mainForm.resources

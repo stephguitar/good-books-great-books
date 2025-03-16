@@ -50,7 +50,7 @@
             this.statusLabel = new System.Windows.Forms.Label();
             this.txtbox_Edition = new System.Windows.Forms.TextBox();
             this.txtbox_Author = new System.Windows.Forms.TextBox();
-            this.txtbox_Title = new System.Windows.Forms.TextBox();
+            this.txtbox_bookTitle = new System.Windows.Forms.TextBox();
             this.txtbox_CopyID = new System.Windows.Forms.TextBox();
             this.txtbox_BookID = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -149,7 +149,7 @@
             this.reservePanel.Controls.Add(this.statusLabel);
             this.reservePanel.Controls.Add(this.txtbox_Edition);
             this.reservePanel.Controls.Add(this.txtbox_Author);
-            this.reservePanel.Controls.Add(this.txtbox_Title);
+            this.reservePanel.Controls.Add(this.txtbox_bookTitle);
             this.reservePanel.Controls.Add(this.txtbox_CopyID);
             this.reservePanel.Controls.Add(this.txtbox_BookID);
             this.reservePanel.Controls.Add(this.txtEmail);
@@ -303,15 +303,15 @@
             this.txtbox_Author.Size = new System.Drawing.Size(153, 23);
             this.txtbox_Author.TabIndex = 36;
             // 
-            // txtbox_Title
+            // txtbox_bookTitle
             // 
-            this.txtbox_Title.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_Title.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbox_Title.Location = new System.Drawing.Point(71, 306);
-            this.txtbox_Title.Name = "txtbox_Title";
-            this.txtbox_Title.ReadOnly = true;
-            this.txtbox_Title.Size = new System.Drawing.Size(153, 23);
-            this.txtbox_Title.TabIndex = 35;
+            this.txtbox_bookTitle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_bookTitle.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_bookTitle.Location = new System.Drawing.Point(71, 306);
+            this.txtbox_bookTitle.Name = "txtbox_bookTitle";
+            this.txtbox_bookTitle.ReadOnly = true;
+            this.txtbox_bookTitle.Size = new System.Drawing.Size(153, 23);
+            this.txtbox_bookTitle.TabIndex = 35;
             // 
             // txtbox_CopyID
             // 
@@ -467,7 +467,7 @@
         private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.TextBox txtbox_Edition;
         private System.Windows.Forms.TextBox txtbox_Author;
-        private System.Windows.Forms.TextBox txtbox_Title;
+        private System.Windows.Forms.TextBox txtbox_bookTitle;
         private System.Windows.Forms.TextBox txtbox_CopyID;
         private System.Windows.Forms.TextBox txtbox_BookID;
         private System.Windows.Forms.TextBox txtEmail;

@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(profile));
             this.registrationPanel = new System.Windows.Forms.Panel();
+            this.btn_registerLibrarian = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btn_SignUp = new System.Windows.Forms.Button();
-            this.btn_LogIn = new System.Windows.Forms.Button();
+            this.btn_signUp = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.registrationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -41,14 +42,28 @@
             // 
             // registrationPanel
             // 
+            this.registrationPanel.Controls.Add(this.btn_registerLibrarian);
             this.registrationPanel.Controls.Add(this.pictureBox3);
-            this.registrationPanel.Controls.Add(this.btn_SignUp);
-            this.registrationPanel.Controls.Add(this.btn_LogIn);
+            this.registrationPanel.Controls.Add(this.btn_signUp);
+            this.registrationPanel.Controls.Add(this.btn_login);
             this.registrationPanel.Controls.Add(this.pictureBox1);
             this.registrationPanel.Location = new System.Drawing.Point(-10, -1);
             this.registrationPanel.Name = "registrationPanel";
             this.registrationPanel.Size = new System.Drawing.Size(1050, 516);
             this.registrationPanel.TabIndex = 0;
+            // 
+            // btn_registerLibrarian
+            // 
+            this.btn_registerLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
+            this.btn_registerLibrarian.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_registerLibrarian.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_registerLibrarian.Location = new System.Drawing.Point(119, 387);
+            this.btn_registerLibrarian.Name = "btn_registerLibrarian";
+            this.btn_registerLibrarian.Size = new System.Drawing.Size(356, 37);
+            this.btn_registerLibrarian.TabIndex = 5;
+            this.btn_registerLibrarian.Text = "REGISTER A LIBRARIAN";
+            this.btn_registerLibrarian.UseVisualStyleBackColor = false;
+            this.btn_registerLibrarian.Click += new System.EventHandler(this.btn_registerLibrarian_Click);
             // 
             // pictureBox3
             // 
@@ -60,31 +75,31 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // btn_SignUp
+            // btn_signUp
             // 
-            this.btn_SignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
-            this.btn_SignUp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SignUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_SignUp.Location = new System.Drawing.Point(119, 335);
-            this.btn_SignUp.Name = "btn_SignUp";
-            this.btn_SignUp.Size = new System.Drawing.Size(356, 37);
-            this.btn_SignUp.TabIndex = 2;
-            this.btn_SignUp.Text = "SIGN-UP";
-            this.btn_SignUp.UseVisualStyleBackColor = false;
-            this.btn_SignUp.Click += new System.EventHandler(this.btn_SignUp_Click);
+            this.btn_signUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
+            this.btn_signUp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_signUp.Location = new System.Drawing.Point(119, 335);
+            this.btn_signUp.Name = "btn_signUp";
+            this.btn_signUp.Size = new System.Drawing.Size(356, 37);
+            this.btn_signUp.TabIndex = 2;
+            this.btn_signUp.Text = "SIGN-UP";
+            this.btn_signUp.UseVisualStyleBackColor = false;
+            this.btn_signUp.Click += new System.EventHandler(this.btn_SignUp_Click);
             // 
-            // btn_LogIn
+            // btn_login
             // 
-            this.btn_LogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
-            this.btn_LogIn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_LogIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_LogIn.Location = new System.Drawing.Point(119, 292);
-            this.btn_LogIn.Name = "btn_LogIn";
-            this.btn_LogIn.Size = new System.Drawing.Size(356, 37);
-            this.btn_LogIn.TabIndex = 1;
-            this.btn_LogIn.Text = "LOG-IN";
-            this.btn_LogIn.UseVisualStyleBackColor = false;
-            this.btn_LogIn.Click += new System.EventHandler(this.btn_LogIn_Click);
+            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
+            this.btn_login.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_login.Location = new System.Drawing.Point(119, 292);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(356, 37);
+            this.btn_login.TabIndex = 1;
+            this.btn_login.Text = "LOG-IN";
+            this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_LogIn_Click);
             // 
             // pictureBox1
             // 
@@ -119,7 +134,8 @@
         private System.Windows.Forms.Panel registrationPanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btn_SignUp;
-        private System.Windows.Forms.Button btn_LogIn;
+        private System.Windows.Forms.Button btn_signUp;
+        private System.Windows.Forms.Button btn_login;
+        private System.Windows.Forms.Button btn_registerLibrarian;
     }
 }

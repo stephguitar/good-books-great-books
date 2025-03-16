@@ -418,7 +418,7 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 back = new Form1();
+            mainForm back = new mainForm();
             back.Show();
         }
 

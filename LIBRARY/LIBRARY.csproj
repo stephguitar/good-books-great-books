@@ -101,11 +101,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminForm.cs">
+    <Compile Include="librarian_loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="adminForm.Designer.cs">
-      <DependentUpon>adminForm.cs</DependentUpon>
+    <Compile Include="librarian_loginForm.Designer.cs">
+      <DependentUpon>librarian_loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="booksForm.cs">
       <SubType>Form</SubType>
@@ -163,17 +163,11 @@
     <Compile Include="finesForm.Designer.cs">
       <DependentUpon>finesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="homeForm.cs">
       <SubType>Form</SubType>
@@ -187,11 +181,11 @@
     <Compile Include="loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="memberForm.cs">
+    <Compile Include="member_loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="memberForm.Designer.cs">
-      <DependentUpon>memberForm.cs</DependentUpon>
+    <Compile Include="member_loginForm.Designer.cs">
+      <DependentUpon>member_loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="notificationsform.cs">
       <SubType>Form</SubType>
@@ -261,8 +255,8 @@
     <Compile Include="transactionsForm.Designer.cs">
       <DependentUpon>transactionsForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="adminForm.resx">
-      <DependentUpon>adminForm.cs</DependentUpon>
+    <EmbeddedResource Include="librarian_loginForm.resx">
+      <DependentUpon>librarian_loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="booksForm.resx">
       <DependentUpon>booksForm.cs</DependentUpon>
@@ -291,8 +285,8 @@
     <EmbeddedResource Include="finesForm.resx">
       <DependentUpon>finesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homeForm.resx">
       <DependentUpon>homeForm.cs</DependentUpon>
@@ -300,8 +294,8 @@
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="memberForm.resx">
-      <DependentUpon>memberForm.cs</DependentUpon>
+    <EmbeddedResource Include="member_loginForm.resx">
+      <DependentUpon>member_loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="notificationsform.resx">
       <DependentUpon>notificationsform.cs</DependentUpon>

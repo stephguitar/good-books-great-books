@@ -49,10 +49,12 @@
             this.editionLabel = new System.Windows.Forms.Label();
             this.txtboxAuthor = new System.Windows.Forms.TextBox();
             this.authorLabel = new System.Windows.Forms.Label();
-            this.txtboxTitle = new System.Windows.Forms.TextBox();
+            this.txtbox_bookTitle = new System.Windows.Forms.TextBox();
             this.titleLabel = new System.Windows.Forms.Label();
             this.txtboxBookID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
             this.booksPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +63,8 @@
             // booksPanel
             // 
             this.booksPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
+            this.booksPanel.Controls.Add(this.btn_Update);
+            this.booksPanel.Controls.Add(this.btn_Save);
             this.booksPanel.Controls.Add(this.bookidLABEL);
             this.booksPanel.Controls.Add(this.statusLABEL);
             this.booksPanel.Controls.Add(this.genreLABEL);
@@ -80,7 +84,7 @@
             this.booksPanel.Controls.Add(this.editionLabel);
             this.booksPanel.Controls.Add(this.txtboxAuthor);
             this.booksPanel.Controls.Add(this.authorLabel);
-            this.booksPanel.Controls.Add(this.txtboxTitle);
+            this.booksPanel.Controls.Add(this.txtbox_bookTitle);
             this.booksPanel.Controls.Add(this.titleLabel);
             this.booksPanel.Controls.Add(this.txtboxBookID);
             this.booksPanel.Controls.Add(this.pictureBox1);
@@ -275,12 +279,12 @@
             this.authorLabel.TabIndex = 14;
             this.authorLabel.Text = "Author:";
             // 
-            // txtboxTitle
+            // txtbox_bookTitle
             // 
-            this.txtboxTitle.Location = new System.Drawing.Point(99, 261);
-            this.txtboxTitle.Name = "txtboxTitle";
-            this.txtboxTitle.Size = new System.Drawing.Size(193, 20);
-            this.txtboxTitle.TabIndex = 13;
+            this.txtbox_bookTitle.Location = new System.Drawing.Point(99, 261);
+            this.txtbox_bookTitle.Name = "txtbox_bookTitle";
+            this.txtbox_bookTitle.Size = new System.Drawing.Size(193, 20);
+            this.txtbox_bookTitle.TabIndex = 13;
             // 
             // titleLabel
             // 
@@ -310,6 +314,30 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_Save
+            // 
+            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_Save.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Location = new System.Drawing.Point(163, 459);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(132, 34);
+            this.btn_Save.TabIndex = 37;
+            this.btn_Save.Text = "SAVE";
+            this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_Update.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.Location = new System.Drawing.Point(317, 459);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(132, 34);
+            this.btn_Update.TabIndex = 38;
+            this.btn_Update.Text = "UPDATE";
+            this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
             // booksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,7 +363,7 @@
         private System.Windows.Forms.Label editionLabel;
         private System.Windows.Forms.TextBox txtboxAuthor;
         private System.Windows.Forms.Label authorLabel;
-        private System.Windows.Forms.TextBox txtboxTitle;
+        private System.Windows.Forms.TextBox txtbox_bookTitle;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.TextBox txtboxBookID;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -354,5 +382,7 @@
         private System.Windows.Forms.Label statusLABEL;
         private System.Windows.Forms.Label genreLABEL;
         private System.Windows.Forms.Label bookidLABEL;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btn_Save;
     }
 }

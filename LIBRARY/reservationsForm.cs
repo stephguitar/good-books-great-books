@@ -36,7 +36,7 @@ namespace LIBRARY
             SetPlaceholder(txtContactNumber, "Contact Number");
             SetPlaceholder(txtEmail, "E-mail");
 
-            SetPlaceholder(txtbox_Title, "Title");
+            SetPlaceholder(txtbox_bookTitle, "Title");
             SetPlaceholder(txtbox_Author, "Author");
             SetPlaceholder(txtbox_Edition, "Edition");
 
@@ -128,7 +128,7 @@ namespace LIBRARY
                         MySqlDataReader reader = cmd.ExecuteReader();
                         if (reader.Read())
                         {
-                            txtbox_Title.Text = reader["title"].ToString();
+                            txtbox_bookTitle.Text = reader["title"].ToString();
                             txtbox_Author.Text = reader["author"].ToString();
                             txtbox_Edition.Text = reader["edition"].ToString();
                         }
@@ -349,7 +349,7 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 back = new Form1();
+            mainForm back = new mainForm();
             back.Show();
         }
 
