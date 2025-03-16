@@ -18,20 +18,15 @@ namespace LIBRARY
         public mainForm()
         {
             InitializeComponent();
+            HideSidebarButtons();
 
-            btn_Notifications.Visible = false;
-            btn_Books.Visible = false;
-            btn_Transactions.Visible = false;
-            btn_Reservations.Visible = false;
-            btn_Fines.Visible = false;
-            btn_Reports.Visible = false;
-            btn_Logout.Visible = false;
+
 
         }
 
-        public void ShowSidebarButtons()
+
+        public void ShowLibrarianButtons()
         {
-            btn_UserRegistration.Visible = true;
             btn_Notifications.Visible = true;
             btn_Books.Visible = true;
             btn_Transactions.Visible = true;
@@ -40,6 +35,35 @@ namespace LIBRARY
             btn_Reports.Visible = true;
             btn_Logout.Visible = true;
            
+        }
+
+        public void ShowMemberButtons()
+        {
+            btn_UserRegistration.Visible = true;
+            btn_Notifications.Visible = true;
+            btn_Books.Visible = true;
+
+            btn_Transactions.Visible = false;
+            btn_Reservations.Visible = false;
+            btn_Fines.Visible = false;
+            btn_Reports.Visible = false;
+            btn_Logout.Visible = true;
+        }
+
+        public void HideSidebarButtons()
+        {
+            btn_Notifications.Visible = false;
+            btn_Books.Visible = false;
+            btn_Transactions.Visible = false;
+            btn_Reservations.Visible = false;
+            btn_Fines.Visible = false;
+            btn_Reports.Visible = false;
+            btn_Logout.Visible = false;
+        }
+
+        public void UpdateUserRegistrationButton(string firstName)
+        {
+            btn_UserRegistration.Text = firstName;
         }
 
         public void loadform(object Form)
@@ -75,7 +99,7 @@ namespace LIBRARY
 
         private void btn_UserRegistration_Click(object sender, EventArgs e)
         {
-            loadform(new profile());
+            loadform(new profile(this));
         }
 
         private void btn_Notifications_Click(object sender, EventArgs e)

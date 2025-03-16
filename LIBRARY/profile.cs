@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace LIBRARY
 {
-    public partial class profile: Form
+    public partial class profile : Form
     {
+        private mainForm mainFormInstance;
 
-        public profile()
+        public profile(mainForm mainFormInstance)
         {
             InitializeComponent();
+            this.mainFormInstance = mainFormInstance;
         }
+
         public void loadform(object Form)
         {
             if (this.registrationPanel.Controls.Count > 0)
@@ -30,6 +33,13 @@ namespace LIBRARY
             f.Show();
         }
 
+        public void UpdateProfileButtons(string position)
+        {
+            btn_login.Visible = false;
+            btn_signUp.Visible = false;
+            btn_registerLibrarian.Visible = position == "Librarian Manager";
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -37,10 +47,9 @@ namespace LIBRARY
 
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
-
             btn_login.Visible = false;
             btn_signUp.Visible = false;
-            loadform(new loginForm());
+            loadform(new loginForm(mainFormInstance));
         }
 
         private void btn_SignUp_Click(object sender, EventArgs e)

@@ -13,9 +13,11 @@ namespace LIBRARY
     public partial class loginForm: Form
     {
         public Point mouseLocation;
-        public loginForm()
+        private mainForm mainFormInstance;
+        public loginForm(mainForm form)
         {
             InitializeComponent();
+            mainFormInstance = form;
         }
 
         public void loadform(object Form)
@@ -35,14 +37,14 @@ namespace LIBRARY
         {
             btn_Librarian.Visible = false;
             btn_Member.Visible = false;
-            loadform(new member_loginForm());
+            loadform(new member_loginForm(mainFormInstance));
         }
 
         private void btn_Librarian_Click(object sender, EventArgs e)
         {
             btn_Librarian.Visible = false;
             btn_Member.Visible = false;
-            loadform(new librarian_loginForm());
+            loadform(new librarian_loginForm(mainFormInstance));
         }
 
         private void mouse_Down(object sender, MouseEventArgs e)
