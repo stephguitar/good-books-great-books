@@ -47,12 +47,14 @@ namespace LIBRARY
         {
             btn_login.Visible = false;
             btn_signUp.Visible = false;
-            loadform(new signupForm());
+            loadform(new member_registrationForm());
         }
 
         private void btn_registerLibrarian_Click(object sender, EventArgs e)
         {
-
+            btn_login.Visible = false;
+            btn_signUp.Visible = false;
+            loadform(new librarian_registrationForm());
         }
     }
 }

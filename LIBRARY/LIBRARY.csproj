@@ -101,6 +101,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="librarian_registrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="librarian_registrationForm.Designer.cs">
+      <DependentUpon>librarian_registrationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="librarian_loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,11 +219,11 @@
     <Compile Include="reservationsForm.Designer.cs">
       <DependentUpon>reservationsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="signupForm.cs">
+    <Compile Include="member_registrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="signupForm.Designer.cs">
-      <DependentUpon>signupForm.cs</DependentUpon>
+    <Compile Include="member_registrationForm.Designer.cs">
+      <DependentUpon>member_registrationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="toastForm.cs">
       <SubType>Form</SubType>
@@ -255,6 +261,9 @@
     <Compile Include="transactionsForm.Designer.cs">
       <DependentUpon>transactionsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="librarian_registrationForm.resx">
+      <DependentUpon>librarian_registrationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="librarian_loginForm.resx">
       <DependentUpon>librarian_loginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,8 +328,8 @@
     <EmbeddedResource Include="reservationsForm.resx">
       <DependentUpon>reservationsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="signupForm.resx">
-      <DependentUpon>signupForm.cs</DependentUpon>
+    <EmbeddedResource Include="member_registrationForm.resx">
+      <DependentUpon>member_registrationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="toastForm.resx">
       <DependentUpon>toastForm.cs</DependentUpon>

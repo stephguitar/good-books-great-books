@@ -79,7 +79,6 @@ X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.profile.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.Properties.Resources.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.reportsForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.reservationsForm.resources
-X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.signupForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.transactionsForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.GenerateResource.cache
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.CoreCompileInputs.cache
@@ -94,3 +93,5 @@ X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer5.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.librarian_loginForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.member_loginForm.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.mainForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.librarian_registrationForm.resources
+X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.member_registrationForm.resources
