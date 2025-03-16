@@ -19,25 +19,14 @@ namespace LIBRARY
         {
             InitializeComponent();
 
-            
+            btn_Notifications.Visible = false;
+            btn_Books.Visible = false;
+            btn_Transactions.Visible = false;
+            btn_Reservations.Visible = false;
+            btn_Fines.Visible = false;
+            btn_Reports.Visible = false;
+            btn_Logout.Visible = false;
 
-            // HIDES BUTTONS ON THE SIDEBAR 
-           /* this.btn_UserRegistration = new System.Windows.Forms.Button();
-            this.btn_UserRegistration.Visible = false; // Hides User Registration Button
-            this.btn_Notifications = new System.Windows.Forms.Button();
-            this.btn_Notifications.Visible = false; // Hides Notification Button
-            this.btn_Books = new System.Windows.Forms.Button();
-            this.btn_Books.Visible = false; // Hides Books Catalog Button
-            this.btn_Transactions = new System.Windows.Forms.Button();
-            this.btn_Transactions.Visible = false; // Hides Transactions Button
-            this.btn_Reservations = new System.Windows.Forms.Button();
-            this.btn_Reservations.Visible = false; // Hides Reservations Button
-            this.btn_Fines = new System.Windows.Forms.Button();
-            this.btn_Fines.Visible = false; // Hides Fines Button
-            this.btn_Reports = new System.Windows.Forms.Button();
-            this.btn_Reports.Visible = false; // Hides the Reports button
-            this.btn_Logout = new System.Windows.Forms.Button();
-            this.btn_Logout.Visible = false; // Hides the Reports button */
         }
 
         public void ShowSidebarButtons()

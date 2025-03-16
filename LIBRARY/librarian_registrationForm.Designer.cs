@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(librarian_registrationForm));
             this.LibPanel = new System.Windows.Forms.Panel();
+            this.txtbox_Password = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.btn_Register = new System.Windows.Forms.Button();
             this.label_address = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.label_libarianPosition = new System.Windows.Forms.Label();
             this.librarianPosition_COMBO = new System.Windows.Forms.ComboBox();
             this.txtbox_LibrarianID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtbox_Password = new System.Windows.Forms.TextBox();
             this.LibPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +89,25 @@
             this.LibPanel.Size = new System.Drawing.Size(790, 648);
             this.LibPanel.TabIndex = 9;
             // 
+            // txtbox_Password
+            // 
+            this.txtbox_Password.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_Password.Location = new System.Drawing.Point(308, 342);
+            this.txtbox_Password.Name = "txtbox_Password";
+            this.txtbox_Password.Size = new System.Drawing.Size(274, 23);
+            this.txtbox_Password.TabIndex = 76;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(305, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 16);
+            this.label1.TabIndex = 75;
+            this.label1.Text = "Password:";
+            // 
             // btn_Cancel
             // 
             this.btn_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
@@ -110,6 +129,7 @@
             this.btn_Register.TabIndex = 73;
             this.btn_Register.Text = "REGISTER";
             this.btn_Register.UseVisualStyleBackColor = false;
+            this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);
             // 
             // label_address
             // 
@@ -304,25 +324,6 @@
             this.txtbox_LibrarianID.Size = new System.Drawing.Size(213, 26);
             this.txtbox_LibrarianID.TabIndex = 53;
             this.txtbox_LibrarianID.Text = "Librarian ID";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(305, 323);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 16);
-            this.label1.TabIndex = 75;
-            this.label1.Text = "Password:";
-            // 
-            // txtbox_Password
-            // 
-            this.txtbox_Password.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbox_Password.Location = new System.Drawing.Point(308, 342);
-            this.txtbox_Password.Name = "txtbox_Password";
-            this.txtbox_Password.Size = new System.Drawing.Size(274, 23);
-            this.txtbox_Password.TabIndex = 76;
             // 
             // librarian_registrationForm
             // 
