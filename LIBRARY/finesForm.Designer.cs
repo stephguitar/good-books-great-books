@@ -43,12 +43,15 @@
             this.allissuedPanel = new System.Windows.Forms.Panel();
             this.finesTBLDATA = new System.Windows.Forms.DataGridView();
             this.issuedLabel = new System.Windows.Forms.Label();
-            this.txtbox_bookTitle = new System.Windows.Forms.TextBox();
+            this.txtbox_Title = new System.Windows.Forms.TextBox();
             this.txtbox_CopyID = new System.Windows.Forms.TextBox();
             this.txtbox_TransactionID = new System.Windows.Forms.TextBox();
             this.txtbox_BookID = new System.Windows.Forms.TextBox();
             this.txtbox_Status = new System.Windows.Forms.TextBox();
             this.finesPanel = new System.Windows.Forms.Panel();
+            this.txtbox_returnDate = new System.Windows.Forms.TextBox();
+            this.txtbox_dueDate = new System.Windows.Forms.TextBox();
+            this.txtbox_issueDate = new System.Windows.Forms.TextBox();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.btn_Return = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,9 +61,6 @@
             this.dueDateLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.issueDateLabel = new System.Windows.Forms.Label();
-            this.txtbox_issueDate = new System.Windows.Forms.TextBox();
-            this.txtbox_dueDate = new System.Windows.Forms.TextBox();
-            this.txtbox_returnDate = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -214,15 +214,15 @@
             this.issuedLabel.TabIndex = 2;
             this.issuedLabel.Text = "ALL ISSUED BOOKS";
             // 
-            // txtbox_bookTitle
+            // txtbox_Title
             // 
-            this.txtbox_bookTitle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_bookTitle.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbox_bookTitle.Location = new System.Drawing.Point(13, 407);
-            this.txtbox_bookTitle.Name = "txtbox_bookTitle";
-            this.txtbox_bookTitle.Size = new System.Drawing.Size(211, 23);
-            this.txtbox_bookTitle.TabIndex = 37;
-            this.txtbox_bookTitle.Text = "Book Title";
+            this.txtbox_Title.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_Title.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_Title.Location = new System.Drawing.Point(13, 407);
+            this.txtbox_Title.Name = "txtbox_Title";
+            this.txtbox_Title.Size = new System.Drawing.Size(211, 23);
+            this.txtbox_Title.TabIndex = 37;
+            this.txtbox_Title.Text = "Book Title";
             // 
             // txtbox_CopyID
             // 
@@ -243,6 +243,7 @@
             this.txtbox_TransactionID.Size = new System.Drawing.Size(211, 23);
             this.txtbox_TransactionID.TabIndex = 35;
             this.txtbox_TransactionID.Text = "Transaction ID";
+            this.txtbox_TransactionID.TextChanged += new System.EventHandler(this.txtbox_TransactionID_TextChanged);
             // 
             // txtbox_BookID
             // 
@@ -283,7 +284,7 @@
             this.finesPanel.Controls.Add(this.txtbox_BookID);
             this.finesPanel.Controls.Add(this.txtbox_TransactionID);
             this.finesPanel.Controls.Add(this.txtbox_CopyID);
-            this.finesPanel.Controls.Add(this.txtbox_bookTitle);
+            this.finesPanel.Controls.Add(this.txtbox_Title);
             this.finesPanel.Controls.Add(this.allissuedPanel);
             this.finesPanel.Controls.Add(this.txtbox_LibrarianName);
             this.finesPanel.Controls.Add(this.txtbox_LibrarianID);
@@ -296,6 +297,36 @@
             this.finesPanel.Size = new System.Drawing.Size(949, 706);
             this.finesPanel.TabIndex = 2;
             this.finesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.finesPanel_Paint);
+            // 
+            // txtbox_returnDate
+            // 
+            this.txtbox_returnDate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_returnDate.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_returnDate.Location = new System.Drawing.Point(550, 548);
+            this.txtbox_returnDate.Name = "txtbox_returnDate";
+            this.txtbox_returnDate.Size = new System.Drawing.Size(220, 23);
+            this.txtbox_returnDate.TabIndex = 64;
+            this.txtbox_returnDate.Text = "YYYY-MM-DD";
+            // 
+            // txtbox_dueDate
+            // 
+            this.txtbox_dueDate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_dueDate.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_dueDate.Location = new System.Drawing.Point(289, 548);
+            this.txtbox_dueDate.Name = "txtbox_dueDate";
+            this.txtbox_dueDate.Size = new System.Drawing.Size(220, 23);
+            this.txtbox_dueDate.TabIndex = 63;
+            this.txtbox_dueDate.Text = "YYYY-MM-DD";
+            // 
+            // txtbox_issueDate
+            // 
+            this.txtbox_issueDate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_issueDate.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbox_issueDate.Location = new System.Drawing.Point(13, 548);
+            this.txtbox_issueDate.Name = "txtbox_issueDate";
+            this.txtbox_issueDate.Size = new System.Drawing.Size(220, 23);
+            this.txtbox_issueDate.TabIndex = 62;
+            this.txtbox_issueDate.Text = "YYYY-MM-DD";
             // 
             // btn_Cancel
             // 
@@ -391,36 +422,6 @@
             this.issueDateLabel.TabIndex = 48;
             this.issueDateLabel.Text = "ISSUE DATE:";
             // 
-            // txtbox_issueDate
-            // 
-            this.txtbox_issueDate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_issueDate.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbox_issueDate.Location = new System.Drawing.Point(13, 548);
-            this.txtbox_issueDate.Name = "txtbox_issueDate";
-            this.txtbox_issueDate.Size = new System.Drawing.Size(220, 23);
-            this.txtbox_issueDate.TabIndex = 62;
-            this.txtbox_issueDate.Text = "YYYY-MM-DD";
-            // 
-            // txtbox_dueDate
-            // 
-            this.txtbox_dueDate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_dueDate.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbox_dueDate.Location = new System.Drawing.Point(289, 548);
-            this.txtbox_dueDate.Name = "txtbox_dueDate";
-            this.txtbox_dueDate.Size = new System.Drawing.Size(220, 23);
-            this.txtbox_dueDate.TabIndex = 63;
-            this.txtbox_dueDate.Text = "YYYY-MM-DD";
-            // 
-            // txtbox_returnDate
-            // 
-            this.txtbox_returnDate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_returnDate.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbox_returnDate.Location = new System.Drawing.Point(550, 548);
-            this.txtbox_returnDate.Name = "txtbox_returnDate";
-            this.txtbox_returnDate.Size = new System.Drawing.Size(220, 23);
-            this.txtbox_returnDate.TabIndex = 64;
-            this.txtbox_returnDate.Text = "YYYY-MM-DD";
-            // 
             // finesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,7 +460,7 @@
         private System.Windows.Forms.Panel allissuedPanel;
         private System.Windows.Forms.DataGridView finesTBLDATA;
         private System.Windows.Forms.Label issuedLabel;
-        private System.Windows.Forms.TextBox txtbox_bookTitle;
+        private System.Windows.Forms.TextBox txtbox_Title;
         private System.Windows.Forms.TextBox txtbox_CopyID;
         private System.Windows.Forms.TextBox txtbox_TransactionID;
         private System.Windows.Forms.TextBox txtbox_BookID;
