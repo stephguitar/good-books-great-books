@@ -36,19 +36,19 @@
             this.btn_Close = new System.Windows.Forms.Button();
             this.btn6Label = new System.Windows.Forms.Label();
             this.borrowedPanel = new System.Windows.Forms.Panel();
-            this.BorrowedDB = new System.Windows.Forms.DataGridView();
+            this.borrowedBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.borrowedLabel = new System.Windows.Forms.Label();
             this.returnedPanel = new System.Windows.Forms.Panel();
-            this.ReturnedDB = new System.Windows.Forms.DataGridView();
+            this.returnedBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.returnedLabel = new System.Windows.Forms.Label();
             this.btn6_Panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.borrowedPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BorrowedDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.borrowedBooksDataGrid)).BeginInit();
             this.returnedPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReturnedDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnedBooksDataGrid)).BeginInit();
             this.btn6_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +62,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(815, 34);
             this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse_Down);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouse_Move);
             // 
@@ -116,66 +115,66 @@
             // btn6Label
             // 
             this.btn6Label.AutoSize = true;
-            this.btn6Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6Label.Location = new System.Drawing.Point(152, 21);
             this.btn6Label.Name = "btn6Label";
-            this.btn6Label.Size = new System.Drawing.Size(498, 43);
+            this.btn6Label.Size = new System.Drawing.Size(842, 42);
             this.btn6Label.TabIndex = 6;
             this.btn6Label.Text = "LIST OF BORROWED AND RETURNED BOOKS";
             // 
             // borrowedPanel
             // 
             this.borrowedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.borrowedPanel.Controls.Add(this.BorrowedDB);
+            this.borrowedPanel.Controls.Add(this.borrowedBooksDataGrid);
             this.borrowedPanel.Controls.Add(this.borrowedLabel);
             this.borrowedPanel.Location = new System.Drawing.Point(19, 92);
             this.borrowedPanel.Name = "borrowedPanel";
             this.borrowedPanel.Size = new System.Drawing.Size(366, 377);
             this.borrowedPanel.TabIndex = 8;
             // 
-            // BorrowedDB
+            // borrowedBooksDataGrid
             // 
-            this.BorrowedDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.BorrowedDB.Location = new System.Drawing.Point(20, 68);
-            this.BorrowedDB.Name = "BorrowedDB";
-            this.BorrowedDB.Size = new System.Drawing.Size(325, 292);
-            this.BorrowedDB.TabIndex = 3;
+            this.borrowedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.borrowedBooksDataGrid.Location = new System.Drawing.Point(20, 68);
+            this.borrowedBooksDataGrid.Name = "borrowedBooksDataGrid";
+            this.borrowedBooksDataGrid.Size = new System.Drawing.Size(325, 292);
+            this.borrowedBooksDataGrid.TabIndex = 3;
             // 
             // borrowedLabel
             // 
             this.borrowedLabel.AutoSize = true;
-            this.borrowedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrowedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrowedLabel.Location = new System.Drawing.Point(66, 14);
             this.borrowedLabel.Name = "borrowedLabel";
-            this.borrowedLabel.Size = new System.Drawing.Size(230, 43);
+            this.borrowedLabel.Size = new System.Drawing.Size(385, 42);
             this.borrowedLabel.TabIndex = 2;
             this.borrowedLabel.Text = "BORROWED BOOKS";
             // 
             // returnedPanel
             // 
             this.returnedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.returnedPanel.Controls.Add(this.ReturnedDB);
+            this.returnedPanel.Controls.Add(this.returnedBooksDataGrid);
             this.returnedPanel.Controls.Add(this.returnedLabel);
             this.returnedPanel.Location = new System.Drawing.Point(426, 126);
             this.returnedPanel.Name = "returnedPanel";
             this.returnedPanel.Size = new System.Drawing.Size(366, 377);
             this.returnedPanel.TabIndex = 7;
             // 
-            // ReturnedDB
+            // returnedBooksDataGrid
             // 
-            this.ReturnedDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ReturnedDB.Location = new System.Drawing.Point(29, 68);
-            this.ReturnedDB.Name = "ReturnedDB";
-            this.ReturnedDB.Size = new System.Drawing.Size(325, 292);
-            this.ReturnedDB.TabIndex = 4;
+            this.returnedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.returnedBooksDataGrid.Location = new System.Drawing.Point(29, 68);
+            this.returnedBooksDataGrid.Name = "returnedBooksDataGrid";
+            this.returnedBooksDataGrid.Size = new System.Drawing.Size(325, 292);
+            this.returnedBooksDataGrid.TabIndex = 4;
             // 
             // returnedLabel
             // 
             this.returnedLabel.AutoSize = true;
-            this.returnedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnedLabel.Location = new System.Drawing.Point(81, 11);
             this.returnedLabel.Name = "returnedLabel";
-            this.returnedLabel.Size = new System.Drawing.Size(220, 43);
+            this.returnedLabel.Size = new System.Drawing.Size(369, 42);
             this.returnedLabel.TabIndex = 3;
             this.returnedLabel.Text = "RETURNED BOOKS";
             // 
@@ -205,10 +204,10 @@
             this.panel2.ResumeLayout(false);
             this.borrowedPanel.ResumeLayout(false);
             this.borrowedPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BorrowedDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.borrowedBooksDataGrid)).EndInit();
             this.returnedPanel.ResumeLayout(false);
             this.returnedPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ReturnedDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnedBooksDataGrid)).EndInit();
             this.btn6_Panel.ResumeLayout(false);
             this.btn6_Panel.PerformLayout();
             this.ResumeLayout(false);
@@ -224,10 +223,10 @@
         private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Label btn6Label;
         private System.Windows.Forms.Panel borrowedPanel;
-        private System.Windows.Forms.DataGridView BorrowedDB;
+        private System.Windows.Forms.DataGridView borrowedBooksDataGrid;
         private System.Windows.Forms.Label borrowedLabel;
         private System.Windows.Forms.Panel returnedPanel;
-        private System.Windows.Forms.DataGridView ReturnedDB;
+        private System.Windows.Forms.DataGridView returnedBooksDataGrid;
         private System.Windows.Forms.Label returnedLabel;
         private System.Windows.Forms.Panel brPanel;
         private System.Windows.Forms.Panel btn6_Panel;

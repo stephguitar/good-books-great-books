@@ -16,6 +16,7 @@ namespace LIBRARY
     {
         public Point mouseLocation;
         private string loggedInMemberID;
+        private notificationsForm notifForm;
         public mainForm()
         {
             InitializeComponent();
@@ -111,11 +112,26 @@ namespace LIBRARY
             loadform(new profile(this));
         }
 
+
         private void btn_Notifications_Click(object sender, EventArgs e)
         {
+            if (notifForm == null || notifForm.IsDisposed) // Ensure only one instance exists
+            {
+                notifForm = new notificationsForm(loggedInMemberID);
+                notifForm.StartPosition = FormStartPosition.Manual; // Prevent default positioning
 
-           loadform(new notificationsForm(loggedInMemberID)); // ✅ Pass memberID
-   
+                // ✅ Position the form to the *right side of mainForm*
+                int notifX = this.Location.X + this.Width - 2;  // Adjust based on window width
+                int notifY = this.Location.Y + 30;  // Slightly below the top bar
+
+                notifForm.Location = new Point(notifX, notifY);
+                notifForm.Show();
+            }
+            else
+            {
+                notifForm.Close();  // Close if already open
+                notifForm = null;
+            }
         }
 
         private void btn_Books_Click(object sender, EventArgs e)

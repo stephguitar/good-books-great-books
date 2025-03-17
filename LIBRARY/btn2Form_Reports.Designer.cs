@@ -35,10 +35,10 @@
             this.btn_Close = new System.Windows.Forms.Button();
             this.btn2_Panel = new System.Windows.Forms.Panel();
             this.unreturnedPanel = new System.Windows.Forms.Panel();
-            this.UnreturnedDB = new System.Windows.Forms.DataGridView();
+            this.unreturnedBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.unreturnedLabel = new System.Windows.Forms.Label();
             this.overduePanel = new System.Windows.Forms.Panel();
-            this.OverdueDB = new System.Windows.Forms.DataGridView();
+            this.overdueBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.overdueLabel = new System.Windows.Forms.Label();
             this.btn2Label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -46,9 +46,9 @@
             this.panel2.SuspendLayout();
             this.btn2_Panel.SuspendLayout();
             this.unreturnedPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UnreturnedDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unreturnedBooksDataGrid)).BeginInit();
             this.overduePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OverdueDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.overdueBooksDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -116,69 +116,68 @@
             // unreturnedPanel
             // 
             this.unreturnedPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.unreturnedPanel.Controls.Add(this.UnreturnedDB);
+            this.unreturnedPanel.Controls.Add(this.unreturnedBooksDataGrid);
             this.unreturnedPanel.Controls.Add(this.unreturnedLabel);
             this.unreturnedPanel.Location = new System.Drawing.Point(30, 105);
             this.unreturnedPanel.Name = "unreturnedPanel";
             this.unreturnedPanel.Size = new System.Drawing.Size(366, 377);
             this.unreturnedPanel.TabIndex = 7;
             // 
-            // UnreturnedDB
+            // unreturnedBooksDataGrid
             // 
-            this.UnreturnedDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UnreturnedDB.Location = new System.Drawing.Point(20, 68);
-            this.UnreturnedDB.Name = "UnreturnedDB";
-            this.UnreturnedDB.Size = new System.Drawing.Size(325, 292);
-            this.UnreturnedDB.TabIndex = 3;
+            this.unreturnedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.unreturnedBooksDataGrid.Location = new System.Drawing.Point(20, 68);
+            this.unreturnedBooksDataGrid.Name = "unreturnedBooksDataGrid";
+            this.unreturnedBooksDataGrid.Size = new System.Drawing.Size(325, 292);
+            this.unreturnedBooksDataGrid.TabIndex = 3;
             // 
             // unreturnedLabel
             // 
             this.unreturnedLabel.AutoSize = true;
-            this.unreturnedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unreturnedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unreturnedLabel.Location = new System.Drawing.Point(56, 11);
             this.unreturnedLabel.Name = "unreturnedLabel";
-            this.unreturnedLabel.Size = new System.Drawing.Size(251, 43);
+            this.unreturnedLabel.Size = new System.Drawing.Size(423, 42);
             this.unreturnedLabel.TabIndex = 2;
             this.unreturnedLabel.Text = "UNRETURNED BOOKS";
             // 
             // overduePanel
             // 
             this.overduePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.overduePanel.Controls.Add(this.OverdueDB);
+            this.overduePanel.Controls.Add(this.overdueBooksDataGrid);
             this.overduePanel.Controls.Add(this.overdueLabel);
             this.overduePanel.Location = new System.Drawing.Point(432, 105);
             this.overduePanel.Name = "overduePanel";
             this.overduePanel.Size = new System.Drawing.Size(366, 377);
             this.overduePanel.TabIndex = 6;
             // 
-            // OverdueDB
+            // overdueBooksDataGrid
             // 
-            this.OverdueDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OverdueDB.Location = new System.Drawing.Point(29, 68);
-            this.OverdueDB.Name = "OverdueDB";
-            this.OverdueDB.Size = new System.Drawing.Size(325, 292);
-            this.OverdueDB.TabIndex = 4;
+            this.overdueBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.overdueBooksDataGrid.Location = new System.Drawing.Point(29, 68);
+            this.overdueBooksDataGrid.Name = "overdueBooksDataGrid";
+            this.overdueBooksDataGrid.Size = new System.Drawing.Size(325, 292);
+            this.overdueBooksDataGrid.TabIndex = 4;
             // 
             // overdueLabel
             // 
             this.overdueLabel.AutoSize = true;
-            this.overdueLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.overdueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.overdueLabel.Location = new System.Drawing.Point(88, 11);
             this.overdueLabel.Name = "overdueLabel";
-            this.overdueLabel.Size = new System.Drawing.Size(206, 43);
+            this.overdueLabel.Size = new System.Drawing.Size(346, 42);
             this.overdueLabel.TabIndex = 3;
             this.overdueLabel.Text = "OVERDUE BOOKS";
             // 
             // btn2Label
             // 
             this.btn2Label.AutoSize = true;
-            this.btn2Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2Label.Location = new System.Drawing.Point(157, 24);
             this.btn2Label.Name = "btn2Label";
-            this.btn2Label.Size = new System.Drawing.Size(505, 43);
+            this.btn2Label.Size = new System.Drawing.Size(857, 42);
             this.btn2Label.TabIndex = 5;
             this.btn2Label.Text = "LIST OF UNRETURNED AND OVERDUE BOOKS";
-            this.btn2Label.Click += new System.EventHandler(this.label3_Click);
             // 
             // btn2Form_Reports
             // 
@@ -198,10 +197,10 @@
             this.btn2_Panel.PerformLayout();
             this.unreturnedPanel.ResumeLayout(false);
             this.unreturnedPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UnreturnedDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unreturnedBooksDataGrid)).EndInit();
             this.overduePanel.ResumeLayout(false);
             this.overduePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.OverdueDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.overdueBooksDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -216,10 +215,10 @@
         private System.Windows.Forms.Panel btn2_Panel;
         private System.Windows.Forms.Label btn2Label;
         private System.Windows.Forms.Panel unreturnedPanel;
-        private System.Windows.Forms.DataGridView UnreturnedDB;
+        private System.Windows.Forms.DataGridView unreturnedBooksDataGrid;
         private System.Windows.Forms.Label unreturnedLabel;
         private System.Windows.Forms.Panel overduePanel;
-        private System.Windows.Forms.DataGridView OverdueDB;
+        private System.Windows.Forms.DataGridView overdueBooksDataGrid;
         private System.Windows.Forms.Label overdueLabel;
     }
 }

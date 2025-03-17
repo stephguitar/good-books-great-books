@@ -115,7 +115,6 @@ namespace LIBRARY
 
                             // ✅ Show notifications form with member ID
                             notificationsForm notifForm = new notificationsForm(memberId);
-                            notifForm.Show();
 
                             // ✅ Hide the login form and show the main form
                             this.Hide();

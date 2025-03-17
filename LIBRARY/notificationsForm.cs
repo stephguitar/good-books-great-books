@@ -8,6 +8,7 @@ namespace LIBRARY
 {
     public partial class notificationsForm : Form
     {
+        public Point mouseLocation;
         private string memberID; // Store logged-in member ID
 
         public notificationsForm(string loggedInMemberID)
@@ -129,6 +130,26 @@ namespace LIBRARY
             LoadBorrowedBooks();
             LoadReservedBooks();
             LoadOverdueBooks();
+        }
+
+        private void mouse_Down(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void mouse_Move(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_Home_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

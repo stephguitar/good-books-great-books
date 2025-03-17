@@ -34,14 +34,14 @@
             this.btn_Back = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
-            this.tenBorrowersDB = new System.Windows.Forms.DataGridView();
+            this.topBorrowersDataGrid = new System.Windows.Forms.DataGridView();
             this.btn5Label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn4_Panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tenBorrowersDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topBorrowersDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,25 +97,25 @@
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
-            // tenBorrowersDB
+            // topBorrowersDataGrid
             // 
-            this.tenBorrowersDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tenBorrowersDB.Location = new System.Drawing.Point(29, 276);
-            this.tenBorrowersDB.Name = "tenBorrowersDB";
-            this.tenBorrowersDB.Size = new System.Drawing.Size(758, 214);
-            this.tenBorrowersDB.TabIndex = 32;
+            this.topBorrowersDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.topBorrowersDataGrid.Location = new System.Drawing.Point(29, 276);
+            this.topBorrowersDataGrid.Name = "topBorrowersDataGrid";
+            this.topBorrowersDataGrid.Size = new System.Drawing.Size(758, 214);
+            this.topBorrowersDataGrid.TabIndex = 32;
+            this.topBorrowersDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.topBorrowersDataGrid_CellContentClick);
             // 
             // btn5Label
             // 
             this.btn5Label.AutoSize = true;
-            this.btn5Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn5Label.Location = new System.Drawing.Point(298, 216);
             this.btn5Label.Name = "btn5Label";
-            this.btn5Label.Size = new System.Drawing.Size(245, 43);
+            this.btn5Label.Size = new System.Drawing.Size(406, 42);
             this.btn5Label.TabIndex = 31;
             this.btn5Label.Text = "TOP 10 BORROWERS";
-            this.btn5Label.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -140,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(827, 511);
-            this.Controls.Add(this.tenBorrowersDB);
+            this.Controls.Add(this.topBorrowersDataGrid);
             this.Controls.Add(this.btn5Label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -151,7 +151,7 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tenBorrowersDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topBorrowersDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,7 +165,7 @@
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Close;
-        private System.Windows.Forms.DataGridView tenBorrowersDB;
+        private System.Windows.Forms.DataGridView topBorrowersDataGrid;
         private System.Windows.Forms.Label btn5Label;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel btn4_Panel;

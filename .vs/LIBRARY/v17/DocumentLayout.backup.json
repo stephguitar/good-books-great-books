@@ -11,16 +11,28 @@
       "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\member_loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\transactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\transactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\notificationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\notificationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\transactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\transactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\notificationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\notificationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\notificationsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +78,84 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "reservationsForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\reservationsForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs",
+              "RelativeToolTip": "LIBRARY\\reservationsForm.cs",
+              "ViewState": "AgIAAKIBAAAAAAAAAAASwLEBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:40:25.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "reservationsForm.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\reservationsForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\reservationsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:39:15.41Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "notificationsForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\notificationsForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.cs",
+              "RelativeToolTip": "LIBRARY\\notificationsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T18:19:47.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "transactionsForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\transactionsForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
+              "RelativeToolTip": "LIBRARY\\transactionsForm.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T15:29:38.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mainForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\mainForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs*",
+              "RelativeToolTip": "LIBRARY\\mainForm.cs*",
+              "ViewState": "AgIAAG0AAAAAAAAAAAA9wHsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:13:52.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "member_loginForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\member_loginForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
+              "RelativeToolTip": "LIBRARY\\member_loginForm.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAASwHQAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T19:05:09.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "notificationsForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\notificationsForm.cs",
@@ -78,72 +167,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "member_loginForm.cs",
-              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\member_loginForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
-              "RelativeToolTip": "LIBRARY\\member_loginForm.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAUwKwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T19:05:09.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "notificationsForm.cs",
-              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\notificationsForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.cs",
-              "RelativeToolTip": "LIBRARY\\notificationsForm.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAUwIUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:19:47.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "transactionsForm.cs",
-              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\transactionsForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
-              "RelativeToolTip": "LIBRARY\\transactionsForm.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T15:29:38.094Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "mainForm.cs",
+              "DocumentIndex": 7,
+              "Title": "mainForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\mainForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs",
-              "RelativeToolTip": "LIBRARY\\mainForm.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAA6wBEAAAAoAAAAAAAAAA==",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs [Design]*",
+              "RelativeToolTip": "LIBRARY\\mainForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:13:52.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T20:25:04.523Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "notificationsForm.Designer.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.Designer.cs",
               "RelativeDocumentMoniker": "LIBRARY\\notificationsForm.Designer.cs",
               "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsForm.Designer.cs",
               "RelativeToolTip": "LIBRARY\\notificationsForm.Designer.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAASwEkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAASwEcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T20:13:33.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "finesForm.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\finesForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\finesForm.cs",
@@ -156,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "finesForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\finesForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\finesForm.cs",
@@ -168,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "member_registrationForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_registrationForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\member_registrationForm.cs",
@@ -180,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "transactionsForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\transactionsForm.cs",
@@ -192,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "member_loginForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\member_loginForm.cs",
@@ -204,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "toastForm.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\toastForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\toastForm.cs",
@@ -217,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "booksForm.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\booksForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\booksForm.cs",

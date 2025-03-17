@@ -34,23 +34,23 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
             this.mainFRPanel = new System.Windows.Forms.Panel();
-            this.btn1Label = new System.Windows.Forms.Label();
-            this.availablePanel = new System.Windows.Forms.Panel();
-            this.AvailableDB = new System.Windows.Forms.DataGridView();
-            this.availableLabel = new System.Windows.Forms.Label();
             this.unavailablePanel = new System.Windows.Forms.Panel();
-            this.UnavailableDB = new System.Windows.Forms.DataGridView();
+            this.unavailableBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.unavailableLabel = new System.Windows.Forms.Label();
             this.btn1_Panel = new System.Windows.Forms.Panel();
+            this.btn1Label = new System.Windows.Forms.Label();
+            this.availablePanel = new System.Windows.Forms.Panel();
+            this.availableBooksDataGrid = new System.Windows.Forms.DataGridView();
+            this.availableLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.mainFRPanel.SuspendLayout();
-            this.availablePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AvailableDB)).BeginInit();
             this.unavailablePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UnavailableDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unavailableBooksDataGrid)).BeginInit();
             this.btn1_Panel.SuspendLayout();
+            this.availablePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.availableBooksDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,69 +114,31 @@
             this.mainFRPanel.Size = new System.Drawing.Size(830, 502);
             this.mainFRPanel.TabIndex = 4;
             // 
-            // btn1Label
-            // 
-            this.btn1Label.AutoSize = true;
-            this.btn1Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1Label.Location = new System.Drawing.Point(147, 31);
-            this.btn1Label.Name = "btn1Label";
-            this.btn1Label.Size = new System.Drawing.Size(533, 43);
-            this.btn1Label.TabIndex = 4;
-            this.btn1Label.Text = "LIST OF AVAILABLE AND UNAVAILABLE BOOKS";
-            // 
-            // availablePanel
-            // 
-            this.availablePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.availablePanel.Controls.Add(this.AvailableDB);
-            this.availablePanel.Controls.Add(this.availableLabel);
-            this.availablePanel.Location = new System.Drawing.Point(26, 95);
-            this.availablePanel.Name = "availablePanel";
-            this.availablePanel.Size = new System.Drawing.Size(366, 377);
-            this.availablePanel.TabIndex = 2;
-            // 
-            // AvailableDB
-            // 
-            this.AvailableDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AvailableDB.Location = new System.Drawing.Point(20, 68);
-            this.AvailableDB.Name = "AvailableDB";
-            this.AvailableDB.Size = new System.Drawing.Size(325, 292);
-            this.AvailableDB.TabIndex = 3;
-            // 
-            // availableLabel
-            // 
-            this.availableLabel.AutoSize = true;
-            this.availableLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.availableLabel.Location = new System.Drawing.Point(68, 11);
-            this.availableLabel.Name = "availableLabel";
-            this.availableLabel.Size = new System.Drawing.Size(227, 43);
-            this.availableLabel.TabIndex = 2;
-            this.availableLabel.Text = "AVAILABLE BOOKS";
-            // 
             // unavailablePanel
             // 
             this.unavailablePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.unavailablePanel.Controls.Add(this.UnavailableDB);
+            this.unavailablePanel.Controls.Add(this.unavailableBooksDataGrid);
             this.unavailablePanel.Controls.Add(this.unavailableLabel);
             this.unavailablePanel.Location = new System.Drawing.Point(430, 98);
             this.unavailablePanel.Name = "unavailablePanel";
             this.unavailablePanel.Size = new System.Drawing.Size(366, 377);
             this.unavailablePanel.TabIndex = 1;
             // 
-            // UnavailableDB
+            // unavailableBooksDataGrid
             // 
-            this.UnavailableDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UnavailableDB.Location = new System.Drawing.Point(29, 68);
-            this.UnavailableDB.Name = "UnavailableDB";
-            this.UnavailableDB.Size = new System.Drawing.Size(325, 292);
-            this.UnavailableDB.TabIndex = 4;
+            this.unavailableBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.unavailableBooksDataGrid.Location = new System.Drawing.Point(29, 68);
+            this.unavailableBooksDataGrid.Name = "unavailableBooksDataGrid";
+            this.unavailableBooksDataGrid.Size = new System.Drawing.Size(325, 292);
+            this.unavailableBooksDataGrid.TabIndex = 4;
             // 
             // unavailableLabel
             // 
             this.unavailableLabel.AutoSize = true;
-            this.unavailableLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unavailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unavailableLabel.Location = new System.Drawing.Point(63, 11);
             this.unavailableLabel.Name = "unavailableLabel";
-            this.unavailableLabel.Size = new System.Drawing.Size(258, 43);
+            this.unavailableLabel.Size = new System.Drawing.Size(416, 42);
             this.unavailableLabel.TabIndex = 3;
             this.unavailableLabel.Text = "UNAVAILABLE BOOKS";
             // 
@@ -188,6 +150,44 @@
             this.btn1_Panel.Name = "btn1_Panel";
             this.btn1_Panel.Size = new System.Drawing.Size(827, 482);
             this.btn1_Panel.TabIndex = 5;
+            // 
+            // btn1Label
+            // 
+            this.btn1Label.AutoSize = true;
+            this.btn1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1Label.Location = new System.Drawing.Point(147, 31);
+            this.btn1Label.Name = "btn1Label";
+            this.btn1Label.Size = new System.Drawing.Size(866, 42);
+            this.btn1Label.TabIndex = 4;
+            this.btn1Label.Text = "LIST OF AVAILABLE AND UNAVAILABLE BOOKS";
+            // 
+            // availablePanel
+            // 
+            this.availablePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
+            this.availablePanel.Controls.Add(this.availableBooksDataGrid);
+            this.availablePanel.Controls.Add(this.availableLabel);
+            this.availablePanel.Location = new System.Drawing.Point(26, 95);
+            this.availablePanel.Name = "availablePanel";
+            this.availablePanel.Size = new System.Drawing.Size(366, 377);
+            this.availablePanel.TabIndex = 2;
+            // 
+            // availableBooksDataGrid
+            // 
+            this.availableBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.availableBooksDataGrid.Location = new System.Drawing.Point(20, 68);
+            this.availableBooksDataGrid.Name = "availableBooksDataGrid";
+            this.availableBooksDataGrid.Size = new System.Drawing.Size(325, 292);
+            this.availableBooksDataGrid.TabIndex = 3;
+            // 
+            // availableLabel
+            // 
+            this.availableLabel.AutoSize = true;
+            this.availableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availableLabel.Location = new System.Drawing.Point(68, 11);
+            this.availableLabel.Name = "availableLabel";
+            this.availableLabel.Size = new System.Drawing.Size(362, 42);
+            this.availableLabel.TabIndex = 2;
+            this.availableLabel.Text = "AVAILABLE BOOKS";
             // 
             // btn1Form_Reports
             // 
@@ -204,14 +204,14 @@
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.mainFRPanel.ResumeLayout(false);
-            this.availablePanel.ResumeLayout(false);
-            this.availablePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AvailableDB)).EndInit();
             this.unavailablePanel.ResumeLayout(false);
             this.unavailablePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UnavailableDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unavailableBooksDataGrid)).EndInit();
             this.btn1_Panel.ResumeLayout(false);
             this.btn1_Panel.PerformLayout();
+            this.availablePanel.ResumeLayout(false);
+            this.availablePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.availableBooksDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -229,8 +229,8 @@
         private System.Windows.Forms.Label btn1Label;
         private System.Windows.Forms.Label availableLabel;
         private System.Windows.Forms.Label unavailableLabel;
-        private System.Windows.Forms.DataGridView AvailableDB;
-        private System.Windows.Forms.DataGridView UnavailableDB;
+        private System.Windows.Forms.DataGridView availableBooksDataGrid;
+        private System.Windows.Forms.DataGridView unavailableBooksDataGrid;
         private System.Windows.Forms.Panel btn1_Panel;
     }
 }

@@ -30,16 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn5_Panel = new System.Windows.Forms.Panel();
             this.btn_Back = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
             this.btn5Label = new System.Windows.Forms.Label();
-            this.FinesDB = new System.Windows.Forms.DataGridView();
-            this.btn5_Panel = new System.Windows.Forms.Panel();
+            this.borrowersWithFinesDataGrid = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FinesDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.borrowersWithFinesDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,6 +61,13 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(76, 46);
             this.panel3.TabIndex = 1;
+            // 
+            // btn5_Panel
+            // 
+            this.btn5_Panel.Location = new System.Drawing.Point(0, 28);
+            this.btn5_Panel.Name = "btn5_Panel";
+            this.btn5_Panel.Size = new System.Drawing.Size(958, 530);
+            this.btn5_Panel.TabIndex = 8;
             // 
             // btn_Back
             // 
@@ -96,28 +103,21 @@
             // btn5Label
             // 
             this.btn5Label.AutoSize = true;
-            this.btn5Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn5Label.Location = new System.Drawing.Point(218, 71);
             this.btn5Label.Name = "btn5Label";
-            this.btn5Label.Size = new System.Drawing.Size(386, 55);
+            this.btn5Label.Size = new System.Drawing.Size(633, 55);
             this.btn5Label.TabIndex = 28;
             this.btn5Label.Text = "BORROWERS WITH FINES";
             // 
-            // FinesDB
+            // borrowersWithFinesDataGrid
             // 
-            this.FinesDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FinesDB.Location = new System.Drawing.Point(25, 144);
-            this.FinesDB.Name = "FinesDB";
-            this.FinesDB.Size = new System.Drawing.Size(771, 355);
-            this.FinesDB.TabIndex = 29;
-            // 
-            // btn5_Panel
-            // 
-            this.btn5_Panel.Location = new System.Drawing.Point(0, 28);
-            this.btn5_Panel.Name = "btn5_Panel";
-            this.btn5_Panel.Size = new System.Drawing.Size(958, 530);
-            this.btn5_Panel.TabIndex = 8;
+            this.borrowersWithFinesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.borrowersWithFinesDataGrid.Location = new System.Drawing.Point(25, 144);
+            this.borrowersWithFinesDataGrid.Name = "borrowersWithFinesDataGrid";
+            this.borrowersWithFinesDataGrid.Size = new System.Drawing.Size(771, 355);
+            this.borrowersWithFinesDataGrid.TabIndex = 29;
             // 
             // btn5Form_Reports
             // 
@@ -125,7 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(822, 523);
-            this.Controls.Add(this.FinesDB);
+            this.Controls.Add(this.borrowersWithFinesDataGrid);
             this.Controls.Add(this.btn5Label);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -137,7 +137,7 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.FinesDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.borrowersWithFinesDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,7 +151,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Label btn5Label;
-        private System.Windows.Forms.DataGridView FinesDB;
+        private System.Windows.Forms.DataGridView borrowersWithFinesDataGrid;
         private System.Windows.Forms.Panel btn5_Panel;
     }
 }

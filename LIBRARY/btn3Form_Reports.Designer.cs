@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btn3Form_Reports));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn3_Panel = new System.Windows.Forms.Panel();
             this.btn_Back = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Close = new System.Windows.Forms.Button();
             this.btn3Label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tenBorrowedDB = new System.Windows.Forms.DataGridView();
-            this.btn3_Panel = new System.Windows.Forms.Panel();
+            this.topBorrowedBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tenBorrowedDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topBorrowedBooksDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +66,13 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(76, 46);
             this.panel3.TabIndex = 1;
+            // 
+            // btn3_Panel
+            // 
+            this.btn3_Panel.Location = new System.Drawing.Point(2, 25);
+            this.btn3_Panel.Name = "btn3_Panel";
+            this.btn3_Panel.Size = new System.Drawing.Size(852, 499);
+            this.btn3_Panel.TabIndex = 31;
             // 
             // btn_Back
             // 
@@ -101,14 +108,13 @@
             // btn3Label
             // 
             this.btn3Label.AutoSize = true;
-            this.btn3Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn3Label.Location = new System.Drawing.Point(262, 229);
             this.btn3Label.Name = "btn3Label";
-            this.btn3Label.Size = new System.Drawing.Size(315, 43);
+            this.btn3Label.Size = new System.Drawing.Size(524, 42);
             this.btn3Label.TabIndex = 28;
             this.btn3Label.Text = "TOP 10 BORROWED BOOKS";
-            this.btn3Label.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -120,20 +126,13 @@
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
-            // tenBorrowedDB
+            // topBorrowedBooksDataGrid
             // 
-            this.tenBorrowedDB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tenBorrowedDB.Location = new System.Drawing.Point(28, 287);
-            this.tenBorrowedDB.Name = "tenBorrowedDB";
-            this.tenBorrowedDB.Size = new System.Drawing.Size(755, 214);
-            this.tenBorrowedDB.TabIndex = 30;
-            // 
-            // btn3_Panel
-            // 
-            this.btn3_Panel.Location = new System.Drawing.Point(2, 25);
-            this.btn3_Panel.Name = "btn3_Panel";
-            this.btn3_Panel.Size = new System.Drawing.Size(852, 499);
-            this.btn3_Panel.TabIndex = 31;
+            this.topBorrowedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.topBorrowedBooksDataGrid.Location = new System.Drawing.Point(28, 287);
+            this.topBorrowedBooksDataGrid.Name = "topBorrowedBooksDataGrid";
+            this.topBorrowedBooksDataGrid.Size = new System.Drawing.Size(755, 214);
+            this.topBorrowedBooksDataGrid.TabIndex = 30;
             // 
             // btn3Form_Reports
             // 
@@ -141,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(817, 513);
-            this.Controls.Add(this.tenBorrowedDB);
+            this.Controls.Add(this.topBorrowedBooksDataGrid);
             this.Controls.Add(this.btn3Label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -152,7 +151,7 @@
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tenBorrowedDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.topBorrowedBooksDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,7 +166,7 @@
         private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Label btn3Label;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView tenBorrowedDB;
+        private System.Windows.Forms.DataGridView topBorrowedBooksDataGrid;
         private System.Windows.Forms.Panel btn3_Panel;
     }
 }
