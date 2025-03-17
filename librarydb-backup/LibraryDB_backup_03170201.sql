@@ -153,11 +153,13 @@ DROP TABLE IF EXISTS `librarian`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `librarian` (
   `librarian_id` varchar(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
   `password` varchar(20) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `first_name` varchar(50) NOT NULL,
   `middle_name` varchar(50) DEFAULT NULL,
   `phone` varchar(15) DEFAULT NULL,
+  `address` varchar(100) NOT NULL,
   `position` varchar(50) NOT NULL,
   PRIMARY KEY (`librarian_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -169,7 +171,7 @@ CREATE TABLE `librarian` (
 
 LOCK TABLES `librarian` WRITE;
 /*!40000 ALTER TABLE `librarian` DISABLE KEYS */;
-INSERT INTO `librarian` VALUES ('LIB0001','admin','admin','admin','admin','09347281921','Library Manager');
+INSERT INTO `librarian` VALUES ('LIB0001','','admin','admin','admin','admin','09347281921','','Library Manager'),('LIB0002','test','test','test','test','test','test232t','test','Library Assistant');
 /*!40000 ALTER TABLE `librarian` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -281,4 +283,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-16 17:23:34
+-- Dump completed on 2025-03-17 14:01:10
