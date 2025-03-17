@@ -31,22 +31,22 @@ namespace LIBRARY
 
         private void btnSuccess_Click(object sender, EventArgs e)
         {
-            showToast("SUCCESS", "SUMMER CUTIE");
+            showToast("SUCCESS", "GREAT NEWS: Reservation is Queued for Book: Title");
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
-            showToast("INFO", "SUMMER IS PWITTI");
+            showToast("INFO", "READY FOR PICK-UP! Kindly Collect at the Library");
         }
 
         private void btnWarning_Click(object sender, EventArgs e)
         {
-            showToast("WARNING", "CAUTION! SUMMER IS HAWT");
+            showToast("WARNING", "REMINDER: Borrowed Book is DUE SOON, RETURN ON TIME to Avoid Penalties");
         }
 
         private void btnError_Click(object sender, EventArgs e)
         {
-            showToast("ERROR", "Summer is NOT my crush");
+            showToast("ERROR", "OVERDUE ALERT! YOU HAVE OVERDUE BOOKS, Return IMMEDIATELY to Avoid FURTHER Fines");
         }
 
 

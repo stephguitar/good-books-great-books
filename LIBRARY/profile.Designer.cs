@@ -57,7 +57,7 @@
             this.btn_registerLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
             this.btn_registerLibrarian.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registerLibrarian.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_registerLibrarian.Location = new System.Drawing.Point(119, 387);
+            this.btn_registerLibrarian.Location = new System.Drawing.Point(119, 389);
             this.btn_registerLibrarian.Name = "btn_registerLibrarian";
             this.btn_registerLibrarian.Size = new System.Drawing.Size(356, 37);
             this.btn_registerLibrarian.TabIndex = 5;
@@ -68,7 +68,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(161, 45);
+            this.pictureBox3.Location = new System.Drawing.Point(166, 61);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(264, 223);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +80,7 @@
             this.btn_signUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
             this.btn_signUp.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_signUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_signUp.Location = new System.Drawing.Point(119, 335);
+            this.btn_signUp.Location = new System.Drawing.Point(119, 346);
             this.btn_signUp.Name = "btn_signUp";
             this.btn_signUp.Size = new System.Drawing.Size(356, 37);
             this.btn_signUp.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
             this.btn_login.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_login.Location = new System.Drawing.Point(119, 292);
+            this.btn_login.Location = new System.Drawing.Point(119, 303);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(356, 37);
             this.btn_login.TabIndex = 1;

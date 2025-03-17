@@ -161,7 +161,7 @@ namespace LIBRARY
         {
             if (!string.IsNullOrWhiteSpace(txtbox_TransactionID.Text))
             {
-                using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+                using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
                 {
                     conn.Open();
 
@@ -208,7 +208,7 @@ namespace LIBRARY
 
         private void LoadFinesData()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"

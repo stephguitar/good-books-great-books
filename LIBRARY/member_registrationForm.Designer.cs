@@ -87,10 +87,10 @@
             // 
             this.signupLabel.AutoSize = true;
             this.signupLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(149)))), ((int)(((byte)(101)))));
-            this.signupLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupLabel.Location = new System.Drawing.Point(210, 10);
             this.signupLabel.Name = "signupLabel";
-            this.signupLabel.Size = new System.Drawing.Size(299, 73);
+            this.signupLabel.Size = new System.Drawing.Size(190, 75);
             this.signupLabel.TabIndex = 0;
             this.signupLabel.Text = "SIGN-UP";
             // 
@@ -139,6 +139,7 @@
             this.txtbox_Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtbox_Password.Location = new System.Drawing.Point(314, 208);
             this.txtbox_Password.Name = "txtbox_Password";
+            this.txtbox_Password.PasswordChar = '*';
             this.txtbox_Password.Size = new System.Drawing.Size(272, 23);
             this.txtbox_Password.TabIndex = 56;
             // 
@@ -253,7 +254,7 @@
             // 
             // conLabel
             // 
-            this.conLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.conLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.conLabel.Location = new System.Drawing.Point(306, 84);
             this.conLabel.Name = "conLabel";
@@ -293,7 +294,7 @@
             // 
             // memberLabel
             // 
-            this.memberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.memberLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memberLabel.Location = new System.Drawing.Point(20, 84);
             this.memberLabel.Name = "memberLabel";
             this.memberLabel.Size = new System.Drawing.Size(322, 50);
@@ -350,7 +351,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // signupForm
+            // member_registrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -358,7 +359,7 @@
             this.ClientSize = new System.Drawing.Size(782, 659);
             this.Controls.Add(this.signupPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "signupForm";
+            this.Name = "member_registrationForm";
             this.Text = "signupForm";
             this.signupPanel.ResumeLayout(false);
             this.signupPanel.PerformLayout();

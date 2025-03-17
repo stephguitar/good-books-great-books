@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
 namespace LIBRARY
 {
@@ -87,7 +87,7 @@ namespace LIBRARY
             string librarianId = txtbox_LibrarianID.Text;
             string password = txtbox_librarianPassword.Text;
 
-            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
 
             try
             {

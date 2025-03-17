@@ -80,24 +80,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label2.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(176, 209);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(370, 108);
+            this.label2.Size = new System.Drawing.Size(241, 112);
             this.label2.TabIndex = 2;
             this.label2.Text = "LOG IN";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(216)))), ((int)(((byte)(205)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.label1.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(197, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 108);
+            this.label1.Size = new System.Drawing.Size(197, 112);
             this.label1.TabIndex = 1;
             this.label1.Text = "USER";
             // 

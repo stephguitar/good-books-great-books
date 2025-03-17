@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(booksForm));
             this.booksPanel = new System.Windows.Forms.Panel();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.bookidLABEL = new System.Windows.Forms.Label();
             this.statusLABEL = new System.Windows.Forms.Label();
             this.genreLABEL = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.txtboxBookID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.btn_Update = new System.Windows.Forms.Button();
             this.booksPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,6 +92,30 @@
             this.booksPanel.Name = "booksPanel";
             this.booksPanel.Size = new System.Drawing.Size(775, 525);
             this.booksPanel.TabIndex = 0;
+            // 
+            // btn_Update
+            // 
+            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_Update.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.Location = new System.Drawing.Point(313, 470);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(132, 34);
+            this.btn_Update.TabIndex = 38;
+            this.btn_Update.Text = "UPDATE";
+            this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_Save.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Location = new System.Drawing.Point(163, 470);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(132, 34);
+            this.btn_Save.TabIndex = 37;
+            this.btn_Save.Text = "SAVE";
+            this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // bookidLABEL
             // 
@@ -150,20 +174,23 @@
             // 
             // txtboxISBN
             // 
+            this.txtboxISBN.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxISBN.Location = new System.Drawing.Point(99, 365);
             this.txtboxISBN.Name = "txtboxISBN";
-            this.txtboxISBN.Size = new System.Drawing.Size(193, 20);
+            this.txtboxISBN.Size = new System.Drawing.Size(193, 21);
             this.txtboxISBN.TabIndex = 31;
             // 
             // txtboxPublisher
             // 
+            this.txtboxPublisher.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxPublisher.Location = new System.Drawing.Point(99, 339);
             this.txtboxPublisher.Name = "txtboxPublisher";
-            this.txtboxPublisher.Size = new System.Drawing.Size(193, 20);
+            this.txtboxPublisher.Size = new System.Drawing.Size(193, 21);
             this.txtboxPublisher.TabIndex = 30;
             // 
             // availabilityStatus_COMBO
             // 
+            this.availabilityStatus_COMBO.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availabilityStatus_COMBO.FormattingEnabled = true;
             this.availabilityStatus_COMBO.Location = new System.Drawing.Point(367, 235);
             this.availabilityStatus_COMBO.Name = "availabilityStatus_COMBO";
@@ -172,6 +199,7 @@
             // 
             // combo_GENRE
             // 
+            this.combo_GENRE.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_GENRE.FormattingEnabled = true;
             this.combo_GENRE.Location = new System.Drawing.Point(99, 391);
             this.combo_GENRE.Name = "combo_GENRE";
@@ -235,19 +263,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(75, 162);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(774, 55);
+            this.label5.Size = new System.Drawing.Size(474, 55);
             this.label5.TabIndex = 18;
             this.label5.Text = "BOOK CATALOG MANAGEMENT ";
             // 
             // txtboxEdition
             // 
+            this.txtboxEdition.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxEdition.Location = new System.Drawing.Point(99, 313);
             this.txtboxEdition.Name = "txtboxEdition";
-            this.txtboxEdition.Size = new System.Drawing.Size(193, 20);
+            this.txtboxEdition.Size = new System.Drawing.Size(193, 21);
             this.txtboxEdition.TabIndex = 17;
             // 
             // editionLabel
@@ -263,9 +292,10 @@
             // 
             // txtboxAuthor
             // 
+            this.txtboxAuthor.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxAuthor.Location = new System.Drawing.Point(99, 287);
             this.txtboxAuthor.Name = "txtboxAuthor";
-            this.txtboxAuthor.Size = new System.Drawing.Size(193, 20);
+            this.txtboxAuthor.Size = new System.Drawing.Size(193, 21);
             this.txtboxAuthor.TabIndex = 15;
             // 
             // authorLabel
@@ -281,9 +311,10 @@
             // 
             // txtbox_bookTitle
             // 
+            this.txtbox_bookTitle.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbox_bookTitle.Location = new System.Drawing.Point(99, 261);
             this.txtbox_bookTitle.Name = "txtbox_bookTitle";
-            this.txtbox_bookTitle.Size = new System.Drawing.Size(193, 20);
+            this.txtbox_bookTitle.Size = new System.Drawing.Size(193, 21);
             this.txtbox_bookTitle.TabIndex = 13;
             // 
             // titleLabel
@@ -299,9 +330,10 @@
             // 
             // txtboxBookID
             // 
+            this.txtboxBookID.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxBookID.Location = new System.Drawing.Point(99, 235);
             this.txtboxBookID.Name = "txtboxBookID";
-            this.txtboxBookID.Size = new System.Drawing.Size(193, 20);
+            this.txtboxBookID.Size = new System.Drawing.Size(193, 21);
             this.txtboxBookID.TabIndex = 11;
             // 
             // pictureBox1
@@ -313,30 +345,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
-            this.btn_Save.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(163, 459);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(132, 34);
-            this.btn_Save.TabIndex = 37;
-            this.btn_Save.Text = "SAVE";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
-            // 
-            // btn_Update
-            // 
-            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
-            this.btn_Update.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Location = new System.Drawing.Point(317, 459);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(132, 34);
-            this.btn_Update.TabIndex = 38;
-            this.btn_Update.Text = "UPDATE";
-            this.btn_Update.UseVisualStyleBackColor = false;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // booksForm
             // 

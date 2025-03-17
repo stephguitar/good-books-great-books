@@ -108,6 +108,7 @@
             this.txtbox_memberPassword.Size = new System.Drawing.Size(317, 21);
             this.txtbox_memberPassword.TabIndex = 2;
             this.txtbox_memberPassword.Text = "PASSWORD: *";
+            this.txtbox_memberPassword.UseSystemPasswordChar = true;
             // 
             // txtbox_MemberID
             // 

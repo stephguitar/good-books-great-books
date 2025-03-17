@@ -8,8 +8,8 @@ namespace LIBRARY
 {
     public partial class transactionsForm : Form
     {
-        public Point mouseLocation;
-        private MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;");
+        public Point mouseLocation; 
+        private MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;");
         private string transactionID;
 
         public transactionsForm()
@@ -120,7 +120,7 @@ namespace LIBRARY
 
         private void ReturnBook(string copyID)
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 MySqlTransaction transaction = conn.BeginTransaction();
@@ -353,7 +353,7 @@ namespace LIBRARY
             DataTable dt = new DataTable();
 
             // Use the same connection string as the main connection
-            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
 
             using (MySqlConnection tempConn = new MySqlConnection(connectionString))
             {

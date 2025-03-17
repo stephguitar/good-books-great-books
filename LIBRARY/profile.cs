@@ -19,7 +19,6 @@ namespace LIBRARY
             InitializeComponent();
             this.mainFormInstance = mainFormInstance;
 
-            btn_registerLibrarian.Visible = false;
 
         }
 

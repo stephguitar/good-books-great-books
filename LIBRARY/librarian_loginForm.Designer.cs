@@ -109,6 +109,7 @@
             this.txtbox_librarianPassword.Size = new System.Drawing.Size(317, 21);
             this.txtbox_librarianPassword.TabIndex = 11;
             this.txtbox_librarianPassword.Text = "PASSWORD: *";
+            this.txtbox_librarianPassword.UseSystemPasswordChar = true;
             this.txtbox_librarianPassword.TextChanged += new System.EventHandler(this.txtboxAdminPW_TextChanged);
             // 
             // txtbox_LibrarianID

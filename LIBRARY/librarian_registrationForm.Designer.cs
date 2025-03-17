@@ -95,6 +95,7 @@
             this.txtbox_Password.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtbox_Password.Location = new System.Drawing.Point(308, 342);
             this.txtbox_Password.Name = "txtbox_Password";
+            this.txtbox_Password.PasswordChar = '*';
             this.txtbox_Password.Size = new System.Drawing.Size(274, 23);
             this.txtbox_Password.TabIndex = 76;
             // 
@@ -190,11 +191,11 @@
             // 
             // label_ContactInfo
             // 
-            this.label_ContactInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label_ContactInfo.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_ContactInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label_ContactInfo.Location = new System.Drawing.Point(301, 217);
             this.label_ContactInfo.Name = "label_ContactInfo";
-            this.label_ContactInfo.Size = new System.Drawing.Size(176, 50);
+            this.label_ContactInfo.Size = new System.Drawing.Size(443, 50);
             this.label_ContactInfo.TabIndex = 66;
             this.label_ContactInfo.Text = "CONTACT INFORMATION";
             // 
@@ -230,12 +231,12 @@
             // 
             // label_LibrarianInfo
             // 
-            this.label_LibrarianInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label_LibrarianInfo.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_LibrarianInfo.Location = new System.Drawing.Point(18, 217);
             this.label_LibrarianInfo.Name = "label_LibrarianInfo";
-            this.label_LibrarianInfo.Size = new System.Drawing.Size(159, 50);
+            this.label_LibrarianInfo.Size = new System.Drawing.Size(276, 50);
             this.label_LibrarianInfo.TabIndex = 59;
-            this.label_LibrarianInfo.Text = "MEMBER INFORMATION";
+            this.label_LibrarianInfo.Text = "LIBRARIAN INFORMATION";
             this.label_LibrarianInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtbox_MN
@@ -279,10 +280,10 @@
             // 
             this.LabelTitle.AutoSize = true;
             this.LabelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(149)))), ((int)(((byte)(101)))));
-            this.LabelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTitle.Location = new System.Drawing.Point(27, 29);
             this.LabelTitle.Name = "LabelTitle";
-            this.LabelTitle.Size = new System.Drawing.Size(869, 73);
+            this.LabelTitle.Size = new System.Drawing.Size(542, 75);
             this.LabelTitle.TabIndex = 57;
             this.LabelTitle.Text = "LIBRARIAN REGISTRATION";
             // 

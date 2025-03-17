@@ -135,11 +135,11 @@
             // finesLabel
             // 
             this.finesLabel.AutoSize = true;
-            this.finesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finesLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finesLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finesLabel.Location = new System.Drawing.Point(218, 117);
             this.finesLabel.Name = "finesLabel";
-            this.finesLabel.Size = new System.Drawing.Size(526, 55);
+            this.finesLabel.Size = new System.Drawing.Size(317, 55);
             this.finesLabel.TabIndex = 19;
             this.finesLabel.Text = "RETURNS AND FINES";
             // 
@@ -207,10 +207,10 @@
             // issuedLabel
             // 
             this.issuedLabel.AutoSize = true;
-            this.issuedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issuedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.issuedLabel.Location = new System.Drawing.Point(3, 3);
             this.issuedLabel.Name = "issuedLabel";
-            this.issuedLabel.Size = new System.Drawing.Size(347, 39);
+            this.issuedLabel.Size = new System.Drawing.Size(216, 41);
             this.issuedLabel.TabIndex = 2;
             this.issuedLabel.Text = "ALL ISSUED BOOKS";
             // 

@@ -60,10 +60,10 @@
             this.txtbox_LibrarianName = new System.Windows.Forms.TextBox();
             this.txtbox_LibrarianID = new System.Windows.Forms.TextBox();
             this.issuedPanel = new System.Windows.Forms.Panel();
+            this.book_copiesTBLDATA = new System.Windows.Forms.DataGridView();
             this.booksTBLDATA = new System.Windows.Forms.DataGridView();
             this.borrowTBLDATA = new System.Windows.Forms.DataGridView();
             this.transactionLabel = new System.Windows.Forms.Label();
-            this.book_copiesTBLDATA = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -71,9 +71,9 @@
             this.transactionsPanel.SuspendLayout();
             this.issuedSidePanel.SuspendLayout();
             this.issuedPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.book_copiesTBLDATA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksTBLDATA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.borrowTBLDATA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.book_copiesTBLDATA)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -203,10 +203,10 @@
             // bookInfoLabel
             // 
             this.bookInfoLabel.AutoSize = true;
-            this.bookInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookInfoLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookInfoLabel.Location = new System.Drawing.Point(6, 342);
             this.bookInfoLabel.Name = "bookInfoLabel";
-            this.bookInfoLabel.Size = new System.Drawing.Size(342, 37);
+            this.bookInfoLabel.Size = new System.Drawing.Size(215, 38);
             this.bookInfoLabel.TabIndex = 2;
             this.bookInfoLabel.Text = "BOOK INFORMATION";
             // 
@@ -417,6 +417,14 @@
             this.issuedPanel.Size = new System.Drawing.Size(576, 556);
             this.issuedPanel.TabIndex = 0;
             // 
+            // book_copiesTBLDATA
+            // 
+            this.book_copiesTBLDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.book_copiesTBLDATA.Location = new System.Drawing.Point(291, 328);
+            this.book_copiesTBLDATA.Name = "book_copiesTBLDATA";
+            this.book_copiesTBLDATA.Size = new System.Drawing.Size(266, 205);
+            this.book_copiesTBLDATA.TabIndex = 4;
+            // 
             // booksTBLDATA
             // 
             this.booksTBLDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -436,20 +444,12 @@
             // transactionLabel
             // 
             this.transactionLabel.AutoSize = true;
-            this.transactionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.transactionLabel.Location = new System.Drawing.Point(111, 24);
             this.transactionLabel.Name = "transactionLabel";
-            this.transactionLabel.Size = new System.Drawing.Size(594, 55);
+            this.transactionLabel.Size = new System.Drawing.Size(364, 55);
             this.transactionLabel.TabIndex = 1;
             this.transactionLabel.Text = "TRANSACTION HISTORY";
-            // 
-            // book_copiesTBLDATA
-            // 
-            this.book_copiesTBLDATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.book_copiesTBLDATA.Location = new System.Drawing.Point(291, 328);
-            this.book_copiesTBLDATA.Name = "book_copiesTBLDATA";
-            this.book_copiesTBLDATA.Size = new System.Drawing.Size(266, 205);
-            this.book_copiesTBLDATA.TabIndex = 4;
             // 
             // transactionsForm
             // 
@@ -471,9 +471,9 @@
             this.issuedSidePanel.PerformLayout();
             this.issuedPanel.ResumeLayout(false);
             this.issuedPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.book_copiesTBLDATA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksTBLDATA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.borrowTBLDATA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.book_copiesTBLDATA)).EndInit();
             this.ResumeLayout(false);
 
         }

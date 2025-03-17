@@ -54,6 +54,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.mnPanel = new System.Windows.Forms.Panel();
+            this.btn_LibRegister = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -66,11 +68,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.panel1.Controls.Add(this.panel14);
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel10);
@@ -83,15 +87,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 506);
+            this.panel1.Size = new System.Drawing.Size(200, 526);
             this.panel1.TabIndex = 0;
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.btn_Logout);
-            this.panel12.Location = new System.Drawing.Point(4, 455);
+            this.panel12.Location = new System.Drawing.Point(0, 477);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(348, 48);
+            this.panel12.Size = new System.Drawing.Size(348, 63);
             this.panel12.TabIndex = 10;
             // 
             // btn_Logout
@@ -101,7 +105,7 @@
             this.btn_Logout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
             this.btn_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Logout.Location = new System.Drawing.Point(-16, -31);
+            this.btn_Logout.Location = new System.Drawing.Point(-14, -28);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Padding = new System.Windows.Forms.Padding(25, 0, 25, 0);
             this.btn_Logout.Size = new System.Drawing.Size(353, 91);
@@ -350,15 +354,34 @@
             // 
             this.mnPanel.Location = new System.Drawing.Point(200, 25);
             this.mnPanel.Name = "mnPanel";
-            this.mnPanel.Size = new System.Drawing.Size(621, 500);
+            this.mnPanel.Size = new System.Drawing.Size(621, 501);
             this.mnPanel.TabIndex = 2;
             this.mnPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mnPanel_Paint);
+            // 
+            // btn_LibRegister
+            // 
+            this.btn_LibRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
+            this.btn_LibRegister.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_LibRegister.Location = new System.Drawing.Point(-21, -17);
+            this.btn_LibRegister.Name = "btn_LibRegister";
+            this.btn_LibRegister.Size = new System.Drawing.Size(261, 69);
+            this.btn_LibRegister.TabIndex = 0;
+            this.btn_LibRegister.Text = "REGISTER A LIBRARIAN";
+            this.btn_LibRegister.UseVisualStyleBackColor = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.btn_LibRegister);
+            this.panel14.Location = new System.Drawing.Point(-7, 435);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(363, 36);
+            this.panel14.TabIndex = 1;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 506);
+            this.ClientSize = new System.Drawing.Size(800, 526);
             this.Controls.Add(this.mnPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -379,6 +402,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -410,6 +434,8 @@
         private System.Windows.Forms.Button btn_Logout;
         private System.Windows.Forms.Panel mnPanel;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Button btn_LibRegister;
+        private System.Windows.Forms.Panel panel14;
     }
 }
 
