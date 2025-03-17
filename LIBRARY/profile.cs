@@ -35,14 +35,6 @@ namespace LIBRARY
             f.Show();
         }
 
-        public void UpdateProfileButtons(string position)
-        {
-            btn_login.Visible = false;
-            btn_signUp.Visible = false;
-            //if ()
-            //btn_registerLibrarian.Visible = position == "Librarian Manager";
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -60,13 +52,6 @@ namespace LIBRARY
             btn_login.Visible = false;
             btn_signUp.Visible = false;
             loadform(new member_registrationForm());
-        }
-
-        private void btn_registerLibrarian_Click(object sender, EventArgs e)
-        {
-            btn_login.Visible = false;
-            btn_signUp.Visible = false;
-            loadform(new librarian_registrationForm());
         }
     }
 }

@@ -167,12 +167,99 @@ namespace LIBRARY
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtboxBookID.Text) ||
+                string.IsNullOrWhiteSpace(txtbox_bookTitle.Text) ||
+                string.IsNullOrWhiteSpace(txtboxAuthor.Text) ||
+                string.IsNullOrWhiteSpace(txtboxISBN.Text) ||
+                string.IsNullOrWhiteSpace(txtboxPublisher.Text) ||
+                string.IsNullOrWhiteSpace(txtboxEdition.Text) ||
+                combo_GENRE.SelectedIndex <= 0 ||
+                availabilityStatus_COMBO.SelectedIndex <= 0)
+            {
+                MessageBox.Show("Please fill in all fields before saving.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = @"
+                INSERT INTO books (book_id, title, author, isbn, publisher, edition, status, genre, borrow_counter)
+                VALUES (@book_id, @title, @author, @isbn, @publisher, @edition, @status, @genre, 0)";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@book_id", txtboxBookID.Text);
+                        cmd.Parameters.AddWithValue("@title", txtbox_bookTitle.Text);
+                        cmd.Parameters.AddWithValue("@author", txtboxAuthor.Text);
+                        cmd.Parameters.AddWithValue("@isbn", txtboxISBN.Text);
+                        cmd.Parameters.AddWithValue("@publisher", txtboxPublisher.Text);
+                        cmd.Parameters.AddWithValue("@edition", txtboxEdition.Text);
+                        cmd.Parameters.AddWithValue("@status", availabilityStatus_COMBO.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@genre", combo_GENRE.SelectedItem.ToString());
+
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Book added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadBooks(); // refresh DataGridView
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error saving book: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtboxBookID.Text))
+            {
+                MessageBox.Show("Please enter a valid Book ID to update.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = @"
+                UPDATE books 
+                SET title = @title, author = @author, isbn = @isbn, publisher = @publisher, 
+                    edition = @edition, status = @status, genre = @genre 
+                WHERE book_id = @book_id";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@book_id", txtboxBookID.Text);
+                        cmd.Parameters.AddWithValue("@title", txtbox_bookTitle.Text);
+                        cmd.Parameters.AddWithValue("@author", txtboxAuthor.Text);
+                        cmd.Parameters.AddWithValue("@isbn", txtboxISBN.Text);
+                        cmd.Parameters.AddWithValue("@publisher", txtboxPublisher.Text);
+                        cmd.Parameters.AddWithValue("@edition", txtboxEdition.Text);
+                        cmd.Parameters.AddWithValue("@status", availabilityStatus_COMBO.SelectedItem.ToString());
+                        cmd.Parameters.AddWithValue("@genre", combo_GENRE.SelectedItem.ToString());
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Book updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadBooks(); // to refresh DataGridView
+                        }
+                        else
+                        {
+                            MessageBox.Show("No book found with the given ID.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error updating book: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

@@ -429,138 +429,98 @@ namespace LIBRARY
             try
             {
                 conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction();
 
-                // *Step 1: Check if the member already has this book borrowed*
-                string duplicateBorrowCheckQuery = @"
-            SELECT COUNT(*) FROM borrow 
-            WHERE member_id = @memberID 
-            AND book_id = @bookID 
-            AND return_date IS NULL";
-
-                using (MySqlCommand checkCmd = new MySqlCommand(duplicateBorrowCheckQuery, conn))
-                {
-                    checkCmd.Parameters.AddWithValue("@memberID", txtbox_MemberID.Text);
-                    checkCmd.Parameters.AddWithValue("@bookID", txtbox_BookID.Text);
-
-                    int activeBorrows = Convert.ToInt32(checkCmd.ExecuteScalar());
-
-                    if (activeBorrows > 0)
-                    {
-                        MessageBox.Show("You already have this book borrowed. Return it before borrowing again.");
-                        return;
-                    }
-                }
-
-                // *Step 2: Check if the member has unpaid fines*
+                // to make sure that the member has no unpaid fines
                 string checkFineQuery = "SELECT COUNT(*) FROM fines WHERE member_id = @member_id AND paid = FALSE";
-                using (MySqlCommand checkFineCmd = new MySqlCommand(checkFineQuery, conn))
+                using (MySqlCommand checkFineCmd = new MySqlCommand(checkFineQuery, conn, transaction))
                 {
                     checkFineCmd.Parameters.AddWithValue("@member_id", txtbox_MemberID.Text);
                     int unpaidFines = Convert.ToInt32(checkFineCmd.ExecuteScalar());
-
                     if (unpaidFines > 0)
                     {
                         MessageBox.Show("You have unpaid fines. Please pay them before borrowing a new book.");
-                        return; // Stop borrowing process
-                    }
-                }
-
-                // *Step 3: Validate book_id*
-                string validateBookQuery = "SELECT COUNT(*) FROM books WHERE book_id = @book_id";
-                using (MySqlCommand validateBookCmd = new MySqlCommand(validateBookQuery, conn))
-                {
-                    validateBookCmd.Parameters.AddWithValue("@book_id", txtbox_BookID.Text);
-                    int bookCount = Convert.ToInt32(validateBookCmd.ExecuteScalar());
-
-                    if (bookCount == 0)
-                    {
-                        MessageBox.Show("Book ID not found.");
+                        transaction.Rollback();
                         return;
                     }
                 }
 
-                // *Step 4: Validate copy_id and ensure it belongs to book_id*
+                // to validate book_id
+                string validateBookQuery = "SELECT COUNT(*) FROM books WHERE book_id = @book_id";
+                using (MySqlCommand validateBookCmd = new MySqlCommand(validateBookQuery, conn, transaction))
+                {
+                    validateBookCmd.Parameters.AddWithValue("@book_id", txtbox_BookID.Text);
+                    int bookCount = Convert.ToInt32(validateBookCmd.ExecuteScalar());
+                    if (bookCount == 0)
+                    {
+                        MessageBox.Show("Book ID not found.");
+                        transaction.Rollback();
+                        return;
+                    }
+                }
+
+                // to validate copy_id and ensure it belongs to book_id
                 string validateCopyQuery = @"
             SELECT COUNT(*) 
             FROM book_copies 
             WHERE copy_id = @copy_id 
               AND book_id = @book_id 
-              AND status = 'available' 
-              AND copy_id NOT IN (SELECT copy_id FROM borrow)";
-                using (MySqlCommand validateCopyCmd = new MySqlCommand(validateCopyQuery, conn))
+              AND status = 'available'";
+                using (MySqlCommand validateCopyCmd = new MySqlCommand(validateCopyQuery, conn, transaction))
                 {
                     validateCopyCmd.Parameters.AddWithValue("@copy_id", txtbox_CopyID.Text);
                     validateCopyCmd.Parameters.AddWithValue("@book_id", txtbox_BookID.Text);
-
                     int copyCount = Convert.ToInt32(validateCopyCmd.ExecuteScalar());
 
                     if (copyCount == 0)
                     {
-                        MessageBox.Show("Invalid copy ID or book ID, or the copy is not available for borrowing.");
+                        MessageBox.Show("Invalid copy ID or the book copy is not available.");
+                        transaction.Rollback();
                         return;
                     }
                 }
 
-                // *Step 5: Validate member_id*
-                string validateMemberQuery = "SELECT COUNT(*) FROM members WHERE member_id = @member_id";
-                using (MySqlCommand validateMemberCmd = new MySqlCommand(validateMemberQuery, conn))
+                // update book copy status
+                using (MySqlCommand cmd = new MySqlCommand("UPDATE book_copies SET status = 'not available' WHERE copy_id = @copy_id", conn, transaction))
                 {
-                    validateMemberCmd.Parameters.AddWithValue("@member_id", txtbox_MemberID.Text);
-                    int memberCount = Convert.ToInt32(validateMemberCmd.ExecuteScalar());
-
-                    if (memberCount == 0)
-                    {
-                        MessageBox.Show("Member ID not found.");
-                        return;
-                    }
+                    cmd.Parameters.AddWithValue("@copy_id", txtbox_CopyID.Text);
+                    cmd.ExecuteNonQuery();
                 }
 
-                // *Step 6: Validate librarian_id*
-                string validateLibrarianQuery = "SELECT COUNT(*) FROM librarian WHERE librarian_id = @librarian_id";
-                using (MySqlCommand validateLibrarianCmd = new MySqlCommand(validateLibrarianQuery, conn))
-                {
-                    validateLibrarianCmd.Parameters.AddWithValue("@librarian_id", txtbox_LibrarianID.Text);
-                    int librarianCount = Convert.ToInt32(validateLibrarianCmd.ExecuteScalar());
-
-                    if (librarianCount == 0)
-                    {
-                        MessageBox.Show("Librarian ID not found.");
-                        return;
-                    }
-                }
-
-                // *Step 7: Start the borrow process*
-                MySqlCommand cmd = conn.CreateCommand();
-                MySqlTransaction transaction = conn.BeginTransaction(); // Start transaction
-                cmd.Transaction = transaction;
-
-                // *Step 8: Update book copy status*
-                cmd.CommandText = "UPDATE book_copies SET status = 'not available' WHERE copy_id = @copy_id AND book_id = @book_id";
-                cmd.Parameters.AddWithValue("@copy_id", txtbox_CopyID.Text);
-                cmd.Parameters.AddWithValue("@book_id", txtbox_BookID.Text);
-                cmd.ExecuteNonQuery();
-
-                // *Step 9: Insert borrow transaction*
-                cmd.CommandText = @"
+                // insert borrow transaction
+                string transactionID = "TXN-" + DateTime.Now.ToString("yyyyMMddHHmmss");
+                using (MySqlCommand cmd = new MySqlCommand(@"
             INSERT INTO borrow (transaction_id, copy_id, book_id, librarian_id, member_id, issue_date, due_date) 
-            VALUES (@txn, @copy, @book, @librarian, @member, @issue, @due)";
-                cmd.Parameters.AddWithValue("@txn", transactionID);
-                cmd.Parameters.AddWithValue("@copy", txtbox_CopyID.Text);
-                cmd.Parameters.AddWithValue("@book", txtbox_BookID.Text);
-                cmd.Parameters.AddWithValue("@librarian", txtbox_LibrarianID.Text);
-                cmd.Parameters.AddWithValue("@member", txtbox_MemberID.Text);
-                cmd.Parameters.AddWithValue("@issue", txtbox_issueDate.Text);
-                cmd.Parameters.AddWithValue("@due", txtbox_dueDate.Text);
-                cmd.ExecuteNonQuery();
+            VALUES (@txn, @copy, @book, @librarian, @member, @issue, @due)", conn, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@txn", transactionID);
+                    cmd.Parameters.AddWithValue("@copy", txtbox_CopyID.Text);
+                    cmd.Parameters.AddWithValue("@book", txtbox_BookID.Text);
+                    cmd.Parameters.AddWithValue("@librarian", txtbox_LibrarianID.Text);
+                    cmd.Parameters.AddWithValue("@member", txtbox_MemberID.Text);
+                    cmd.Parameters.AddWithValue("@issue", txtbox_issueDate.Text);
+                    cmd.Parameters.AddWithValue("@due", txtbox_dueDate.Text);
+                    cmd.ExecuteNonQuery();
+                }
 
-                transaction.Commit(); // Commit transaction
+                // increment borrow_counter in books
+                using (MySqlCommand cmd = new MySqlCommand("UPDATE books SET borrow_counter = borrow_counter + 1 WHERE book_id = @book_id", conn, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@book_id", txtbox_BookID.Text);
+                    cmd.ExecuteNonQuery();
+                }
+
+                // increment borrow_counter in members
+                using (MySqlCommand cmd = new MySqlCommand("UPDATE members SET borrow_counter = borrow_counter + 1 WHERE member_id = @member_id", conn, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@member_id", txtbox_MemberID.Text);
+                    cmd.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
                 MessageBox.Show("Book borrowed successfully!");
 
-                // *Step 10: Regenerate Transaction ID*
-                GenerateTransactionID();
-                txtbox_TransactionID.Text = transactionID;
-
-                // *Step 11: Refresh all DataGridViews*
+                // refresh all DataGridViews
                 RefreshBorrowTransactions();
                 RefreshBooks();
                 RefreshBookCopies();
@@ -571,7 +531,7 @@ namespace LIBRARY
             }
             finally
             {
-                conn.Close(); // Ensure the connection is closed
+                conn.Close();
             }
         }
 

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(profile));
             this.registrationPanel = new System.Windows.Forms.Panel();
-            this.btn_registerLibrarian = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_signUp = new System.Windows.Forms.Button();
             this.btn_login = new System.Windows.Forms.Button();
@@ -42,7 +41,6 @@
             // 
             // registrationPanel
             // 
-            this.registrationPanel.Controls.Add(this.btn_registerLibrarian);
             this.registrationPanel.Controls.Add(this.pictureBox3);
             this.registrationPanel.Controls.Add(this.btn_signUp);
             this.registrationPanel.Controls.Add(this.btn_login);
@@ -51,19 +49,6 @@
             this.registrationPanel.Name = "registrationPanel";
             this.registrationPanel.Size = new System.Drawing.Size(1050, 516);
             this.registrationPanel.TabIndex = 0;
-            // 
-            // btn_registerLibrarian
-            // 
-            this.btn_registerLibrarian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(66)))), ((int)(((byte)(41)))));
-            this.btn_registerLibrarian.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_registerLibrarian.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_registerLibrarian.Location = new System.Drawing.Point(119, 389);
-            this.btn_registerLibrarian.Name = "btn_registerLibrarian";
-            this.btn_registerLibrarian.Size = new System.Drawing.Size(356, 37);
-            this.btn_registerLibrarian.TabIndex = 5;
-            this.btn_registerLibrarian.Text = "REGISTER A LIBRARIAN";
-            this.btn_registerLibrarian.UseVisualStyleBackColor = false;
-            this.btn_registerLibrarian.Click += new System.EventHandler(this.btn_registerLibrarian_Click);
             // 
             // pictureBox3
             // 
@@ -136,6 +121,5 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_signUp;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button btn_registerLibrarian;
     }
 }
