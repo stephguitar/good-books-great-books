@@ -86,7 +86,6 @@ X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.csproj.Up2Date
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.exe
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.pdb
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.toastForm.resources
-X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer2.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer3.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer4.resources
 X:\SharedProject\LIBSYS\LIBRARY\LIBRARY\obj\Debug\LIBRARY.summer5.resources

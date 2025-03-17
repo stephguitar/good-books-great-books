@@ -157,26 +157,24 @@ namespace LIBRARY
             }
         }
 
+
+
         private void txtbox_TransactionID_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtbox_TransactionID.Text))
             {
-                using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
+                using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
                 {
                     conn.Open();
 
                     string query = @"
-            SELECT b.transaction_id, b.copy_id, b.book_id, b.librarian_id, 
-                   CONCAT(l.first_name, ' ', COALESCE(l.middle_name, ''), ' ', l.last_name) AS librarian_name,
-                   b.member_id, 
-                   CONCAT(m.first_name, ' ', COALESCE(m.middle_name, ''), ' ', m.last_name) AS member_name,
-                   b.issue_date, b.due_date, b.return_date, 
-                   IF(f.fine_amount IS NULL, 0, f.fine_amount) AS fine_amount, f.paid
-            FROM borrow b
-            JOIN members m ON b.member_id = m.member_id
-            JOIN librarian l ON b.librarian_id = l.librarian_id
-            LEFT JOIN fines f ON b.transaction_id = f.transaction_id
-            WHERE b.transaction_id = @transaction_id";
+        SELECT b.transaction_id, b.copy_id, b.book_id, m.member_id, 
+               CONCAT(m.first_name, ' ', COALESCE(m.middle_name, ''), ' ', m.last_name) AS full_name,
+               b.issue_date, b.due_date, b.return_date, r.status AS reservation_status
+        FROM borrow b
+        JOIN members m ON b.member_id = m.member_id
+        LEFT JOIN reservations r ON b.book_id = r.book_id AND r.member_id = m.member_id
+        WHERE b.transaction_id = @transaction_id";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
@@ -187,14 +185,15 @@ namespace LIBRARY
                             {
                                 txtbox_CopyID.Text = reader["copy_id"].ToString();
                                 txtbox_BookID.Text = reader["book_id"].ToString();
-                                txtbox_LibrarianID.Text = reader["librarian_id"].ToString();
-                                txtbox_LibrarianName.Text = reader["librarian_name"].ToString();
                                 txtbox_MemberID.Text = reader["member_id"].ToString();
-                                txtbox_Name.Text = reader["member_name"].ToString();
+                                txtbox_Name.Text = reader["full_name"].ToString();
                                 txtbox_issueDate.Text = reader["issue_date"].ToString();
                                 txtbox_dueDate.Text = reader["due_date"].ToString();
                                 txtbox_returnDate.Text = reader["return_date"] == DBNull.Value ? "Not Returned" : reader["return_date"].ToString();
-                                txtbox_fineAmount.Text = reader["fine_amount"].ToString();
+                                string reservationStatus = reader["reservation_status"] == DBNull.Value ? "" : reader["reservation_status"].ToString();
+
+                                // ✅ Call the function to update status
+                                UpdateStatusField(txtbox_dueDate.Text, txtbox_returnDate.Text, reservationStatus);
                             }
                             else
                             {
@@ -206,9 +205,10 @@ namespace LIBRARY
             }
         }
 
+
         private void LoadFinesData()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
             {
                 conn.Open();
                 string query = @"
@@ -223,7 +223,7 @@ namespace LIBRARY
                f.paid_date AS 'Paid Date'
         FROM fines f
         JOIN members m ON f.member_id = m.member_id
-        ORDER BY f.paid ASC, f.fine_id DESC";  // Show unpaid fines first
+        ORDER BY f.paid ASC, f.fine_id DESC";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -234,5 +234,71 @@ namespace LIBRARY
                 }
             }
         }
+
+        private void btn_PayFine_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtbox_TransactionID.Text))
+            {
+                MessageBox.Show("Please enter a valid Transaction ID.");
+                return;
+            }
+
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            {
+                conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction();
+
+                try
+                {
+                    // Step 1: Get Member ID for Notification
+                    string getMemberQuery = "SELECT member_id FROM fines WHERE transaction_id = @transaction_id";
+                    string memberID = "";
+
+                    using (MySqlCommand cmd = new MySqlCommand(getMemberQuery, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@transaction_id", txtbox_TransactionID.Text);
+                        object result = cmd.ExecuteScalar();
+                        if (result != null)
+                        {
+                            memberID = result.ToString();
+                        }
+                    }
+
+                    // Step 2: Update Fine as Paid
+                    string updateFineQuery = @"
+            UPDATE fines 
+            SET paid = TRUE, paid_date = NOW() 
+            WHERE transaction_id = @transaction_id AND paid = FALSE";
+
+                    using (MySqlCommand cmd = new MySqlCommand(updateFineQuery, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@transaction_id", txtbox_TransactionID.Text);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected == 0)
+                        {
+                            MessageBox.Show("No unpaid fine found for this transaction.");
+                            return;
+                        }
+                    }
+
+                    transaction.Commit();
+                    MessageBox.Show("Fine payment successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // 🔔 Notify User of Successful Payment
+                    NotificationHelper.ShowNotification("SUCCESS", "Your fine has been successfully paid. You may now borrow books again!");
+
+                    LoadFinesData(); // Refresh the fines list
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    MessageBox.Show("Error processing payment: " + ex.Message);
+                }
+            }
+        }
+
+
+
     }
 }

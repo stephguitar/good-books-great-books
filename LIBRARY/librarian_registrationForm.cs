@@ -65,7 +65,7 @@ namespace LIBRARY
         // GENERATE MEMBER ID ON TEXTBOX
         private void GenerateLibrarianID()
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
+            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -101,7 +101,7 @@ namespace LIBRARY
             string phoneNumber = txtbox_Number.Text;
             string position = librarianPosition_COMBO.SelectedItem.ToString();
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
+            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
 
             try
             {

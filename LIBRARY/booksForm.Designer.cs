@@ -42,9 +42,7 @@
             this.availabilityStatus_COMBO = new System.Windows.Forms.ComboBox();
             this.combo_GENRE = new System.Windows.Forms.ComboBox();
             this.dataGridViewBooks = new System.Windows.Forms.DataGridView();
-            this.btn_Borrow = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
-            this.btn_Reserve = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtboxEdition = new System.Windows.Forms.TextBox();
@@ -75,9 +73,7 @@
             this.booksPanel.Controls.Add(this.availabilityStatus_COMBO);
             this.booksPanel.Controls.Add(this.combo_GENRE);
             this.booksPanel.Controls.Add(this.dataGridViewBooks);
-            this.booksPanel.Controls.Add(this.btn_Borrow);
             this.booksPanel.Controls.Add(this.btn_Cancel);
-            this.booksPanel.Controls.Add(this.btn_Reserve);
             this.booksPanel.Controls.Add(this.btn_Search);
             this.booksPanel.Controls.Add(this.label5);
             this.booksPanel.Controls.Add(this.txtboxEdition);
@@ -97,7 +93,7 @@
             // 
             this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
             this.btn_Update.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Update.Location = new System.Drawing.Point(313, 470);
+            this.btn_Update.Location = new System.Drawing.Point(305, 430);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(132, 34);
             this.btn_Update.TabIndex = 38;
@@ -109,7 +105,7 @@
             // 
             this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
             this.btn_Save.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(163, 470);
+            this.btn_Save.Location = new System.Drawing.Point(160, 430);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(132, 34);
             this.btn_Save.TabIndex = 37;
@@ -215,17 +211,6 @@
             this.dataGridViewBooks.TabIndex = 27;
             this.dataGridViewBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBooks_CellContentClick);
             // 
-            // btn_Borrow
-            // 
-            this.btn_Borrow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
-            this.btn_Borrow.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Borrow.Location = new System.Drawing.Point(163, 430);
-            this.btn_Borrow.Name = "btn_Borrow";
-            this.btn_Borrow.Size = new System.Drawing.Size(132, 34);
-            this.btn_Borrow.TabIndex = 25;
-            this.btn_Borrow.Text = "BORROW";
-            this.btn_Borrow.UseVisualStyleBackColor = false;
-            // 
             // btn_Cancel
             // 
             this.btn_Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
@@ -236,17 +221,6 @@
             this.btn_Cancel.TabIndex = 23;
             this.btn_Cancel.Text = "CANCEL";
             this.btn_Cancel.UseVisualStyleBackColor = false;
-            // 
-            // btn_Reserve
-            // 
-            this.btn_Reserve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
-            this.btn_Reserve.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reserve.Location = new System.Drawing.Point(313, 430);
-            this.btn_Reserve.Name = "btn_Reserve";
-            this.btn_Reserve.Size = new System.Drawing.Size(132, 34);
-            this.btn_Reserve.TabIndex = 22;
-            this.btn_Reserve.Text = "RESERVE";
-            this.btn_Reserve.UseVisualStyleBackColor = false;
             // 
             // btn_Search
             // 
@@ -263,11 +237,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(75, 162);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(474, 55);
+            this.label5.Size = new System.Drawing.Size(774, 55);
             this.label5.TabIndex = 18;
             this.label5.Text = "BOOK CATALOG MANAGEMENT ";
             // 
@@ -378,8 +352,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Cancel;
-        private System.Windows.Forms.Button btn_Reserve;
-        private System.Windows.Forms.Button btn_Borrow;
         private System.Windows.Forms.DataGridView dataGridViewBooks;
         private System.Windows.Forms.ComboBox availabilityStatus_COMBO;
         private System.Windows.Forms.ComboBox combo_GENRE;

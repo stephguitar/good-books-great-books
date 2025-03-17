@@ -10,7 +10,7 @@ namespace LIBRARY
     public partial class reservationsForm : Form
     {
         public Point mouseLocation;
-        private MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;");
+        private MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;");
 
         public reservationsForm()
         {
@@ -153,7 +153,7 @@ namespace LIBRARY
                 return;
             }
 
-            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
             {
                 conn.Open();
 
@@ -316,29 +316,85 @@ namespace LIBRARY
 
         private void ApproveReservation(string reservationID)
         {
-            string query = "UPDATE reservations SET status = 'Approved' WHERE reservation_id = @reservation_id";
-
-            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
             {
-                cmd.Parameters.AddWithValue("@reservation_id", reservationID);
+                conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction();
 
                 try
                 {
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
+                    // Step 1: Get the book ID and member ID linked to the reservation
+                    string getReservationQuery = @"
+                SELECT book_id, member_id 
+                FROM reservations 
+                WHERE reservation_id = @reservationID AND status = 'Pending'";
+
+                    string bookID = "", memberID = "";
+                    using (MySqlCommand cmd = new MySqlCommand(getReservationQuery, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@reservationID", reservationID);
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                bookID = reader["book_id"].ToString();
+                                memberID = reader["member_id"].ToString();
+                            }
+                        }
+                    }
+
+                    if (string.IsNullOrEmpty(bookID))
+                    {
+                        MessageBox.Show("Reservation not found or already processed.");
+                        return;
+                    }
+
+                    // Step 2: Check if there is at least one available copy of the book
+                    string checkAvailabilityQuery = @"
+                SELECT COUNT(*) 
+                FROM book_copies 
+                WHERE book_id = @bookID AND status = 'available'";
+
+                    int availableCopies = 0;
+                    using (MySqlCommand cmd = new MySqlCommand(checkAvailabilityQuery, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@bookID", bookID);
+                        availableCopies = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+
+                    if (availableCopies == 0)
+                    {
+                        MessageBox.Show("No available copies of this book. Reservation cannot be approved.");
+                        return;
+                    }
+
+                    // Step 3: Approve the reservation
+                    string updateReservationQuery = @"
+                UPDATE reservations 
+                SET status = 'Approved', expires_at = DATE_ADD(NOW(), INTERVAL 3 DAY), notified = FALSE 
+                WHERE reservation_id = @reservationID";
+
+                    using (MySqlCommand cmd = new MySqlCommand(updateReservationQuery, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@reservationID", reservationID);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // 🔔 Notify the member about reservation approval
+                    NotificationHelper.ShowNotification("INFO", $"Your reservation has been approved! Pick up your book within 3 days.");
+
+                    transaction.Commit();
                     MessageBox.Show("Reservation approved successfully!");
+
+                    // Refresh Reservations DataGridView
+                    LoadReservations();
                 }
                 catch (Exception ex)
                 {
+                    transaction.Rollback();
                     MessageBox.Show("Error approving reservation: " + ex.Message);
                 }
-                finally
-                {
-                    conn.Close();
-                }
             }
-
-            LoadReservations(); // Refresh the DataGridView
         }
 
         private void CancelReservation(string reservationID)

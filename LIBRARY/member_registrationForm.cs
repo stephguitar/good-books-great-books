@@ -65,7 +65,7 @@ namespace LIBRARY
         // GENERATE MEMBER ID ON TEXTBOX
         private void GenerateMemberID()
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
+            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -118,7 +118,7 @@ namespace LIBRARY
 
         private void btn_Signup_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
+            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {

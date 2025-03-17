@@ -81,10 +81,9 @@ namespace LIBRARY
 
         private void btn_Submit_Click(object sender, EventArgs e)
         {
-            string memberId = txtbox_MemberID.Text;
-            string password = txtbox_memberPassword.Text;
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;";
-            string position = "Member"; // Assuming position is "Member" for this context
+            string memberId = txtbox_MemberID.Text.Trim();
+            string password = txtbox_memberPassword.Text.Trim();
+            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
 
             try
             {
@@ -92,7 +91,7 @@ namespace LIBRARY
                 {
                     connection.Open();
 
-                    // SQL query to check member ID and password
+                    // ✅ Check if the credentials match
                     string query = "SELECT first_name FROM members WHERE member_id = @memberID AND password = @password";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
@@ -104,36 +103,47 @@ namespace LIBRARY
 
                         if (result != null)
                         {
-                            // Login successful
+                            // ✅ Login successful
                             string firstName = result.ToString();
+
+                            // ✅ Update main form UI
                             mainFormInstance.ShowMemberButtons();
                             mainFormInstance.UpdateUserRegistrationButton(firstName);
+
+                            // ✅ Pass the logged-in member ID to mainForm
+                            mainFormInstance.SetLoggedInMember(memberId);
+
+                            // ✅ Show notifications form with member ID
+                            notificationsForm notifForm = new notificationsForm(memberId);
+                            notifForm.Show();
+
+                            // ✅ Hide the login form and show the main form
                             this.Hide();
                             mainFormInstance.Show();
 
-                            // 🔹 STEP 1: CHECK FOR PENDING NOTIFICATIONS
+                            // ✅ Check for pending notifications
                             CheckReservationsOnLogin(memberId);
                         }
                         else
                         {
-                            MessageBox.Show("Invalid Member ID or Password.");
+                            MessageBox.Show("Invalid Member ID or Password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                 }
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Database Error: " + ex.Message);
+                MessageBox.Show("Database Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred: " + ex.Message);
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void CheckReservationsOnLogin(string memberID)
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Port=3306;Database=LibraryDB;User=root;Password=;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
             {
                 conn.Open();
 
@@ -148,7 +158,7 @@ namespace LIBRARY
 
                     if (count > 0)
                     {
-                        ShowNotification("INFO", "Your reserved book is ready for pickup!");
+                        NotificationHelper.ShowNotification("INFO", "Your reserved book is ready for pickup!");
 
                         using (MySqlCommand updateCmd = new MySqlCommand("UPDATE reservations SET notified = TRUE WHERE member_id = @memberID AND status = 'Approved'", conn))
                         {
@@ -160,10 +170,6 @@ namespace LIBRARY
             }
         }
 
-        private void ShowNotification(string type, string message)
-        {
-            notificationsForm notif = new notificationsForm();
-            notif.showToast(type, message);
-        }
+
     }
 }

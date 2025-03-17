@@ -61,6 +61,7 @@
             this.dueDateLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.issueDateLabel = new System.Windows.Forms.Label();
+            this.btn_PayFine = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -135,11 +136,11 @@
             // finesLabel
             // 
             this.finesLabel.AutoSize = true;
-            this.finesLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finesLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.finesLabel.Location = new System.Drawing.Point(218, 117);
             this.finesLabel.Name = "finesLabel";
-            this.finesLabel.Size = new System.Drawing.Size(317, 55);
+            this.finesLabel.Size = new System.Drawing.Size(526, 55);
             this.finesLabel.TabIndex = 19;
             this.finesLabel.Text = "RETURNS AND FINES";
             // 
@@ -207,10 +208,10 @@
             // issuedLabel
             // 
             this.issuedLabel.AutoSize = true;
-            this.issuedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issuedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.issuedLabel.Location = new System.Drawing.Point(3, 3);
             this.issuedLabel.Name = "issuedLabel";
-            this.issuedLabel.Size = new System.Drawing.Size(216, 41);
+            this.issuedLabel.Size = new System.Drawing.Size(347, 39);
             this.issuedLabel.TabIndex = 2;
             this.issuedLabel.Text = "ALL ISSUED BOOKS";
             // 
@@ -268,6 +269,7 @@
             // finesPanel
             // 
             this.finesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
+            this.finesPanel.Controls.Add(this.btn_PayFine);
             this.finesPanel.Controls.Add(this.txtbox_returnDate);
             this.finesPanel.Controls.Add(this.txtbox_dueDate);
             this.finesPanel.Controls.Add(this.txtbox_issueDate);
@@ -422,6 +424,18 @@
             this.issueDateLabel.TabIndex = 48;
             this.issueDateLabel.Text = "ISSUE DATE:";
             // 
+            // btn_PayFine
+            // 
+            this.btn_PayFine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_PayFine.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_PayFine.Location = new System.Drawing.Point(491, 642);
+            this.btn_PayFine.Name = "btn_PayFine";
+            this.btn_PayFine.Size = new System.Drawing.Size(78, 33);
+            this.btn_PayFine.TabIndex = 65;
+            this.btn_PayFine.Text = "PAY FINE";
+            this.btn_PayFine.UseVisualStyleBackColor = false;
+            this.btn_PayFine.Click += new System.EventHandler(this.btn_PayFine_Click);
+            // 
             // finesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -480,5 +494,6 @@
         private System.Windows.Forms.TextBox txtbox_issueDate;
         private System.Windows.Forms.TextBox txtbox_returnDate;
         private System.Windows.Forms.TextBox txtbox_dueDate;
+        private System.Windows.Forms.Button btn_PayFine;
     }
 }

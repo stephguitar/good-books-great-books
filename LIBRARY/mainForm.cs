@@ -15,6 +15,7 @@ namespace LIBRARY
     public partial class mainForm: Form
     {
         public Point mouseLocation;
+        private string loggedInMemberID;
         public mainForm()
         {
             InitializeComponent();
@@ -24,7 +25,12 @@ namespace LIBRARY
 
         }
 
+        
 
+        public void SetLoggedInMember(string memberID)
+        {
+            loggedInMemberID = memberID;
+        }
         public void ShowLibrarianButtons()
         {
             btn_Notifications.Visible = true;
@@ -33,6 +39,7 @@ namespace LIBRARY
             btn_Reservations.Visible = true;
             btn_Fines.Visible = true;
             btn_Reports.Visible = true;
+            btn_LibRegister.Visible = true;
             btn_Logout.Visible = true;
            
         }
@@ -41,12 +48,13 @@ namespace LIBRARY
         {
             btn_UserRegistration.Visible = true;
             btn_Notifications.Visible = true;
-            btn_Books.Visible = true;
 
+            btn_Books.Visible = false;
             btn_Transactions.Visible = false;
             btn_Reservations.Visible = false;
             btn_Fines.Visible = false;
             btn_Reports.Visible = false;
+            btn_LibRegister.Visible = false;
             btn_Logout.Visible = true;
         }
 
@@ -59,6 +67,7 @@ namespace LIBRARY
             btn_Fines.Visible = false;
             btn_Reports.Visible = false;
             btn_Logout.Visible = false;
+            btn_LibRegister.Visible = false;
         }
 
         public void UpdateUserRegistrationButton(string firstName)
@@ -104,7 +113,9 @@ namespace LIBRARY
 
         private void btn_Notifications_Click(object sender, EventArgs e)
         {
-            loadform(new notificationsForm());
+
+           loadform(new notificationsForm(loggedInMemberID)); // ✅ Pass memberID
+   
         }
 
         private void btn_Books_Click(object sender, EventArgs e)

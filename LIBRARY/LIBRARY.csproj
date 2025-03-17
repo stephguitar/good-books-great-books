@@ -101,6 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class2.cs" />
     <Compile Include="librarian_registrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,7 +162,7 @@
     <Compile Include="btn_1Reportscs.Designer.cs">
       <DependentUpon>btn_1Reportscs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
+    <Compile Include="NotificationHelper.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="finesForm.cs">
       <SubType>Form</SubType>
@@ -193,11 +194,11 @@
     <Compile Include="member_loginForm.Designer.cs">
       <DependentUpon>member_loginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="notificationsform.cs">
+    <Compile Include="notificationsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="notificationsform.Designer.cs">
-      <DependentUpon>notificationsform.cs</DependentUpon>
+    <Compile Include="notificationsForm.Designer.cs">
+      <DependentUpon>notificationsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
@@ -231,12 +232,6 @@
     <Compile Include="toastForm.Designer.cs">
       <DependentUpon>toastForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="summer2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="summer2.Designer.cs">
-      <DependentUpon>summer2.cs</DependentUpon>
-    </Compile>
     <Compile Include="summer3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,6 +264,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="booksForm.resx">
       <DependentUpon>booksForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="btn1Form_Reports.resx">
       <DependentUpon>btn1Form_Reports.cs</DependentUpon>
@@ -306,8 +302,8 @@
     <EmbeddedResource Include="member_loginForm.resx">
       <DependentUpon>member_loginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="notificationsform.resx">
-      <DependentUpon>notificationsform.cs</DependentUpon>
+    <EmbeddedResource Include="notificationsForm.resx">
+      <DependentUpon>notificationsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
@@ -333,9 +329,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="toastForm.resx">
       <DependentUpon>toastForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="summer2.resx">
-      <DependentUpon>summer2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="summer3.resx">
       <DependentUpon>summer3.cs</DependentUpon>
