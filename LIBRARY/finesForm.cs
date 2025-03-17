@@ -79,8 +79,6 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
-            mainForm back = new mainForm();
-            back.Show();
         }
 
         private void finesTBLDATA_CellContentClick(object sender, DataGridViewCellEventArgs e)

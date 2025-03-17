@@ -17,6 +17,12 @@ namespace LIBRARY
             InitializeComponent();
         }
 
+        private void ShowNotification(string memberID, string message)
+        {
+            notificationsForm notif = new notificationsForm();
+            notif.showToast("INFO", message);
+        }
+
         public void showToast(string type, string message)
         {
             toastForm toast = new toastForm(type, message);
@@ -42,5 +48,7 @@ namespace LIBRARY
         {
             showToast("ERROR", "Summer is NOT my crush");
         }
+
+
     }
 }

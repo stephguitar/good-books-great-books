@@ -116,20 +116,17 @@ namespace LIBRARY
         {
             var newForm = new transactionsForm();
             newForm.Show();
-            this.Hide();
         }
 
         private void btn_Reservations_Click(object sender, EventArgs e)
         {
             var newForm = new reservationsForm();
             newForm.Show();
-            this.Hide();
         }
         private void btn_Fines_Click(object sender, EventArgs e)
         {
             var newForm = new finesForm();
             newForm.Show();
-            this.Hide();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)

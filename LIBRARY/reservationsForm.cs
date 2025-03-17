@@ -147,55 +147,82 @@ namespace LIBRARY
 
         private void btn_Reserve_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtbox_BookID.Text) || string.IsNullOrWhiteSpace(txtbox_CopyID.Text) ||
-                string.IsNullOrWhiteSpace(txtbox_MemberID.Text) || string.IsNullOrWhiteSpace(txtbox_LibrarianID.Text) ||
-                string.IsNullOrWhiteSpace(txtbox_reserveDate.Text))
+            if (string.IsNullOrWhiteSpace(txtbox_BookID.Text) || string.IsNullOrWhiteSpace(txtbox_MemberID.Text))
             {
-                MessageBox.Show("All fields must be filled out before proceeding.");
+                MessageBox.Show("Book ID and Member ID are required.");
                 return;
             }
 
-            try
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
             {
                 conn.Open();
 
-                // **Step 1: Use the existing reservation ID from the textbox**
-                string reservationID = txtbox_ReservationID.Text;
+                // *Check if the member has overdue books*
+                string overdueCheckQuery = @"
+                SELECT COUNT(*) FROM borrow 
+                WHERE member_id = @memberID AND due_date < NOW()";
 
-                // **Step 2: Insert reservation into the database**
+                using (MySqlCommand cmd = new MySqlCommand(overdueCheckQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@memberID", txtbox_MemberID.Text);
+                    int overdueCount = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (overdueCount > 0)
+                    {
+                        MessageBox.Show("You have overdue books. Please return them before making a reservation.");
+                        return;
+                    }
+                }
+
+                // *Check if the user already has 3 reservations*
+                string reservationCheckQuery = @"
+        SELECT COUNT(*) FROM reservations 
+        WHERE member_id = @memberID AND status = 'Pending'";
+
+                using (MySqlCommand cmd = new MySqlCommand(reservationCheckQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@memberID", txtbox_MemberID.Text);
+                    int reservationCount = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (reservationCount >= 3)
+                    {
+                        MessageBox.Show("You can only have 3 active reservations at a time.");
+                        return;
+                    }
+                }
+
+                // *Check if all copies of the book are taken*
+                string copyCheckQuery = @"
+        SELECT COUNT(*) FROM book_copies 
+        WHERE book_id = @bookID AND status = 'available'";
+
+                using (MySqlCommand cmd = new MySqlCommand(copyCheckQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@bookID", txtbox_BookID.Text);
+                    int availableCopies = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (availableCopies > 0)
+                    {
+                        MessageBox.Show("This book still has available copies. No reservation is needed.");
+                        return;
+                    }
+                }
+
+                // *Insert reservation*
                 string query = @"
-            INSERT INTO reservations (reservation_id, book_id, copy_id, member_id, librarian_id, reserve_date, status) 
-            VALUES (@reservation_id, @book_id, @copy_id, @member_id, @librarian_id, @reserve_date, @status)";
+        INSERT INTO reservations (reservation_id, book_id, member_id, status, reserve_date, notified) 
+        VALUES (@reservationID, @bookID, @memberID, 'Pending', NOW(), FALSE)";
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@reservation_id", reservationID);
-                    cmd.Parameters.AddWithValue("@book_id", txtbox_BookID.Text);
-                    cmd.Parameters.AddWithValue("@copy_id", txtbox_CopyID.Text);
-                    cmd.Parameters.AddWithValue("@member_id", txtbox_MemberID.Text);
-                    cmd.Parameters.AddWithValue("@librarian_id", txtbox_LibrarianID.Text);
-                    cmd.Parameters.AddWithValue("@reserve_date", txtbox_reserveDate.Text);
-                    cmd.Parameters.AddWithValue("@status", "Pending"); // Default status
-
+                    cmd.Parameters.AddWithValue("@reservationID", Guid.NewGuid().ToString());
+                    cmd.Parameters.AddWithValue("@bookID", txtbox_BookID.Text);
+                    cmd.Parameters.AddWithValue("@memberID", txtbox_MemberID.Text);
                     cmd.ExecuteNonQuery();
                 }
 
-                MessageBox.Show("Reservation created successfully!");
-
-                // **Step 3: Generate a new reservation ID for the next reservation**
-                txtbox_ReservationID.Text = GenerateReservationID();
+                MessageBox.Show("Reservation placed successfully.");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            // **Step 4: Refresh the DataGridView**
-            LoadReservations();
         }
 
 
@@ -349,8 +376,6 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
-            mainForm back = new mainForm();
-            back.Show();
         }
 
         private void mouse_Down(object sender, MouseEventArgs e)

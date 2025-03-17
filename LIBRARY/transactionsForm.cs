@@ -112,6 +112,86 @@ namespace LIBRARY
             }
         }
 
+        private void ShowNotification(string type, string message)
+        {
+            notificationsForm notif = new notificationsForm();
+            notif.showToast(type, message);
+        }
+
+        private void ReturnBook(string copyID)
+        {
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            {
+                conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction();
+
+                try
+                {
+                    // Step 1: Mark book as available
+                    using (MySqlCommand cmd = new MySqlCommand("UPDATE book_copies SET status = 'available' WHERE copy_id = @copyID", conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@copyID", copyID);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // Step 2: Find the next reservation
+                    string getNextReservationQuery = @"
+            SELECT reservation_id, member_id FROM reservations 
+            WHERE book_id = (SELECT book_id FROM book_copies WHERE copy_id = @copyID)
+            AND status = 'Pending'
+            ORDER BY reserve_date ASC
+            LIMIT 1;";
+
+                    using (MySqlCommand cmd = new MySqlCommand(getNextReservationQuery, conn, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@copyID", copyID);
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string reservationID = reader["reservation_id"].ToString();
+                                string memberID = reader["member_id"].ToString();
+                                reader.Close();
+
+                                // Step 3: Assign book to the next person
+                                string updateReservationQuery = @"
+                        UPDATE reservations SET status = 'Approved', notified = FALSE
+                        WHERE reservation_id = @reservationID";
+
+                                using (MySqlCommand updateCmd = new MySqlCommand(updateReservationQuery, conn, transaction))
+                                {
+                                    updateCmd.Parameters.AddWithValue("@reservationID", reservationID);
+                                    updateCmd.ExecuteNonQuery();
+                                }
+
+                                // Step 4: Notify the user
+                                ShowNotification("INFO", "Your reserved book is now available! Pick it up within 3 days.");
+                            }
+                        }
+                    }
+
+                    transaction.Commit();
+                    MessageBox.Show("Book returned successfully!");
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
+        private void btn_Return_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtbox_CopyID.Text))
+            {
+                MessageBox.Show("Please enter a valid Copy ID.");
+                return;
+            }
+
+            ReturnBook(txtbox_CopyID.Text);
+        }
+
         private void txtbox_MemberID_TextChanged(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtbox_MemberID.Text))
@@ -177,6 +257,9 @@ namespace LIBRARY
                 }
             }
         }
+
+
+
 
 
 
@@ -418,8 +501,6 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
-            mainForm back = new mainForm();
-            back.Show();
         }
 
         private void LoadBorrowTransactions()

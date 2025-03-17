@@ -97,9 +97,8 @@ namespace LIBRARY
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        // Use parameters to prevent SQL injection
-                        command.Parameters.AddWithValue("@memberId", memberId);
-                        command.Parameters.AddWithValue("@password", password); // **IMPORTANT: In real-world applications, you should hash the password before storing it and comparing it.**
+                        command.Parameters.AddWithValue("@memberID", memberId);
+                        command.Parameters.AddWithValue("@password", password);
 
                         object result = command.ExecuteScalar();
 
@@ -111,6 +110,9 @@ namespace LIBRARY
                             mainFormInstance.UpdateUserRegistrationButton(firstName);
                             this.Hide();
                             mainFormInstance.Show();
+
+                            // 🔹 STEP 1: CHECK FOR PENDING NOTIFICATIONS
+                            CheckReservationsOnLogin(memberId);
                         }
                         else
                         {
@@ -127,6 +129,41 @@ namespace LIBRARY
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
+        }
+
+        private void CheckReservationsOnLogin(string memberID)
+        {
+            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            {
+                conn.Open();
+
+                string query = @"
+        SELECT COUNT(*) FROM reservations 
+        WHERE member_id = @memberID AND status = 'Approved' AND notified = FALSE";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@memberID", memberID);
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (count > 0)
+                    {
+                        ShowNotification("INFO", "Your reserved book is ready for pickup!");
+
+                        using (MySqlCommand updateCmd = new MySqlCommand("UPDATE reservations SET notified = TRUE WHERE member_id = @memberID AND status = 'Approved'", conn))
+                        {
+                            updateCmd.Parameters.AddWithValue("@memberID", memberID);
+                            updateCmd.ExecuteNonQuery();
+                        }
+                    }
+                }
+            }
+        }
+
+        private void ShowNotification(string type, string message)
+        {
+            notificationsForm notif = new notificationsForm();
+            notif.showToast(type, message);
         }
     }
 }

@@ -3,12 +3,60 @@
   "WorkspaceRootPath": "X:\\SharedProject\\LIBSYS\\LIBRARY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\btn1form_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\btn1form_reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\member_loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\member_loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\transactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\transactionsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\booksform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\booksform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\finesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\finesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\notificationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\notificationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\toastform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\toastform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\summer5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\summer5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\summer4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\summer4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\summer3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\summer3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\summer2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\summer2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\librarian_loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,18 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|X:\\SharedProject\\LIBSYS\\LIBRARY\\library\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\reservationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|x:\\sharedproject\\libsys\\library\\library\\member_loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABBF2E8E-D4A3-4AB3-8DDC-EB8533A84A1A}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\member_loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,54 +74,191 @@
       "DocumentGroups": [
         {
           "DockedWidth": 330,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "btn1Form_Reports.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\btn1Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn1Form_Reports.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\btn1Form_Reports.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\btn1Form_Reports.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T12:15:41.44Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "booksForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\booksForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\booksForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\booksForm.cs",
+              "RelativeToolTip": "LIBRARY\\booksForm.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAswLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:55:52.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "member_loginForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\member_loginForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
+              "RelativeToolTip": "LIBRARY\\member_loginForm.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAUwKAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T16:31:28.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "finesForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\finesForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\finesForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\finesForm.cs",
+              "RelativeToolTip": "LIBRARY\\finesForm.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:36:38.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "notificationsform.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsform.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\notificationsform.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\notificationsform.cs",
+              "RelativeToolTip": "LIBRARY\\notificationsform.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:22:43.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "transactionsForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\transactionsForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\transactionsForm.cs",
+              "RelativeToolTip": "LIBRARY\\transactionsForm.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAArwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:16:01.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "reservationsForm.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\reservationsForm.cs",
               "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs",
               "RelativeToolTip": "LIBRARY\\reservationsForm.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAvwKEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:45:05.118Z",
+              "WhenOpened": "2025-03-17T11:09:43.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "mainForm.cs",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\mainForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs",
+              "RelativeToolTip": "LIBRARY\\mainForm.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAswLIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:30:14.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "reservationsForm.cs [Design]",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\reservationsForm.cs",
               "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\reservationsForm.cs [Design]",
               "RelativeToolTip": "LIBRARY\\reservationsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:45:01.994Z",
+              "WhenOpened": "2025-03-17T11:09:27.634Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "mainForm.cs",
-              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\mainForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\mainForm.cs*",
-              "RelativeToolTip": "LIBRARY\\mainForm.cs*",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAswKUAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "toastForm.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\toastForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\toastForm.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\toastForm.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\toastForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T15:21:23.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T11:09:17.477Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "summer5.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer5.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\summer5.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer5.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\summer5.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:15.868Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "summer4.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer4.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\summer4.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer4.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\summer4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:15.368Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "summer3.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer3.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\summer3.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer3.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\summer3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:14.743Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "summer2.cs [Design]",
+              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer2.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\summer2.cs",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\summer2.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\summer2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T11:09:13.774Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "profile.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\profile.cs",
               "RelativeDocumentMoniker": "LIBRARY\\profile.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\profile.cs*",
-              "RelativeToolTip": "LIBRARY\\profile.cs*",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\profile.cs",
+              "RelativeToolTip": "LIBRARY\\profile.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAAACsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T16:19:17.229Z",
@@ -93,41 +266,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "librarian_loginForm.cs",
               "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\librarian_loginForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\librarian_loginForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\librarian_loginForm.cs*",
-              "RelativeToolTip": "LIBRARY\\librarian_loginForm.cs*",
-              "ViewState": "AgIAAFQAAAAAAAAAAAA2wHEAAABVAAAAAAAAAA==",
+              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\librarian_loginForm.cs",
+              "RelativeToolTip": "LIBRARY\\librarian_loginForm.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwv3EAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T15:20:46.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "loginForm.cs",
-              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\loginForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\loginForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\loginForm.cs*",
-              "RelativeToolTip": "LIBRARY\\loginForm.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T15:26:25.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "member_loginForm.cs",
-              "DocumentMoniker": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\member_loginForm.cs",
-              "ToolTip": "X:\\SharedProject\\LIBSYS\\LIBRARY\\LIBRARY\\member_loginForm.cs",
-              "RelativeToolTip": "LIBRARY\\member_loginForm.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAiwIQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T16:31:28.307Z",
               "EditorCaption": ""
             }
           ]
