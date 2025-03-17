@@ -18,6 +18,9 @@ namespace LIBRARY
         {
             InitializeComponent();
             this.mainFormInstance = mainFormInstance;
+
+            btn_registerLibrarian.Visible = false;
+
         }
 
         public void loadform(object Form)
@@ -37,7 +40,8 @@ namespace LIBRARY
         {
             btn_login.Visible = false;
             btn_signUp.Visible = false;
-            btn_registerLibrarian.Visible = position == "Librarian Manager";
+            //if ()
+            //btn_registerLibrarian.Visible = position == "Librarian Manager";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

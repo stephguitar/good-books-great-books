@@ -161,5 +161,21 @@ namespace LIBRARY
         {
 
         }
+
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
+            HideSidebarButtons();
+
+            // Update the user registration button back to default
+            btn_UserRegistration.Text = "Profile";
+
+            // Load the home/landing form
+            loadform(new homeForm());
+
+            // Optional: Display a logout message
+            MessageBox.Show("You have been logged out successfully.", "Logout",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
     }
 }

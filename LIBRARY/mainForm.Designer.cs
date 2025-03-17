@@ -48,12 +48,12 @@
             this.btn_UserRegistration = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.mnPanel = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -108,6 +108,7 @@
             this.btn_Logout.TabIndex = 9;
             this.btn_Logout.Text = "LOG-OUT";
             this.btn_Logout.UseVisualStyleBackColor = false;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // panel11
             // 
@@ -302,6 +303,13 @@
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouse_Down);
             this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouse_Move);
             // 
+            // panel13
+            // 
+            this.panel13.Location = new System.Drawing.Point(1, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(53, 43);
+            this.panel13.TabIndex = 5;
+            // 
             // mainPanel
             // 
             this.mainPanel.Location = new System.Drawing.Point(0, 29);
@@ -346,14 +354,7 @@
             this.mnPanel.TabIndex = 2;
             this.mnPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mnPanel_Paint);
             // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(1, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(53, 43);
-            this.panel13.TabIndex = 5;
-            // 
-            // Form1
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -363,7 +364,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "mainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
