@@ -91,7 +91,7 @@ namespace LIBRARY
                 {
                     connection.Open();
 
-                    // ✅ Check if the credentials match
+                    // check if the credentials match
                     string query = "SELECT first_name FROM members WHERE member_id = @memberID AND password = @password";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
@@ -103,24 +103,25 @@ namespace LIBRARY
 
                         if (result != null)
                         {
-                            // ✅ Login successful
+                            // login successful ;p
                             string firstName = result.ToString();
 
-                            // ✅ Update main form UI
+                            // update main form UI
                             mainFormInstance.ShowMemberButtons();
                             mainFormInstance.UpdateUserRegistrationButton(firstName);
 
-                            // ✅ Pass the logged-in member ID to mainForm
+                            // pass the logged-in member ID to mainForm
                             mainFormInstance.SetLoggedInMember(memberId);
 
-                            // ✅ Show notifications form with member ID
+                            // show notifications form with member ID
                             notificationsForm notifForm = new notificationsForm(memberId);
 
-                            // ✅ Hide the login form and show the main form
+                            // hide the login form and show the main form
                             this.Hide();
+                            mainFormInstance.loadform(new homeForm());
                             mainFormInstance.Show();
 
-                            // ✅ Check for pending notifications
+                            // check for pending notifications
                             CheckReservationsOnLogin(memberId);
                         }
                         else

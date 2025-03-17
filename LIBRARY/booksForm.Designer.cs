@@ -162,7 +162,7 @@
             this.isbnLABEL.AutoSize = true;
             this.isbnLABEL.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.isbnLABEL.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.isbnLABEL.Location = new System.Drawing.Point(12, 366);
+            this.isbnLABEL.Location = new System.Drawing.Point(12, 315);
             this.isbnLABEL.Name = "isbnLABEL";
             this.isbnLABEL.Size = new System.Drawing.Size(47, 16);
             this.isbnLABEL.TabIndex = 32;
@@ -171,7 +171,7 @@
             // txtboxISBN
             // 
             this.txtboxISBN.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxISBN.Location = new System.Drawing.Point(99, 365);
+            this.txtboxISBN.Location = new System.Drawing.Point(99, 314);
             this.txtboxISBN.Name = "txtboxISBN";
             this.txtboxISBN.Size = new System.Drawing.Size(193, 21);
             this.txtboxISBN.TabIndex = 31;
@@ -248,7 +248,7 @@
             // txtboxEdition
             // 
             this.txtboxEdition.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxEdition.Location = new System.Drawing.Point(99, 313);
+            this.txtboxEdition.Location = new System.Drawing.Point(99, 365);
             this.txtboxEdition.Name = "txtboxEdition";
             this.txtboxEdition.Size = new System.Drawing.Size(193, 21);
             this.txtboxEdition.TabIndex = 17;
@@ -258,7 +258,7 @@
             this.editionLabel.AutoSize = true;
             this.editionLabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editionLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.editionLabel.Location = new System.Drawing.Point(12, 314);
+            this.editionLabel.Location = new System.Drawing.Point(12, 366);
             this.editionLabel.Name = "editionLabel";
             this.editionLabel.Size = new System.Drawing.Size(62, 16);
             this.editionLabel.TabIndex = 16;

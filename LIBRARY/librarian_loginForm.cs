@@ -113,6 +113,8 @@ namespace LIBRARY
                             mainFormInstance.ShowLibrarianButtons();
                             mainFormInstance.UpdateUserRegistrationButton(firstName);
                             this.Hide();
+                            mainFormInstance.loadform(new homeForm());
+                            mainFormInstance.Show();
                         }
                         else
                         {

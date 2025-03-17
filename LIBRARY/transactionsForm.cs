@@ -122,7 +122,7 @@ namespace LIBRARY
 
                 try
                 {
-                    // Step 1: Get transaction details
+                    // get transaction details
                     string getTransactionQuery = @"
                 SELECT transaction_id, member_id, book_id, due_date 
                 FROM borrow 
@@ -159,14 +159,14 @@ namespace LIBRARY
                         cmd.ExecuteNonQuery();
                     }
 
-                    // Step 3: Record return date
+                    // record return date
                     using (MySqlCommand cmd = new MySqlCommand("UPDATE borrow SET return_date = NOW() WHERE transaction_id = @transactionID", conn, transaction))
                     {
                         cmd.Parameters.AddWithValue("@transactionID", transactionID);
                         cmd.ExecuteNonQuery();
                     }
 
-                    // Step 4: Calculate Fine (if overdue)
+                    // calculate Fine (if overdue)
                     DateTime returnDate = DateTime.Now;
                     if (returnDate > dueDate)
                     {
@@ -186,11 +186,11 @@ namespace LIBRARY
                             cmd.ExecuteNonQuery();
                         }
 
-                        // 🔔 Notify member about the fine
+                        // notify member about the fine
                         NotificationHelper.ShowNotification("WARNING", $"You have been fined ₱{fineAmount} for an overdue book.");
                     }
 
-                    // Step 5: Check for next reservation in queue
+                    // check for next reservation in queue
                     string getNextReservationQuery = @"
                 SELECT reservation_id, member_id 
                 FROM reservations 
@@ -221,7 +221,7 @@ namespace LIBRARY
                                     updateCmd.ExecuteNonQuery();
                                 }
 
-                                // 🔔 Notify the next member about the book availability
+                                // notify the next member about the book availability
                                 NotificationHelper.ShowNotification("INFO", $"Your reserved book is now available! Please pick it up within 3 days.");
                             }
                         }
@@ -230,7 +230,7 @@ namespace LIBRARY
                     transaction.Commit();
                     MessageBox.Show("Book returned successfully!");
 
-                    // Refresh Data
+                    // refresh Data
                     RefreshBorrowTransactions();
                     RefreshBookCopies();
                     RefreshBooks();
@@ -322,10 +322,6 @@ namespace LIBRARY
         }
 
 
-
-
-
-
         private void RefreshBooks()
         {
             string query = "SELECT book_id, title, author, edition, status FROM books";
@@ -352,7 +348,7 @@ namespace LIBRARY
                 }
             }
 
-            booksTBLDATA.DataSource = dt; // Update the DataGridView
+            booksTBLDATA.DataSource = dt; // update the DataGridView
         }
 
         private void RefreshBookCopies()
@@ -381,7 +377,7 @@ namespace LIBRARY
                 }
             }
 
-            book_copiesTBLDATA.DataSource = dt; // Update the DataGridView
+            book_copiesTBLDATA.DataSource = dt; // update the DataGridView
         }
 
         private void RefreshBorrowTransactions()
@@ -389,7 +385,7 @@ namespace LIBRARY
             string query = "SELECT * FROM borrow";
             DataTable dt = new DataTable();
 
-            // Use the same connection string as the main connection
+            // use the same connection string as the main connection
             string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
 
             using (MySqlConnection tempConn = new MySqlConnection(connectionString))
@@ -413,7 +409,7 @@ namespace LIBRARY
                 }
             }
 
-            borrowTBLDATA.DataSource = dt; // Update the DataGridView
+            borrowTBLDATA.DataSource = dt; // update the DataGridView
         }
 
         private void btn_Borrow_Click(object sender, EventArgs e)
@@ -431,7 +427,7 @@ namespace LIBRARY
                 conn.Open();
                 MySqlTransaction transaction = conn.BeginTransaction();
 
-                // to make sure that the member has no unpaid fines
+                // check if the member has unpaid fines
                 string checkFineQuery = "SELECT COUNT(*) FROM fines WHERE member_id = @member_id AND paid = FALSE";
                 using (MySqlCommand checkFineCmd = new MySqlCommand(checkFineQuery, conn, transaction))
                 {
@@ -445,7 +441,22 @@ namespace LIBRARY
                     }
                 }
 
-                // to validate book_id
+                // check if the member already has 3 active borrow transactions
+                string borrowLimitQuery = "SELECT COUNT(*) FROM borrow WHERE member_id = @member_id AND return_date IS NULL";
+                using (MySqlCommand checkBorrowCmd = new MySqlCommand(borrowLimitQuery, conn, transaction))
+                {
+                    checkBorrowCmd.Parameters.AddWithValue("@member_id", txtbox_MemberID.Text);
+                    int activeBorrows = Convert.ToInt32(checkBorrowCmd.ExecuteScalar());
+
+                    if (activeBorrows >= 3)
+                    {
+                        MessageBox.Show("You can only borrow up to 3 books at a time.");
+                        transaction.Rollback();
+                        return;
+                    }
+                }
+
+                // validate book_id
                 string validateBookQuery = "SELECT COUNT(*) FROM books WHERE book_id = @book_id";
                 using (MySqlCommand validateBookCmd = new MySqlCommand(validateBookQuery, conn, transaction))
                 {
@@ -459,13 +470,13 @@ namespace LIBRARY
                     }
                 }
 
-                // to validate copy_id and ensure it belongs to book_id
+                // validate copy_id and ensure it belongs to book_id
                 string validateCopyQuery = @"
-            SELECT COUNT(*) 
-            FROM book_copies 
-            WHERE copy_id = @copy_id 
-              AND book_id = @book_id 
-              AND status = 'available'";
+        SELECT COUNT(*) 
+        FROM book_copies 
+        WHERE copy_id = @copy_id 
+          AND book_id = @book_id 
+          AND status = 'available'";
                 using (MySqlCommand validateCopyCmd = new MySqlCommand(validateCopyQuery, conn, transaction))
                 {
                     validateCopyCmd.Parameters.AddWithValue("@copy_id", txtbox_CopyID.Text);
@@ -480,7 +491,7 @@ namespace LIBRARY
                     }
                 }
 
-                // update book copy status
+                // update book copy status to "not available"
                 using (MySqlCommand cmd = new MySqlCommand("UPDATE book_copies SET status = 'not available' WHERE copy_id = @copy_id", conn, transaction))
                 {
                     cmd.Parameters.AddWithValue("@copy_id", txtbox_CopyID.Text);
@@ -490,8 +501,8 @@ namespace LIBRARY
                 // insert borrow transaction
                 string transactionID = "TXN-" + DateTime.Now.ToString("yyyyMMddHHmmss");
                 using (MySqlCommand cmd = new MySqlCommand(@"
-            INSERT INTO borrow (transaction_id, copy_id, book_id, librarian_id, member_id, issue_date, due_date) 
-            VALUES (@txn, @copy, @book, @librarian, @member, @issue, @due)", conn, transaction))
+        INSERT INTO borrow (transaction_id, copy_id, book_id, librarian_id, member_id, issue_date, due_date) 
+        VALUES (@txn, @copy, @book, @librarian, @member, @issue, @due)", conn, transaction))
                 {
                     cmd.Parameters.AddWithValue("@txn", transactionID);
                     cmd.Parameters.AddWithValue("@copy", txtbox_CopyID.Text);
