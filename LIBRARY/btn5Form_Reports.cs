@@ -13,12 +13,12 @@ namespace LIBRARY
         public btn5Form_Reports()
         {
             InitializeComponent();
-            LoadBorrowersWithFines(); // ✅ Load Data on Form Load
+            LoadBorrowersWithFines(); // load Data on Form Load
         }
 
         private void LoadBorrowersWithFines()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -36,7 +36,7 @@ namespace LIBRARY
                     DataTable dt = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(dt);
-                    borrowersWithFinesDataGrid.DataSource = dt; // ✅ Bind to DataGridView
+                    borrowersWithFinesDataGrid.DataSource = dt; // bind to DataGridView
                 }
             }
         }

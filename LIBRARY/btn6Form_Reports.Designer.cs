@@ -115,10 +115,10 @@
             // btn6Label
             // 
             this.btn6Label.AutoSize = true;
-            this.btn6Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6Label.Location = new System.Drawing.Point(152, 21);
             this.btn6Label.Name = "btn6Label";
-            this.btn6Label.Size = new System.Drawing.Size(842, 42);
+            this.btn6Label.Size = new System.Drawing.Size(498, 43);
             this.btn6Label.TabIndex = 6;
             this.btn6Label.Text = "LIST OF BORROWED AND RETURNED BOOKS";
             // 
@@ -143,10 +143,10 @@
             // borrowedLabel
             // 
             this.borrowedLabel.AutoSize = true;
-            this.borrowedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrowedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrowedLabel.Location = new System.Drawing.Point(66, 14);
             this.borrowedLabel.Name = "borrowedLabel";
-            this.borrowedLabel.Size = new System.Drawing.Size(385, 42);
+            this.borrowedLabel.Size = new System.Drawing.Size(230, 43);
             this.borrowedLabel.TabIndex = 2;
             this.borrowedLabel.Text = "BORROWED BOOKS";
             // 
@@ -171,10 +171,10 @@
             // returnedLabel
             // 
             this.returnedLabel.AutoSize = true;
-            this.returnedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnedLabel.Location = new System.Drawing.Point(81, 11);
             this.returnedLabel.Name = "returnedLabel";
-            this.returnedLabel.Size = new System.Drawing.Size(369, 42);
+            this.returnedLabel.Size = new System.Drawing.Size(220, 43);
             this.returnedLabel.TabIndex = 3;
             this.returnedLabel.Text = "RETURNED BOOKS";
             // 

@@ -20,7 +20,7 @@ namespace LIBRARY
         // ✅ Load Borrowed Books (Still Not Returned)
         private void LoadBorrowedBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -33,14 +33,14 @@ namespace LIBRARY
                     FROM borrow b
                     JOIN members m ON b.member_id = m.member_id
                     WHERE b.return_date IS NULL
-                    ORDER BY b.issue_date DESC"; // ✅ Most recent first
+                    ORDER BY b.issue_date DESC"; // most recent first
 
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     DataTable dt = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(dt);
-                    borrowedBooksDataGrid.DataSource = dt; // ✅ Bind to DataGridView
+                    borrowedBooksDataGrid.DataSource = dt; // bind to DataGridView
                 }
             }
         }
@@ -48,7 +48,7 @@ namespace LIBRARY
         // ✅ Load Returned Books
         private void LoadReturnedBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"

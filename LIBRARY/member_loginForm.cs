@@ -83,7 +83,7 @@ namespace LIBRARY
         {
             string memberId = txtbox_MemberID.Text.Trim();
             string password = txtbox_memberPassword.Text.Trim();
-            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
+            string connectionString = "Server=127.0.0.1;Database=LibraryDB;User=root;Password=;";
 
             try
             {
@@ -143,7 +143,7 @@ namespace LIBRARY
 
         private void CheckReservationsOnLogin(string memberID)
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
 

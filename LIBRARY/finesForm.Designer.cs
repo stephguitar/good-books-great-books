@@ -49,6 +49,7 @@
             this.txtbox_BookID = new System.Windows.Forms.TextBox();
             this.txtbox_Status = new System.Windows.Forms.TextBox();
             this.finesPanel = new System.Windows.Forms.Panel();
+            this.btn_PayFine = new System.Windows.Forms.Button();
             this.txtbox_returnDate = new System.Windows.Forms.TextBox();
             this.txtbox_dueDate = new System.Windows.Forms.TextBox();
             this.txtbox_issueDate = new System.Windows.Forms.TextBox();
@@ -56,12 +57,11 @@
             this.btn_Return = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.fineAmountLabel = new System.Windows.Forms.Label();
-            this.txtbox_fineAmount = new System.Windows.Forms.TextBox();
+            this.txtbox_FineTotal = new System.Windows.Forms.TextBox();
             this.returnDateLabel = new System.Windows.Forms.Label();
             this.dueDateLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.issueDateLabel = new System.Windows.Forms.Label();
-            this.btn_PayFine = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -136,11 +136,11 @@
             // finesLabel
             // 
             this.finesLabel.AutoSize = true;
-            this.finesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finesLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finesLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.finesLabel.Location = new System.Drawing.Point(218, 117);
+            this.finesLabel.Location = new System.Drawing.Point(227, 119);
             this.finesLabel.Name = "finesLabel";
-            this.finesLabel.Size = new System.Drawing.Size(526, 55);
+            this.finesLabel.Size = new System.Drawing.Size(317, 55);
             this.finesLabel.TabIndex = 19;
             this.finesLabel.Text = "RETURNS AND FINES";
             // 
@@ -153,7 +153,7 @@
             this.txtbox_MemberID.Size = new System.Drawing.Size(188, 23);
             this.txtbox_MemberID.TabIndex = 20;
             this.txtbox_MemberID.Text = "Member ID";
-            this.txtbox_MemberID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtbox_MemberID.TextChanged += new System.EventHandler(this.txtbox_MemberID_TextChanged);
             // 
             // txtbox_Name
             // 
@@ -208,10 +208,10 @@
             // issuedLabel
             // 
             this.issuedLabel.AutoSize = true;
-            this.issuedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issuedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.issuedLabel.Location = new System.Drawing.Point(3, 3);
             this.issuedLabel.Name = "issuedLabel";
-            this.issuedLabel.Size = new System.Drawing.Size(347, 39);
+            this.issuedLabel.Size = new System.Drawing.Size(216, 41);
             this.issuedLabel.TabIndex = 2;
             this.issuedLabel.Text = "ALL ISSUED BOOKS";
             // 
@@ -277,7 +277,7 @@
             this.finesPanel.Controls.Add(this.btn_Return);
             this.finesPanel.Controls.Add(this.label6);
             this.finesPanel.Controls.Add(this.fineAmountLabel);
-            this.finesPanel.Controls.Add(this.txtbox_fineAmount);
+            this.finesPanel.Controls.Add(this.txtbox_FineTotal);
             this.finesPanel.Controls.Add(this.returnDateLabel);
             this.finesPanel.Controls.Add(this.dueDateLabel);
             this.finesPanel.Controls.Add(this.label7);
@@ -299,6 +299,18 @@
             this.finesPanel.Size = new System.Drawing.Size(949, 706);
             this.finesPanel.TabIndex = 2;
             this.finesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.finesPanel_Paint);
+            // 
+            // btn_PayFine
+            // 
+            this.btn_PayFine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_PayFine.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_PayFine.Location = new System.Drawing.Point(491, 642);
+            this.btn_PayFine.Name = "btn_PayFine";
+            this.btn_PayFine.Size = new System.Drawing.Size(78, 33);
+            this.btn_PayFine.TabIndex = 65;
+            this.btn_PayFine.Text = "PAY FINE";
+            this.btn_PayFine.UseVisualStyleBackColor = false;
+            this.btn_PayFine.Click += new System.EventHandler(this.btn_PayFine_Click);
             // 
             // txtbox_returnDate
             // 
@@ -351,6 +363,7 @@
             this.btn_Return.TabIndex = 60;
             this.btn_Return.Text = "RETURN";
             this.btn_Return.UseVisualStyleBackColor = false;
+            this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
             // 
             // label6
             // 
@@ -374,12 +387,12 @@
             this.fineAmountLabel.TabIndex = 58;
             this.fineAmountLabel.Text = "FINE AMOUNT:";
             // 
-            // txtbox_fineAmount
+            // txtbox_FineTotal
             // 
-            this.txtbox_fineAmount.Location = new System.Drawing.Point(129, 655);
-            this.txtbox_fineAmount.Name = "txtbox_fineAmount";
-            this.txtbox_fineAmount.Size = new System.Drawing.Size(211, 20);
-            this.txtbox_fineAmount.TabIndex = 57;
+            this.txtbox_FineTotal.Location = new System.Drawing.Point(129, 655);
+            this.txtbox_FineTotal.Name = "txtbox_FineTotal";
+            this.txtbox_FineTotal.Size = new System.Drawing.Size(211, 20);
+            this.txtbox_FineTotal.TabIndex = 57;
             // 
             // returnDateLabel
             // 
@@ -423,18 +436,6 @@
             this.issueDateLabel.Size = new System.Drawing.Size(96, 16);
             this.issueDateLabel.TabIndex = 48;
             this.issueDateLabel.Text = "ISSUE DATE:";
-            // 
-            // btn_PayFine
-            // 
-            this.btn_PayFine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
-            this.btn_PayFine.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btn_PayFine.Location = new System.Drawing.Point(491, 642);
-            this.btn_PayFine.Name = "btn_PayFine";
-            this.btn_PayFine.Size = new System.Drawing.Size(78, 33);
-            this.btn_PayFine.TabIndex = 65;
-            this.btn_PayFine.Text = "PAY FINE";
-            this.btn_PayFine.UseVisualStyleBackColor = false;
-            this.btn_PayFine.Click += new System.EventHandler(this.btn_PayFine_Click);
             // 
             // finesForm
             // 
@@ -486,7 +487,7 @@
         private System.Windows.Forms.Label dueDateLabel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label fineAmountLabel;
-        private System.Windows.Forms.TextBox txtbox_fineAmount;
+        private System.Windows.Forms.TextBox txtbox_FineTotal;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.Button btn_Return;
         private System.Windows.Forms.Panel panel4;

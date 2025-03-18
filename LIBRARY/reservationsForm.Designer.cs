@@ -418,10 +418,10 @@
             // reservationLabel
             // 
             this.reservationLabel.AutoSize = true;
-            this.reservationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reservationLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reservationLabel.Location = new System.Drawing.Point(124, 11);
             this.reservationLabel.Name = "reservationLabel";
-            this.reservationLabel.Size = new System.Drawing.Size(436, 55);
+            this.reservationLabel.Size = new System.Drawing.Size(269, 55);
             this.reservationLabel.TabIndex = 1;
             this.reservationLabel.Text = "BOOKS CATALOG";
             // 

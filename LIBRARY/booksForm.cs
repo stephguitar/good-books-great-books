@@ -86,7 +86,7 @@ namespace LIBRARY
 
         private void LoadBooks()
         {
-            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
+            string connectionString = "Server=127.0.0.1;Database=LibraryDB;User=root;Password=;";
             string query = "SELECT book_id AS 'Book ID', title AS 'Title', author AS 'Author', isbn AS 'ISBN', publisher AS 'Publisher', edition AS 'Edition', status AS 'Status', genre AS 'Genre' FROM books";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -180,7 +180,7 @@ namespace LIBRARY
                 return;
             }
 
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 try
                 {
@@ -221,7 +221,7 @@ namespace LIBRARY
                 return;
             }
 
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 try
                 {

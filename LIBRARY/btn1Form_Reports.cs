@@ -20,7 +20,7 @@ namespace LIBRARY
         // ✅ Load Available Books
         private void LoadAvailableBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -48,7 +48,7 @@ namespace LIBRARY
         // ✅ Load Unavailable Books
         private void LoadUnavailableBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"

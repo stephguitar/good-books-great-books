@@ -108,11 +108,11 @@
             // btn3Label
             // 
             this.btn3Label.AutoSize = true;
-            this.btn3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn3Label.Location = new System.Drawing.Point(262, 229);
             this.btn3Label.Name = "btn3Label";
-            this.btn3Label.Size = new System.Drawing.Size(524, 42);
+            this.btn3Label.Size = new System.Drawing.Size(315, 43);
             this.btn3Label.TabIndex = 28;
             this.btn3Label.Text = "TOP 10 BORROWED BOOKS";
             // 

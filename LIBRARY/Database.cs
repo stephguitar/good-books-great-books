@@ -4,7 +4,7 @@ using System.Data;
 
 public class Database
 {
-    private static string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
+    private static string connectionString = "Server=127.0.0.1;Database=LibraryDB;User=root;Password=;";
 
     public static MySqlConnection GetConnection()
     {

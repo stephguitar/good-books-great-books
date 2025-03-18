@@ -152,7 +152,6 @@ C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\
 C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.reservationsForm.resources
 C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.member_registrationForm.resources
 C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.toastForm.resources
-C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.summer2.resources
 C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.summer3.resources
 C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.summer4.resources
 C:\Users\Summer MDR\OneDrive\Documents\good-books-great-books\LIBRARY\obj\Debug\LIBRARY.summer5.resources

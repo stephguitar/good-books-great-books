@@ -201,5 +201,10 @@ namespace LIBRARY
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
+
+        private void btn_LibRegister_Click(object sender, EventArgs e)
+        {
+            loadform(new librarian_registrationForm());
+        }
     }
 }

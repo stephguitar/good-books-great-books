@@ -13,12 +13,12 @@ namespace LIBRARY
         public btn4Form_Reports()
         {
             InitializeComponent();
-            LoadTopBorrowers(); // ✅ Load Data on Form Load
+            LoadTopBorrowers(); // load Data on Form Load
         }
 
         private void LoadTopBorrowers()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -34,7 +34,7 @@ namespace LIBRARY
                     DataTable dt = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                     adapter.Fill(dt);
-                    topBorrowersDataGrid.DataSource = dt; // ✅ Bind to DataGridView
+                    topBorrowersDataGrid.DataSource = dt; // bind to DataGridView
                 }
             }
         }

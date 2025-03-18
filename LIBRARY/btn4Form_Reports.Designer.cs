@@ -109,11 +109,11 @@
             // btn5Label
             // 
             this.btn5Label.AutoSize = true;
-            this.btn5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn5Label.Location = new System.Drawing.Point(298, 216);
             this.btn5Label.Name = "btn5Label";
-            this.btn5Label.Size = new System.Drawing.Size(406, 42);
+            this.btn5Label.Size = new System.Drawing.Size(245, 43);
             this.btn5Label.TabIndex = 31;
             this.btn5Label.Text = "TOP 10 BORROWERS";
             // 

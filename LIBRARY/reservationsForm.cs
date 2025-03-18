@@ -10,7 +10,7 @@ namespace LIBRARY
     public partial class reservationsForm : Form
     {
         public Point mouseLocation;
-        private MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;");
+        private MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;");
 
         public reservationsForm()
         {
@@ -153,7 +153,7 @@ namespace LIBRARY
                 return;
             }
 
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
 
@@ -316,7 +316,7 @@ namespace LIBRARY
 
         private void ApproveReservation(string reservationID)
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 MySqlTransaction transaction = conn.BeginTransaction();

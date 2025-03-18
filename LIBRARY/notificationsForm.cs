@@ -23,10 +23,10 @@ namespace LIBRARY
             LoadOverdueBooks();
         }
 
-        // ✅ Load Pending Fines
+        // load Pending Fines
         private void LoadPendingFines()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -48,10 +48,10 @@ namespace LIBRARY
             }
         }
 
-        // ✅ Load Borrowed Books
+        // load Borrowed Books
         private void LoadBorrowedBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -73,10 +73,10 @@ namespace LIBRARY
             }
         }
 
-        // ✅ Load Reserved Books
+        // load Reserved Books
         private void LoadReservedBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -98,10 +98,10 @@ namespace LIBRARY
             }
         }
 
-        // ✅ Load Overdue Books
+        // load Overdue Books
         private void LoadOverdueBooks()
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 string query = @"
@@ -123,7 +123,7 @@ namespace LIBRARY
             }
         }
 
-        // ✅ Refresh button to reload data
+        // refresh button to reload data
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             LoadPendingFines();
@@ -150,6 +150,26 @@ namespace LIBRARY
         private void btn_Home_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void mouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        private void mouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
+        }
+
+        private void finesDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -134,10 +134,10 @@
             // unreturnedLabel
             // 
             this.unreturnedLabel.AutoSize = true;
-            this.unreturnedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unreturnedLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unreturnedLabel.Location = new System.Drawing.Point(56, 11);
             this.unreturnedLabel.Name = "unreturnedLabel";
-            this.unreturnedLabel.Size = new System.Drawing.Size(423, 42);
+            this.unreturnedLabel.Size = new System.Drawing.Size(251, 43);
             this.unreturnedLabel.TabIndex = 2;
             this.unreturnedLabel.Text = "UNRETURNED BOOKS";
             // 
@@ -162,20 +162,20 @@
             // overdueLabel
             // 
             this.overdueLabel.AutoSize = true;
-            this.overdueLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.overdueLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.overdueLabel.Location = new System.Drawing.Point(88, 11);
             this.overdueLabel.Name = "overdueLabel";
-            this.overdueLabel.Size = new System.Drawing.Size(346, 42);
+            this.overdueLabel.Size = new System.Drawing.Size(206, 43);
             this.overdueLabel.TabIndex = 3;
             this.overdueLabel.Text = "OVERDUE BOOKS";
             // 
             // btn2Label
             // 
             this.btn2Label.AutoSize = true;
-            this.btn2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2Label.Location = new System.Drawing.Point(157, 24);
             this.btn2Label.Name = "btn2Label";
-            this.btn2Label.Size = new System.Drawing.Size(857, 42);
+            this.btn2Label.Size = new System.Drawing.Size(505, 43);
             this.btn2Label.TabIndex = 5;
             this.btn2Label.Text = "LIST OF UNRETURNED AND OVERDUE BOOKS";
             // 

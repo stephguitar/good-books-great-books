@@ -135,10 +135,10 @@
             // unavailableLabel
             // 
             this.unavailableLabel.AutoSize = true;
-            this.unavailableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unavailableLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unavailableLabel.Location = new System.Drawing.Point(63, 11);
             this.unavailableLabel.Name = "unavailableLabel";
-            this.unavailableLabel.Size = new System.Drawing.Size(416, 42);
+            this.unavailableLabel.Size = new System.Drawing.Size(258, 43);
             this.unavailableLabel.TabIndex = 3;
             this.unavailableLabel.Text = "UNAVAILABLE BOOKS";
             // 
@@ -154,10 +154,10 @@
             // btn1Label
             // 
             this.btn1Label.AutoSize = true;
-            this.btn1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1Label.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1Label.Location = new System.Drawing.Point(147, 31);
             this.btn1Label.Name = "btn1Label";
-            this.btn1Label.Size = new System.Drawing.Size(866, 42);
+            this.btn1Label.Size = new System.Drawing.Size(533, 43);
             this.btn1Label.TabIndex = 4;
             this.btn1Label.Text = "LIST OF AVAILABLE AND UNAVAILABLE BOOKS";
             // 
@@ -182,10 +182,10 @@
             // availableLabel
             // 
             this.availableLabel.AutoSize = true;
-            this.availableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availableLabel.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availableLabel.Location = new System.Drawing.Point(68, 11);
             this.availableLabel.Name = "availableLabel";
-            this.availableLabel.Size = new System.Drawing.Size(362, 42);
+            this.availableLabel.Size = new System.Drawing.Size(227, 43);
             this.availableLabel.TabIndex = 2;
             this.availableLabel.Text = "AVAILABLE BOOKS";
             // 

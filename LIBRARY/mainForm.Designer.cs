@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.btn_LibRegister = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.btn_Logout = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -54,9 +56,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.mnPanel = new System.Windows.Forms.Panel();
-            this.btn_LibRegister = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -68,7 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,6 +89,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 526);
             this.panel1.TabIndex = 0;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.btn_LibRegister);
+            this.panel14.Location = new System.Drawing.Point(-7, 435);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(363, 36);
+            this.panel14.TabIndex = 1;
+            // 
+            // btn_LibRegister
+            // 
+            this.btn_LibRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
+            this.btn_LibRegister.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_LibRegister.Location = new System.Drawing.Point(-21, -17);
+            this.btn_LibRegister.Name = "btn_LibRegister";
+            this.btn_LibRegister.Size = new System.Drawing.Size(261, 69);
+            this.btn_LibRegister.TabIndex = 0;
+            this.btn_LibRegister.Text = "REGISTER A LIBRARIAN";
+            this.btn_LibRegister.UseVisualStyleBackColor = false;
+            this.btn_LibRegister.Click += new System.EventHandler(this.btn_LibRegister_Click);
             // 
             // panel12
             // 
@@ -358,25 +378,6 @@
             this.mnPanel.TabIndex = 2;
             this.mnPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mnPanel_Paint);
             // 
-            // btn_LibRegister
-            // 
-            this.btn_LibRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(188)))), ((int)(((byte)(165)))));
-            this.btn_LibRegister.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btn_LibRegister.Location = new System.Drawing.Point(-21, -17);
-            this.btn_LibRegister.Name = "btn_LibRegister";
-            this.btn_LibRegister.Size = new System.Drawing.Size(261, 69);
-            this.btn_LibRegister.TabIndex = 0;
-            this.btn_LibRegister.Text = "REGISTER A LIBRARIAN";
-            this.btn_LibRegister.UseVisualStyleBackColor = false;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.btn_LibRegister);
-            this.panel14.Location = new System.Drawing.Point(-7, 435);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(363, 36);
-            this.panel14.TabIndex = 1;
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,6 +392,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -402,7 +404,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -1,0 +1,335 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\member_registrationForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\member_registrationForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\reservationsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\reservationsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\notificationsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\notificationsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\member_loginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\member_loginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\memberRegistrationForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\memberRegistrationForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\librarian_registrationForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\librarian_registrationForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\finesForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\finesForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\Database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\Database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn6Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\btn6Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn5Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\btn5Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn4Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\btn4Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn3Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\btn3Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn2Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\btn2Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn1Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\btn1Form_Reports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\booksForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\booksForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\transactionsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\transactionsForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\librarian_loginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\librarian_loginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\loginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIBRARY\\loginForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 330,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "reservationsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\reservationsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\reservationsForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\reservationsForm.cs",
+              "RelativeToolTip": "LIBRARY\\reservationsForm.cs",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAAwD4BAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:40:21.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "notificationsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\notificationsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\notificationsForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\notificationsForm.cs",
+              "RelativeToolTip": "LIBRARY\\notificationsForm.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwGcAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:39:51.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "member_registrationForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\member_registrationForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\member_registrationForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\member_registrationForm.cs",
+              "RelativeToolTip": "LIBRARY\\member_registrationForm.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwHQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:39:33.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "member_loginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\member_loginForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\member_loginForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\member_loginForm.cs",
+              "RelativeToolTip": "LIBRARY\\member_loginForm.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAwJEAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:39:12.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "memberRegistrationForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\memberRegistrationForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\memberRegistrationForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\memberRegistrationForm.cs",
+              "RelativeToolTip": "LIBRARY\\memberRegistrationForm.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwHgAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:38:54.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "librarian_registrationForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\librarian_registrationForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\librarian_registrationForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\librarian_registrationForm.cs",
+              "RelativeToolTip": "LIBRARY\\librarian_registrationForm.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAwGcAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:38:33.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "finesForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\finesForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\finesForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\finesForm.cs",
+              "RelativeToolTip": "LIBRARY\\finesForm.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAAwPUAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:38:04.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\Database.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Database.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\Database.cs",
+              "RelativeToolTip": "LIBRARY\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:37:54.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "btn6Form_Reports.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn6Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn6Form_Reports.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn6Form_Reports.cs",
+              "RelativeToolTip": "LIBRARY\\btn6Form_Reports.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADIAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:37:28.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "btn5Form_Reports.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn5Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn5Form_Reports.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn5Form_Reports.cs",
+              "RelativeToolTip": "LIBRARY\\btn5Form_Reports.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:37:14.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "btn4Form_Reports.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn4Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn4Form_Reports.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn4Form_Reports.cs",
+              "RelativeToolTip": "LIBRARY\\btn4Form_Reports.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:36:49.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "btn3Form_Reports.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn3Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn3Form_Reports.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn3Form_Reports.cs",
+              "RelativeToolTip": "LIBRARY\\btn3Form_Reports.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:36:22.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "btn2Form_Reports.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn2Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn2Form_Reports.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn2Form_Reports.cs",
+              "RelativeToolTip": "LIBRARY\\btn2Form_Reports.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDUAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:36:03.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "btn1Form_Reports.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn1Form_Reports.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\btn1Form_Reports.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\btn1Form_Reports.cs",
+              "RelativeToolTip": "LIBRARY\\btn1Form_Reports.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBYAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:35:42.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "booksForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\booksForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\booksForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\booksForm.cs",
+              "RelativeToolTip": "LIBRARY\\booksForm.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAAwN8AAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:35:11.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "librarian_loginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\librarian_loginForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\librarian_loginForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\librarian_loginForm.cs",
+              "RelativeToolTip": "LIBRARY\\librarian_loginForm.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFkAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:10:03.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "transactionsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\transactionsForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\transactionsForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\transactionsForm.cs",
+              "RelativeToolTip": "LIBRARY\\transactionsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:08:57.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "loginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\loginForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\loginForm.cs",
+              "ToolTip": "C:\\Users\\Summer MDR\\OneDrive\\Documents\\good-books-great-books\\LIBRARY\\loginForm.cs",
+              "RelativeToolTip": "LIBRARY\\loginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T00:08:39.311Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 268,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

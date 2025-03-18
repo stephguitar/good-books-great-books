@@ -9,7 +9,7 @@ namespace LIBRARY
     public partial class transactionsForm : Form
     {
         public Point mouseLocation; 
-        private MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;");
+        private MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;");
         private string transactionID;
 
         public transactionsForm()
@@ -115,7 +115,7 @@ namespace LIBRARY
 
         private void ReturnBook(string copyID)
         {
-            using (MySqlConnection conn = new MySqlConnection("Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;"))
+            using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
             {
                 conn.Open();
                 MySqlTransaction transaction = conn.BeginTransaction();
@@ -152,7 +152,7 @@ namespace LIBRARY
                         return;
                     }
 
-                    // Step 2: Update book copy status to 'available'
+                    // update book copy status to 'available'
                     using (MySqlCommand cmd = new MySqlCommand("UPDATE book_copies SET status = 'available' WHERE copy_id = @copyID", conn, transaction))
                     {
                         cmd.Parameters.AddWithValue("@copyID", copyID);
@@ -290,36 +290,42 @@ namespace LIBRARY
 
         private void txtbox_LibrarianID_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtbox_LibrarianID.Text))
+            if (!string.IsNullOrWhiteSpace(txtbox_LibrarianID.Text) && txtbox_LibrarianID.Text != "Librarian ID")
             {
-                string query = @"
-            SELECT CONCAT(first_name, ' ', COALESCE(middle_name, ''), ' ', last_name) AS full_name 
-            FROM librarian 
-            WHERE librarian_id = @librarian_id";
-
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlConnection conn = new MySqlConnection("Server=127.0.0.1;Database=LibraryDB;User=root;Password=;"))
                 {
-                    cmd.Parameters.AddWithValue("@librarian_id", txtbox_LibrarianID.Text);
                     try
                     {
                         conn.Open();
-                        MySqlDataReader reader = cmd.ExecuteReader();
-                        if (reader.Read())
+                        string query = @"
+                SELECT CONCAT(first_name, ' ', COALESCE(middle_name, ''), ' ', last_name) AS full_name 
+                FROM librarian 
+                WHERE librarian_id = @librarian_id";
+
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
                         {
-                            txtbox_LibrarianName.Text = reader["full_name"].ToString();
+                            cmd.Parameters.AddWithValue("@librarian_id", txtbox_LibrarianID.Text);
+                            using (MySqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    txtbox_LibrarianName.Text = reader["full_name"].ToString();
+                                }
+                                else
+                                {
+                                    txtbox_LibrarianName.Text = "Librarian Not Found"; // Placeholder if ID is invalid
+                                }
+                            }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error: " + ex.Message);
-                    }
-                    finally
-                    {
-                        conn.Close();
+                        MessageBox.Show("Error fetching librarian details: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
         }
+
 
 
         private void RefreshBooks()
@@ -386,7 +392,7 @@ namespace LIBRARY
             DataTable dt = new DataTable();
 
             // use the same connection string as the main connection
-            string connectionString = "Server=192.168.1.18;Database=LibraryDB;User=lmsummer;Password=lmsummer;";
+            string connectionString = "Server=127.0.0.1;Database=LibraryDB;User=root;Password=;";
 
             using (MySqlConnection tempConn = new MySqlConnection(connectionString))
             {

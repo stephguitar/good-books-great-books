@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(notificationsForm));
             this.notificationsPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Home = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Close = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.overdueBooksDataGrid = new System.Windows.Forms.DataGridView();
             this.lbl_OverdueBooks = new System.Windows.Forms.Label();
@@ -39,19 +44,14 @@
             this.lbl_BorrowedBooks = new System.Windows.Forms.Label();
             this.finesDataGrid = new System.Windows.Forms.DataGridView();
             this.lbl_PendingFines = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_Home = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_Close = new System.Windows.Forms.Button();
             this.notificationsPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.overdueBooksDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservedBooksDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.borrowedBooksDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finesDataGrid)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // notificationsPanel
@@ -71,90 +71,6 @@
             this.notificationsPanel.Size = new System.Drawing.Size(780, 518);
             this.notificationsPanel.TabIndex = 0;
             // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
-            this.btn_Refresh.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btn_Refresh.Location = new System.Drawing.Point(479, 47);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(107, 27);
-            this.btn_Refresh.TabIndex = 66;
-            this.btn_Refresh.Text = "REFRESH";
-            this.btn_Refresh.UseVisualStyleBackColor = false;
-            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
-            // 
-            // overdueBooksDataGrid
-            // 
-            this.overdueBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.overdueBooksDataGrid.Location = new System.Drawing.Point(15, 408);
-            this.overdueBooksDataGrid.Name = "overdueBooksDataGrid";
-            this.overdueBooksDataGrid.Size = new System.Drawing.Size(571, 76);
-            this.overdueBooksDataGrid.TabIndex = 59;
-            // 
-            // lbl_OverdueBooks
-            // 
-            this.lbl_OverdueBooks.AutoSize = true;
-            this.lbl_OverdueBooks.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_OverdueBooks.Location = new System.Drawing.Point(15, 389);
-            this.lbl_OverdueBooks.Name = "lbl_OverdueBooks";
-            this.lbl_OverdueBooks.Size = new System.Drawing.Size(122, 16);
-            this.lbl_OverdueBooks.TabIndex = 58;
-            this.lbl_OverdueBooks.Text = "Overdue Books:";
-            // 
-            // reservedBooksDataGrid
-            // 
-            this.reservedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reservedBooksDataGrid.Location = new System.Drawing.Point(15, 302);
-            this.reservedBooksDataGrid.Name = "reservedBooksDataGrid";
-            this.reservedBooksDataGrid.Size = new System.Drawing.Size(571, 76);
-            this.reservedBooksDataGrid.TabIndex = 57;
-            // 
-            // lbl_ReservedBooks
-            // 
-            this.lbl_ReservedBooks.AutoSize = true;
-            this.lbl_ReservedBooks.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ReservedBooks.Location = new System.Drawing.Point(15, 283);
-            this.lbl_ReservedBooks.Name = "lbl_ReservedBooks";
-            this.lbl_ReservedBooks.Size = new System.Drawing.Size(128, 16);
-            this.lbl_ReservedBooks.TabIndex = 56;
-            this.lbl_ReservedBooks.Text = "Reserved Books:";
-            // 
-            // borrowedBooksDataGrid
-            // 
-            this.borrowedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.borrowedBooksDataGrid.Location = new System.Drawing.Point(15, 192);
-            this.borrowedBooksDataGrid.Name = "borrowedBooksDataGrid";
-            this.borrowedBooksDataGrid.Size = new System.Drawing.Size(571, 76);
-            this.borrowedBooksDataGrid.TabIndex = 55;
-            // 
-            // lbl_BorrowedBooks
-            // 
-            this.lbl_BorrowedBooks.AutoSize = true;
-            this.lbl_BorrowedBooks.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_BorrowedBooks.Location = new System.Drawing.Point(15, 173);
-            this.lbl_BorrowedBooks.Name = "lbl_BorrowedBooks";
-            this.lbl_BorrowedBooks.Size = new System.Drawing.Size(130, 16);
-            this.lbl_BorrowedBooks.TabIndex = 54;
-            this.lbl_BorrowedBooks.Text = "Borrowed Books:";
-            // 
-            // finesDataGrid
-            // 
-            this.finesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.finesDataGrid.Location = new System.Drawing.Point(15, 85);
-            this.finesDataGrid.Name = "finesDataGrid";
-            this.finesDataGrid.Size = new System.Drawing.Size(571, 76);
-            this.finesDataGrid.TabIndex = 53;
-            // 
-            // lbl_PendingFines
-            // 
-            this.lbl_PendingFines.AutoSize = true;
-            this.lbl_PendingFines.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_PendingFines.Location = new System.Drawing.Point(15, 66);
-            this.lbl_PendingFines.Name = "lbl_PendingFines";
-            this.lbl_PendingFines.Size = new System.Drawing.Size(113, 16);
-            this.lbl_PendingFines.TabIndex = 49;
-            this.lbl_PendingFines.Text = "Pending Fines:";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
@@ -165,6 +81,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(780, 34);
             this.panel1.TabIndex = 67;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove);
             // 
             // panel3
             // 
@@ -205,6 +123,91 @@
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(153)))), ((int)(((byte)(118)))));
+            this.btn_Refresh.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_Refresh.Location = new System.Drawing.Point(652, 41);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(107, 27);
+            this.btn_Refresh.TabIndex = 66;
+            this.btn_Refresh.Text = "REFRESH";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // overdueBooksDataGrid
+            // 
+            this.overdueBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.overdueBooksDataGrid.Location = new System.Drawing.Point(15, 408);
+            this.overdueBooksDataGrid.Name = "overdueBooksDataGrid";
+            this.overdueBooksDataGrid.Size = new System.Drawing.Size(744, 76);
+            this.overdueBooksDataGrid.TabIndex = 59;
+            // 
+            // lbl_OverdueBooks
+            // 
+            this.lbl_OverdueBooks.AutoSize = true;
+            this.lbl_OverdueBooks.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_OverdueBooks.Location = new System.Drawing.Point(15, 389);
+            this.lbl_OverdueBooks.Name = "lbl_OverdueBooks";
+            this.lbl_OverdueBooks.Size = new System.Drawing.Size(122, 16);
+            this.lbl_OverdueBooks.TabIndex = 58;
+            this.lbl_OverdueBooks.Text = "Overdue Books:";
+            // 
+            // reservedBooksDataGrid
+            // 
+            this.reservedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reservedBooksDataGrid.Location = new System.Drawing.Point(15, 302);
+            this.reservedBooksDataGrid.Name = "reservedBooksDataGrid";
+            this.reservedBooksDataGrid.Size = new System.Drawing.Size(744, 76);
+            this.reservedBooksDataGrid.TabIndex = 57;
+            // 
+            // lbl_ReservedBooks
+            // 
+            this.lbl_ReservedBooks.AutoSize = true;
+            this.lbl_ReservedBooks.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ReservedBooks.Location = new System.Drawing.Point(15, 283);
+            this.lbl_ReservedBooks.Name = "lbl_ReservedBooks";
+            this.lbl_ReservedBooks.Size = new System.Drawing.Size(128, 16);
+            this.lbl_ReservedBooks.TabIndex = 56;
+            this.lbl_ReservedBooks.Text = "Reserved Books:";
+            // 
+            // borrowedBooksDataGrid
+            // 
+            this.borrowedBooksDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.borrowedBooksDataGrid.Location = new System.Drawing.Point(15, 192);
+            this.borrowedBooksDataGrid.Name = "borrowedBooksDataGrid";
+            this.borrowedBooksDataGrid.Size = new System.Drawing.Size(744, 76);
+            this.borrowedBooksDataGrid.TabIndex = 55;
+            // 
+            // lbl_BorrowedBooks
+            // 
+            this.lbl_BorrowedBooks.AutoSize = true;
+            this.lbl_BorrowedBooks.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_BorrowedBooks.Location = new System.Drawing.Point(15, 173);
+            this.lbl_BorrowedBooks.Name = "lbl_BorrowedBooks";
+            this.lbl_BorrowedBooks.Size = new System.Drawing.Size(130, 16);
+            this.lbl_BorrowedBooks.TabIndex = 54;
+            this.lbl_BorrowedBooks.Text = "Borrowed Books:";
+            // 
+            // finesDataGrid
+            // 
+            this.finesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.finesDataGrid.Location = new System.Drawing.Point(15, 85);
+            this.finesDataGrid.Name = "finesDataGrid";
+            this.finesDataGrid.Size = new System.Drawing.Size(744, 76);
+            this.finesDataGrid.TabIndex = 53;
+            this.finesDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.finesDataGrid_CellContentClick);
+            // 
+            // lbl_PendingFines
+            // 
+            this.lbl_PendingFines.AutoSize = true;
+            this.lbl_PendingFines.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PendingFines.Location = new System.Drawing.Point(15, 66);
+            this.lbl_PendingFines.Name = "lbl_PendingFines";
+            this.lbl_PendingFines.Size = new System.Drawing.Size(113, 16);
+            this.lbl_PendingFines.TabIndex = 49;
+            this.lbl_PendingFines.Text = "Pending Fines:";
+            // 
             // notificationsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,13 +220,13 @@
             this.Text = "notificationsForm";
             this.notificationsPanel.ResumeLayout(false);
             this.notificationsPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.overdueBooksDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservedBooksDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.borrowedBooksDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.finesDataGrid)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
